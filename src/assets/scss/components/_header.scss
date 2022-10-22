@@ -1,15 +1,19 @@
 @import '../themes/variable';
 
 //css
-.header {
-    background-color: black !important
+// .header {
+//     background-color: #e3f2fd !important;
     
-}
-.header_right {
-    justify-content: end !important;
-    align-items: center !important;
-}
-.search_header {
-    color: white;
-    border: none;
+// }
+// .header_right {
+//     justify-content: end !important;
+//     align-items: center !important;
+// }
+// .search_header {
+//     color: white;
+//     border: none;
+// }
+.header_fixed {
+    background-color:  #102027 !important;
+    color: black !important;
 }

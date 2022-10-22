@@ -45,6 +45,9 @@
                     li {
                         list-style: none;
                         line-height: 20px;
+                        span {
+                            font-weight: 600;
+                        }
 
                         a {
                             @include text($size: 12px);
@@ -53,7 +56,7 @@
                 }
 
                 p {
-                    @include text($size: 12px);
+                    @include text($size: 15px);
                     margin-bottom: 4px;
                 }
 

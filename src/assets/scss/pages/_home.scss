@@ -1,16 +1,17 @@
 @import '../themes/variable' ;
 .card_home {
   img {
-
+    height: auto;
+    width: auto;
   }
   .card_mota {
-    background-color: rgb(173, 242, 242) !important;
+    background-color: #64627bd9 !important;
     color: rgb(0, 0, 0) !important;
     font-size: 15px;
   }
 }
 .ProductFeature {
-  background: linear-gradient(#501163 , #bdbbcd);
+  background:#37474f ;
   width: 698px;
   height: 74px;
   top: 44px;
@@ -23,4 +24,7 @@
       line-height: 48px;
      padding: 20px;
   }
+}
+.btn-card {
+   background-color: #737A4C;
 }

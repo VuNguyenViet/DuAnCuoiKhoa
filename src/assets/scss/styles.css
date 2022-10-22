@@ -20,18 +20,9 @@
   max-width: 1280px;
 }
 
-.header {
-  background-color: black !important;
-}
-
-.header_right {
-  justify-content: end !important;
-  align-items: center !important;
-}
-
-.search_header {
-  color: white;
-  border: none;
+.header_fixed {
+  background-color: #102027 !important;
+  color: black !important;
 }
 
 * {
@@ -99,70 +90,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #000;
 }
 
-.product-card {
+.card_home {
   width: 334px;
   height: 369px;
   background-color: #F8F8F8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 35px;
 }
-.product-card .product-card__img {
-  width: 220px;
-  height: 156px;
-  margin: 0 57px 30px;
-}
-.product-card .product-card__img img {
-  width: 100%;
-}
-.product-card .product-card__body {
-  padding: 0 24px 10px;
-}
-.product-card .product-card__body h3 {
-  height: 29px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.product-card .product-card__body .product-description {
-  height: 72px;
-}
-.product-card .product-card__body .product-description p {
-  font-size: 20px;
-  font-weight: 300;
-  color: #CBC9C9;
-  line-height: 1.2;
-}
-.product-card .product-card__footer {
-  height: 64px;
-  display: flex;
-  align-items: center;
-  background-color: #DEDDDC;
-}
-.product-card .product-card__footer .btnBuyNow {
-  width: 50%;
-  height: 64px;
-  background: #F8B653;
-  border: transparent;
-  border-radius: 0px;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.2;
-}
-.product-card .product-card__footer .product-price {
-  transform: translateX(75%);
-}
-.product-card .product-card__footer .product-price p {
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 1.2;
-  width: 50%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -233,6 +167,9 @@ p, h1, h2, h3, h4, h5, h6 {
   list-style: none;
   line-height: 20px;
 }
+.footer .footer__part .container .footer__item ul li span {
+  font-weight: 600;
+}
 .footer .footer__part .container .footer__item ul li a {
   font-size: 12px;
   font-weight: 400;
@@ -240,7 +177,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 .footer .footer__part .container .footer__item p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   color: #000;
   line-height: 1.2;
@@ -253,78 +190,25 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-.product-card {
+.card_home {
   width: 334px;
   height: 369px;
   background-color: #F8F8F8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 35px;
 }
-.product-card .product-card__img {
-  width: 220px;
-  height: 156px;
-  margin: 0 57px 30px;
+.card_home img {
+  height: auto;
+  width: auto;
 }
-.product-card .product-card__img img {
-  width: 100%;
-}
-.product-card .product-card__body {
-  padding: 0 24px 10px;
-}
-.product-card .product-card__body h3 {
-  height: 29px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.product-card .product-card__body .product-description {
-  height: 72px;
-}
-.product-card .product-card__body .product-description p {
-  font-size: 20px;
-  font-weight: 300;
-  color: #CBC9C9;
-  line-height: 1.2;
-}
-.product-card .product-card__footer {
-  height: 64px;
-  display: flex;
-  align-items: center;
-  background-color: #DEDDDC;
-}
-.product-card .product-card__footer .btnBuyNow {
-  width: 50%;
-  height: 64px;
-  background: #F8B653;
-  border: transparent;
-  border-radius: 0px;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.2;
-}
-.product-card .product-card__footer .product-price {
-  transform: translateX(75%);
-}
-.product-card .product-card__footer .product-price p {
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  line-height: 1.2;
-  width: 50%;
-}
-
 .card_home .card_mota {
-  background-color: rgb(173, 242, 242) !important;
+  background-color: rgba(100, 98, 123, 0.8509803922) !important;
   color: rgb(0, 0, 0) !important;
   font-size: 15px;
 }
 
 .ProductFeature {
-  background: linear-gradient(#501163, #bdbbcd);
+  background: #37474f;
   width: 698px;
   height: 74px;
   top: 44px;
@@ -337,6 +221,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 48px;
   padding: 20px;
+}
+
+.btn-card {
+  background-color: #737A4C;
 }
 
 .login {

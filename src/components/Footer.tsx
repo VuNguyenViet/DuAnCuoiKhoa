@@ -12,10 +12,10 @@ export default function Footer({}: Props) {
         <div className='footer__item'>
           <h2>Hãy liên hệ ngay với chúng tôi</h2>
           <ul>
-            <li><a href="#">Địa chỉ:</a></li>
-            <li><a href="#">Số điện thoại:</a></li>
-            <li><a href="#">Facebook:</a></li>
-            <li><a href="#">Zalo:</a></li>
+            <li><a href="#"> <span>Địa chỉ:</span>   336/12 Phường 12 , Quận 10,TP HCM</a></li>
+            <li><a href="#"><span>Số điện thoại</span> :0934.923.643</a></li>
+            <li><a href="https://www.facebook.com/vietvu.22.06"><span> Facebook:</span>https://www.facebook.com/vietvu.22.06</a></li>
+            <li><a href="#"><span>Zalo:</span> 0934.923.643</a></li>
           </ul>
         </div>
         <div className='footer__item ps-3 me-3 --border'>
