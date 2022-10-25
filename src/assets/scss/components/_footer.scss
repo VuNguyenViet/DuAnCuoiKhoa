@@ -6,9 +6,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        color: white;
 
         &.--part-1 {
-            background-color: rgb(249, 249, 249);
+            background-color:  #102027 ;
         }
 
         &.--part-2 {
@@ -35,6 +36,7 @@
                     @include text($text-15, $text-bold, $text-primary);
                     margin-bottom: 5px;
                     padding-top: 10px;
+                    color: white;
 
                 }
 
@@ -51,6 +53,7 @@
 
                         a {
                             @include text($size: 12px);
+                            color: white;
                         }
                     }
                 }

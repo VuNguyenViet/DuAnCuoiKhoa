@@ -90,6 +90,23 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #000;
 }
 
+.carousel {
+  padding: 10px 0;
+}
+.carousel .carousel_1 .carousel_2 {
+  position: relative;
+  text-align: center !important;
+}
+.carousel .carousel_1 .carousel_2 img {
+  height: 400px;
+}
+.carousel .carousel_1 .carousel_2 h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+}
+
 .card_home {
   width: 334px;
   height: 369px;
@@ -131,9 +148,10 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 .footer .footer__part.--part-1 {
-  background-color: rgb(249, 249, 249);
+  background-color: #102027;
 }
 .footer .footer__part.--part-2 {
   background-color: rgb(231, 231, 231);
@@ -158,6 +176,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 5px;
   padding-top: 10px;
+  color: white;
 }
 .footer .footer__part .container .footer__item ul {
   padding: 0;
@@ -175,6 +194,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #000;
   line-height: 1.2;
+  color: white;
 }
 .footer .footer__part .container .footer__item p {
   font-size: 15px;

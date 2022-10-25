@@ -1,15 +1,17 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
+
 type Props = {
   title?: string;
 };
 
 export default function Header({ }: Props) {
+  const elearning = require ("../assets/img/elearning.webp")
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark header_fixed">
       <NavLink className="navbar-brand header_text" to="/">
-        Elearning: Đạo tạo lập trình viên
-      </NavLink>
+       <img style={{width:'50px'}} src= {elearning} alt="" />
+       </NavLink>
       <button
         className="navbar-toggler d-lg-none"
         type="button"
