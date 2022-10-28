@@ -18,7 +18,7 @@ import Detail from './pages/Detail/Detail';
 import Introduction from './pages/About/About';
 import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
-import Support from './pages/Support/Support';
+import Support from './pages/Contact/Contact';
 import About from './pages/About/About';
 
 export const history = createBrowserHistory();

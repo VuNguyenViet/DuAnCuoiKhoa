@@ -7,7 +7,7 @@ export default function Introduction({}: Props) {
   return (
     <div className="container">
       <div className="main_about_img">
-        <img src="https://picsum.photos/200/200" alt="..." />
+        {/* <img src="https://picsum.photos/200/200" alt="..." /> */}
       </div>
 
       <div className="row about_title_main">
