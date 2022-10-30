@@ -8,7 +8,7 @@ export default function Header({ }: Props) {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark header_fixed">
       <NavLink className="navbar-brand header_text" to="/">
-        Elearning: Đạo tạo lập trình viên
+        Elearning: Đào tạo lập trình viên
       </NavLink>
       <button
         className="navbar-toggler d-lg-none"

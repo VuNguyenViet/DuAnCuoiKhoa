@@ -1,0 +1,126 @@
+.advise {
+    padding-top: 30px;
+    
+    .advise_title {
+        padding-bottom: 30px;
+        h1 {
+            text-align: center;
+            color: #173359;
+        }
+    }
+
+    .container {
+        .advise_content {
+            .about_course {
+                background: rgb(93,139,199);
+                background: linear-gradient(90deg, rgba(93,139,199,1) 0%, rgba(255,255,255,1) 100%);
+                border-radius: 15px;
+                .row {
+                    .col-6 {
+                        .about_course_left {
+                            img {
+                              border-radius: 15px; 
+                              margin: 10px 20px; 
+                            }
+                        }
+                    }
+
+                    .col-6 {
+                        .about_course_right {
+                            .title_about_course {
+                                h2 {
+                                    color: #173359;
+                                    font-size: 40px;
+                                }
+                            }
+
+                            .content_about_course {
+                                p {
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .choose_course {
+                .row {
+                    .col-6 {
+                        .choose_course_left {
+                            .choose_course_title {
+                                h1 {}
+
+                                .choose_course_content {
+                                    p {}
+                                }
+                            }
+                        }
+
+                    }
+
+                    .col-6 {
+                        .choose_course_right {
+                            img {}
+                        }
+                    }
+                }
+            }
+
+            .not_IT {
+                background: rgb(93,139,199);
+                background: linear-gradient(90deg, rgba(93,139,199,1) 0%, rgba(255,255,255,1) 100%);
+                border-radius: 15px;
+                .row {
+                    .col-6 {
+                        .not_IT_left {
+                            img {
+                                border-radius: 15px; 
+                                margin: 10px 20px; 
+                            }
+                        }
+                    }
+
+                    .col-6 {
+                        .not_IT_right {
+                            .not_IT_title {
+                                h1 {}
+                            }
+
+                            .not_IT_content {
+                                p {}
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .IT_student {
+                .row {
+                    .col-6 {
+                        .IT_student_left {
+                            .IT_student_title {
+                                h1 {}
+                            }
+
+                            .IT_student_content {
+                                p {}
+                            }
+                        }
+                    }
+
+                    .col-6 {
+                        .IT_student_right {
+                            img {}
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}

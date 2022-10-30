@@ -12,7 +12,7 @@ export default function Menu({}: Props) {
         <NavLink to="/about">Giới thiệu</NavLink>
         <NavLink to="/mentor">Đội ngũ giảng viên</NavLink>
         <NavLink to="/advise">Tư vấn</NavLink>
-        <NavLink to="/support">Hỗ trợ</NavLink>
+        <NavLink to="/support">Liên hệ</NavLink>
     </div>
 </section>
   )
