@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-// import { signupApi } from "../../redux/reducers/userReducer";
+import { signupApi } from "../../redux/reducers/registerReducer";
 import { useDispatch } from "react-redux";
 type Props = {}
 
@@ -33,9 +33,10 @@ export default function Register({}: Props) {
       // .matches(/cybersoft/,'Password phải có cybersoft')
     }),
     onSubmit: (values) => {
-      console.log(values);
-
-      // dispatch(signupApi(values));
+      // console.log(values);
+      console.log(123)
+      const action = signupApi(values)
+      dispatch(action);
     },
   });
 
@@ -147,7 +148,7 @@ export default function Register({}: Props) {
               </label>
             </li>
           </ul>
-          <button type="submit" className="Submit_register">
+          <button type='submit' className="Submit_register">
             Đăng ký 
           </button>
         </div>

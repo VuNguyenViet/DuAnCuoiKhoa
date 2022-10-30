@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useDispatch } from 'react-redux'
-// import { signinApi } from '../../redux/reducers/userReducer'
+import { signinApi } from '../../redux/reducers/userReducer'
+
 // import FacebookLogin from 'react-facebook-login'
 
 type Props = {}
@@ -12,7 +13,7 @@ export default function Login({}: Props) {
   // const responseFacebook = (response) => {
   //   console.log(response);
   // }
- 
+  const dispatch = useDispatch ()
 const formik = useFormik ({
   initialValues:{
     email:'',
@@ -26,8 +27,8 @@ validationSchema:Yup.object().shape({
 ,
 onSubmit: (values)=>{
   // console.log(values)
-  // const action = signinApi(values);
-  // dispatch(action);
+  const action = signinApi(values);
+  dispatch(action);
 
   
 }
