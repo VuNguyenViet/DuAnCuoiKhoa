@@ -9,20 +9,28 @@ type Props = {}
 
 
 export default function Mentors({ }: Props) {
+
+
+  const mentor1 = require("../../assets/img/mentor/mentor_1.jpg");
+  const mentor2 = require("../../assets/img/mentor/mentor_2.jpg");
+  const mentor3 = require("../../assets/img/mentor/mentor_3.jpg");
+  const mentor4 = require("../../assets/img/mentor/mentor_4.jpg");
+  const mentor5 = require("../../assets/img/mentor/mentor_5.jpg");
+
   return (
      
   
     <div>
       <div className="mentors_title">
         <p>Our Team</p>
-
       </div>
+
       <div className="container">
         <div className="intro_mentors1">
           <div className="row">
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="./img//mentor/mentor_1.jpg" alt="..." />
+                <img src= {mentor1} alt="" />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -37,7 +45,7 @@ export default function Mentors({ }: Props) {
 
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="../../img/mentor/mentor_1.jpg" alt="..." />
+                <img src= {mentor2} alt="..." />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -51,7 +59,7 @@ export default function Mentors({ }: Props) {
             </div>
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="../../img/mentor/mentor_1.jpg" alt="..." />
+                <img src={mentor3} alt="..." />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -72,7 +80,7 @@ export default function Mentors({ }: Props) {
           <div className="row">
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="../../img/mentor/mentor_1.jpg" alt="..." />
+                <img src= {mentor4} alt="..." />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -87,7 +95,7 @@ export default function Mentors({ }: Props) {
 
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="../../img/mentor/mentor_1.jpg" alt="..." />
+                <img src= {mentor5} alt="..." />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -102,7 +110,7 @@ export default function Mentors({ }: Props) {
 
             <div className="col-4">
               <div className="mentor_profile">
-                <img src="../../img/mentor/mentor_1.jpg" alt="..." />
+                <img src={mentor5} alt="..." />
                 <div className="contact_mentor">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
