@@ -11,7 +11,7 @@ type Props = {}
 export default function Mentors({ }: Props) {
   return (
      
-
+  
     <div>
       <div className="mentors_title">
         <p>Our Team</p>
