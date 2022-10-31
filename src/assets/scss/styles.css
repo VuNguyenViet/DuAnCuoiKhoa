@@ -723,4 +723,47 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .search .search-result .search-result__products .search-result__product {
   margin-bottom: 44px;
+}
+
+.container .main_about_img {
+  height: 400px;
+  background-size: cover;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.container .about_title_main {
+  margin-top: 20px;
+}
+.container .about_title_main .col-3 :hover {
+  -webkit-animation: upToDown 1s;
+          animation: upToDown 1s;
+}
+.container .about_title_main .about_title {
+  background-color: rgb(41, 66, 83);
+  border-radius: 15px;
+  height: 300px;
+}
+.container .about_title_main .about_title i {
+  color: red;
+  font-size: 100px;
+  margin: 20px 90px;
+}
+.container .about_title_main .about_title h2 {
+  color: aqua;
+}
+@-webkit-keyframes upToDown {
+  10% {
+    transform: translateY(20%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+}
+@keyframes upToDown {
+  10% {
+    transform: translateY(20%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=styles.css.map */
