@@ -15,8 +15,6 @@ export default function HomeTemplate({ }: Props) {
       <div style={{ minHeight: 600 }}>
         <Outlet />
       </div>
-      <TuvanKhoahoc />
-
       <Footer />
 
     </>
