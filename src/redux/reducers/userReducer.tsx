@@ -10,7 +10,6 @@ export interface User {
 
 const initialState = {
   userLogin: getStoreJSON(USER_LOGIN), //null
-  newUser: {},
 }
 
 
@@ -23,6 +22,7 @@ const userReducer = createSlice({
       state.userLogin =  userLogin;
       // state.userLogin.email = email;
   },
+
   }
 });
 
@@ -42,8 +42,8 @@ export const signinApi = (userLogin:any) => { //userLogin = {email:'',password}
 
           //thành công
           //Lưu lại token
-          setStore(ACCESS_TOKEN,result.data.accessToken);
-          setCookie(result.data.accessToken,30,ACCESS_TOKEN);
+          setStore(ACCESS_TOKEN,result.data);
+          setCookie(result.data,30,ACCESS_TOKEN);
           //Lưu email 
           setStoreJSON(USER_LOGIN,result.data)
       

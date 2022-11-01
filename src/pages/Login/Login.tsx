@@ -21,7 +21,7 @@ const formik = useFormik ({
     password:''
 },
 validationSchema:Yup.object().shape({
-  email: Yup.string().required('Email không được bỏ trống !').email('Email không đúng định dạng!'),
+  email: Yup.string().required('Email không được bỏ trống !') ,
   password: Yup.string().required('Password không được bỏ trống !').min(3,'password từ 3 - 32 ký tự!').max(32,'password từ 3 đến 32 ký tự!')
   // .matches(/cybersoft/,'Password phải có cybersoft')
 })
@@ -39,7 +39,7 @@ onSubmit: (values)=>{
 
   return (
     <form className='login'  onSubmit={formik.handleSubmit}>
-      <p>Email</p>
+      <p>Tài khoản</p>
       <input type="text" id="email" name='email' placeholder='Enter Your Email' className='Login_padding'  onChange={formik.handleChange} onBlur={formik.handleBlur}/>
       {formik.errors.email ? <p className='text text-danger'>{formik.errors.email}</p> : ''} 
       <p>Mật khẩu</p>
