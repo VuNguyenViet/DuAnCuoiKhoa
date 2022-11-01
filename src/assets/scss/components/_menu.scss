@@ -1,7 +1,8 @@
 
 @import './variable-base' ;
 .menu {
-    background-color: gray;
+    background-color: #0d6870;
+    color: white;
     padding: 16px 0 0;
 
     .container {
@@ -17,6 +18,7 @@
             text-decoration: none;
             opacity: 0.7;
             transition: opacity 0.5s;
+            color: white;
 
             &:hover {
                 opacity: 1;

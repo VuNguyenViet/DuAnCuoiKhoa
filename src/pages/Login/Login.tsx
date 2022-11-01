@@ -5,6 +5,7 @@ import * as Yup from 'yup'
 import { AppDispatch } from '../../redux/configStore'
 import { useDispatch } from 'react-redux'
 import { signinApi } from '../../redux/reducers/userReducer'
+import { http } from '../../util/setting'
 
 // import FacebookLogin from 'react-facebook-login'
 
@@ -27,8 +28,14 @@ validationSchema:Yup.object().shape({
 })
 ,
 onSubmit: (values)=>{
+  
+  const payload = {
+    taiKhoan: values.email,
+    matKhau: values.password
+  }
+
   // console.log(values)
-  const action = signinApi(values);
+  const action = signinApi(payload);
   dispatch(action);
 
   
