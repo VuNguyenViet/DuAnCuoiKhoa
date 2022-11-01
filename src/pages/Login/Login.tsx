@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import { AppDispatch } from '../../redux/configStore'
 import { useDispatch } from 'react-redux'
 import { signinApi } from '../../redux/reducers/userReducer'
 
@@ -13,7 +14,7 @@ export default function Login({}: Props) {
   // const responseFacebook = (response) => {
   //   console.log(response);
   // }
-  const dispatch = useDispatch ()
+  const dispatch:AppDispatch = useDispatch ()
 const formik = useFormik ({
   initialValues:{
     email:'',
@@ -57,14 +58,14 @@ onSubmit: (values)=>{
         </div>
         <button type='submit' className='login_button'>Đăng nhập</button>
       </div>
-      <div>
-      {/* <FacebookLogin
+      {/* <div>
+      <FacebookLogin
     appId="405558278438475"
     autoLoad={true}
     fields="name,email,picture"
     
-    callback={responseFacebook} />, */}
-      </div>
+    callback={responseFacebook} />,
+      </div> */}
     </form>
   //   <button className='facebook_button'>
   //   <div className='facebook_icon'>

@@ -5,46 +5,40 @@ import { ACCESS_TOKEN, getStore, getStoreJSON, http, setCookie, setStore, setSto
 
 export interface User {
   taiKhoan:        string;
-  email:           string;
-  soDT:            string;
-  maNhom:          string;
-  maLoaiNguoiDung: string;
-  hoTen:           string;
-  accessToken:     string;
+  matKhau:         string
 }
 
-export interface UserState {
-    arrUser:User []
+const initialState = {
+  userLogin: getStoreJSON(USER_LOGIN), //null
+  newUser: {},
 }
 
-const initialState:UserState = {
-    arrUser: []
-}
 
-const UserReducer = createSlice({
-  name: 'UserReducer',
+const userReducer = createSlice({
+  name: 'userReducer',
   initialState,
   reducers: {
-    getUserAction: (state:UserState,action:PayloadAction<User[]>) =>{
-        state.arrUser = action.payload;
-        
-    }
+    setUserLoginAction : (state,action) => {
+      let userLogin = action.payload;
+      state.userLogin =  userLogin;
+      // state.userLogin.email = email;
+  },
   }
 });
 
-export const {getUserAction} = UserReducer.actions
+export const {setUserLoginAction} = userReducer.actions
 
-export default UserReducer.reducer
+export default userReducer.reducer
 
  
 //----------api-------------
 
-export const signinApi:any = (userLogin:{}) => { //userLogin = {email:'',password}
+export const signinApi = (userLogin:any) => { //userLogin = {email:'',password}
 
 
   return async (dispatch:AppDispatch) => {
       try {
-          let result = await http.post('QuanLyNguoiDung/DangNhap',userLogin);
+          let result = await http.post('/QuanLyNguoiDung/DangNhap',userLogin);
 
           //thành công
           //Lưu lại token
@@ -54,16 +48,14 @@ export const signinApi:any = (userLogin:{}) => { //userLogin = {email:'',passwor
           setStoreJSON(USER_LOGIN,result.data)
       
           // console.log(result);
-          //Đưa lên userLogin thành công lên reducer
-          //result.data.content = {email:'',accessToken:''}
-          const action = getUserAction(result.data);
+          const action = setUserLoginAction(result.data);
           dispatch(action);
-          history.push('/Profile');
+          history.push('/profile');
 
 
       } catch (err) {
           console.log({err});
-          alert('Tài khoản hoăc 1 mật khẩu không đúng !')
+          alert('Tài khoản hoăc  mật khẩu không đúng !')
           history.push('/Register')
          
 

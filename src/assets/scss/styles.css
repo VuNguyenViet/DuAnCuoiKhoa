@@ -21,8 +21,14 @@
 }
 
 .header_fixed {
-  background-color: #102027 !important;
+  background-color: white !important;
   color: black !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.header_fixed a {
+  color: #06BBCC !important;
 }
 
 * {
@@ -55,6 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
+  background-color: gray;
   padding: 16px 0 0;
 }
 .menu .container {

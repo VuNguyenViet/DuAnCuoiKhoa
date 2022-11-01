@@ -4,11 +4,11 @@ import  {history} from '../../index'
 import { ACCESS_TOKEN, getStore, getStoreJSON, http, setCookie, setStore, setStoreJSON, USER_LOGIN } from '../../util/setting';
 
 export interface Register {
-  taiKhoan:        string;
-  email:           string;
-  soDT:            string;
-  maNhom:          'GP06';
-  hoTen:           string;
+  // taiKhoan:        string;
+  // email:           string;
+  // soDT:            string;
+  // maNhom:          
+  // hoTen:           string;
 
 }
 

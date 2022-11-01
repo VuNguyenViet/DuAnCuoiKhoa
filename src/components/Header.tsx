@@ -6,41 +6,13 @@ type Props = {
 };
 
 export default function Header({ }: Props) {
-  const elearning = require ("../assets/img/elearning.webp")
+  const elearning = require("../assets/img/elearning.webp")
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark header_fixed">
+    <nav className=" navbar-expand-sm navbar-dark bg-dark header_fixed">
       <NavLink className="navbar-brand header_text" to="/">
-       <img style={{width:'50px'}} src= {elearning} alt="" />
-       </NavLink>
-      <button
-        className="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      />
-      <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Lựa chọn khóa học
-            </a>
-            <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a className="dropdown-item header_text" href="#">Html cơ bản</a></li>
-              <li><a className="dropdown-item header_text" href="#">Css cơ bản</a></li>
-              <li><a className="dropdown-item header_text" href="#">JavaScript cơ bản</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-
-
-
-
-      <div className="collapse navbar-collapse" id="collapsibleNavId">
+        <i style={{ color: '#06BBCC', fontSize: '50px' }} className="fas fa-book"></i>
+      </NavLink>
+      <div className="collapse navbar-collapse header_right" id="collapsibleNavId">
         <form className="d-flex my-2 my-lg-0">
 
           <input
@@ -70,6 +42,20 @@ export default function Header({ }: Props) {
               Đăng Ký
             </NavLink>
           </li>
+          <div className="collapse navbar-collapse header_left" id="navbarNavDarkDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lựa chọn khóa học
+                </a>
+                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a className="dropdown-item header_text" href="#">Html cơ bản</a></li>
+                  <li><a className="dropdown-item header_text" href="#">Css cơ bản</a></li>
+                  <li><a className="dropdown-item header_text" href="#">JavaScript cơ bản</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
         </ul>
 
