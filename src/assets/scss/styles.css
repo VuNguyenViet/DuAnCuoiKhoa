@@ -16,13 +16,25 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1280px;
-}
-
 .header_fixed {
-  background-color: #102027 !important;
+  background-color: white !important;
   color: black !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.header_fixed a {
+  color: #06BBCC !important;
+}
+.header_fixed h2 {
+  color: #06BBCC;
+  font-weight: 700;
+}
+.header_fixed .header_right {
+  padding-left: 350px;
+}
+.header_fixed .header_right ul {
+  font-weight: 500;
 }
 
 * {
@@ -55,6 +67,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
+  background-color: #0d6870;
+  color: white;
   padding: 16px 0 0;
 }
 .menu .container {
@@ -73,6 +87,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   opacity: 0.7;
   transition: opacity 0.5s;
+  color: white;
 }
 .menu .container a:hover {
   opacity: 1;
@@ -88,6 +103,23 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 1px;
   inset: auto auto 0 0;
   background-color: #000;
+}
+
+.carousel {
+  padding: 10px 0;
+}
+.carousel .carousel_1 .carousel_2 {
+  position: relative;
+  text-align: center !important;
+}
+.carousel .carousel_1 .carousel_2 img {
+  height: 100vh;
+}
+.carousel .carousel_1 .carousel_2 h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
 }
 
 .card_home {
@@ -131,9 +163,10 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 .footer .footer__part.--part-1 {
-  background-color: rgb(249, 249, 249);
+  background-color: #102027;
 }
 .footer .footer__part.--part-2 {
   background-color: rgb(231, 231, 231);
@@ -158,6 +191,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 5px;
   padding-top: 10px;
+  color: white;
 }
 .footer .footer__part .container .footer__item ul {
   padding: 0;
@@ -175,6 +209,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #000;
   line-height: 1.2;
+  color: white;
 }
 .footer .footer__part .container .footer__item p {
   font-size: 15px;
@@ -234,7 +269,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 .card_home .card_mota {
-  background-color: rgba(100, 98, 123, 0.8509803922) !important;
+  background-color: #b9eaef !important;
   color: rgb(0, 0, 0) !important;
   font-size: 15px;
 }

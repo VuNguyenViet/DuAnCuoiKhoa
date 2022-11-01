@@ -1,0 +1,19 @@
+.carousel {
+   padding: 10px 0;
+   .carousel_1 {
+    .carousel_2 {
+        position: relative;
+        text-align: center !important;
+        img {
+            height: 100vh;
+        }
+        h1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
+
+        }
+    }
+   }
+}

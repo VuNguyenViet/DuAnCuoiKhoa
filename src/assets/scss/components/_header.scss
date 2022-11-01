@@ -14,6 +14,27 @@
 //     border: none;
 // }
 .header_fixed {
-    background-color:  #102027 !important;
+    background-color:  white !important;
     color: black !important;
+    a {
+        color: #06BBCC !important;
+    }
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    h2 {
+        color: #06BBCC;
+        font-weight: 700;
+    }
+    .header_right {
+        padding-left: 350px;
+        form {
+            .header_icon {
+
+            }
+        } ;
+       ul {
+        font-weight: 500;
+       }
+    }
 }
