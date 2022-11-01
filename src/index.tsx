@@ -15,6 +15,7 @@ import Cart from './pages/Cart/Cart';
 import Search from './pages/Search/Search';
 import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
+import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
 
 export const history = createBrowserHistory();
 
@@ -36,6 +37,7 @@ root.render(
               <Route path=':id' element={<Detail />}></Route> 
             </Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
+            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
         </Routes>
     </HistoryRouter>
   </Provider>
