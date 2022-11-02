@@ -32,9 +32,9 @@ export default function Home({ }: Props) {
               <h3>Thông tin khóa học</h3>
             </div>
           </div>
-          <div className='row'>
+          <div className='row gx-5'>
             {arrProduct.map((item: Product, index: number) => {
-              return <div className='col-4' key={index}>
+              return <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
                 <ProductCard prod={item} />
               </div>
             })}

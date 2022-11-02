@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/scss/styles.css'
+import '../../assets/scss/components/_carousel.scss'
 
 
 
@@ -18,17 +18,37 @@ export default function Carousel({}: Props) {
   return (
     <div  id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
     <div className="carousel-inner carousel_1">
+      
       <div className="carousel-item active carousel_2">
         <img src= {frontend}  className="d-block w-100" alt="..."/>
-        <div>
-          <h1>Tổng quan về khóa học </h1>
+        <div className='carousel_content'>
+          
+          <h2 className='display-5'>Đào tạo chuyên môn về tư duy lập trình, Frontend, Backend</h2>
+              <div className="carousel_button">
+                <button className='btn btn-primary mx-2'>Tìm hiểu thêm</button>
+                <button className='btn btn-success'>Tham gia ngay</button>
+
+              </div>
         </div>
       </div>
-      <div className="carousel-item carousel_2">
+     
+
+           
+            <div className="carousel-item carousel_2">
         <img src= {frontend2} className="d-block w-100" alt="..."/>
-        <h1>Kiến thức về HTML</h1>
+        <div className='carousel_content'>
+          
+          <h2 className='display-5'></h2>
+              <div className="carousel_button">
+                <button className='btn btn-primary mx-2'>Tìm hiểu thêm</button>
+                <button className='btn btn-success'>Tham gia ngay</button>
+
+              </div>
+        </div>
       </div>
+            
     </div>
+
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
