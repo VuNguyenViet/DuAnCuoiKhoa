@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { signupApi } from "../../redux/reducers/registerReducer";
+import { signupApi } from "../../redux/reducers/userReducer";
 import { useDispatch } from "react-redux";
+import { AppDispatch} from '../../redux/configStore'
 type Props = {}
 
 export default function Register({}: Props) {
-  const [gender, setGender] = useState(true);
+  // const [gender, setGender] = useState(true);
 
-  const dispatch = useDispatch();
+  const dispatch: AppDispatch = useDispatch();
 
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
-      name: "",
-      gender: gender,
+      name: "" ,
       phone: "",
     },
     validationSchema: Yup.object().shape({
@@ -33,11 +33,17 @@ export default function Register({}: Props) {
       // .matches(/cybersoft/,'Password phải có cybersoft')
     }),
     onSubmit: (values) => {
-      // console.log(values);
-      console.log(123)
-      const action = signupApi(values)
-      dispatch(action);
-    },
+     const payload = {
+      taiKhoan: values.name,
+      matKhau: values.password,
+      hoTen: values.name,
+      soDT: values.phone,
+      email: values.email,
+      maNhom: values.name
+     }
+     const action = signupApi(payload) ;
+     dispatch(action)
+    }
   });
 
   return (
@@ -56,11 +62,14 @@ export default function Register({}: Props) {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
+          <div>
           {formik.errors.email ? (
             <p className="text text-danger">{formik.errors.email}</p>
           ) : (
             ""
           )}
+          </div>
+          
           <p>Mật khẩu</p>
           <input
             name="password"
@@ -70,11 +79,14 @@ export default function Register({}: Props) {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
+          <div>
           {formik.errors.password ? (
             <p className="text text-danger">{formik.errors.password}</p>
           ) : (
             ""
           )}
+          </div>
+          
           <p>Nhập lại mật khẩu</p>
           <input
             name="passwordConfirmed"
@@ -84,11 +96,14 @@ export default function Register({}: Props) {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
+          <div>
           {formik.errors.password ? (
             <p className="text text-danger">{formik.errors.password}</p>
           ) : (
             ""
           )}
+          </div>
+          
         </div>
         {/* Bên phải  */}
         <div className="col-6 register_right">
@@ -101,11 +116,14 @@ export default function Register({}: Props) {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
+          <div>
           {formik.errors.name ? (
             <p className="text text-danger">{formik.errors.name}</p>
           ) : (
             ""
           )}
+          </div>
+        
           <p>Số điện thoại</p>
           <input
             id="phone"
@@ -114,12 +132,32 @@ export default function Register({}: Props) {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
+          <div>
           {formik.errors.phone ? (
             <p className="text text-danger">{formik.errors.phone}</p>
           ) : (
             ""
           )}
-          <ul className="ul_radio_button">
+          </div>
+         
+           <p>Mã nhóm</p>
+           <input
+            id="name"
+            className="input_validation"
+            type="text"
+            placeholder="Name"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          <div>
+          {formik.errors.name ? (
+            <p className="text text-danger">{formik.errors.name}</p>
+          ) : (
+            ""
+          )}
+          </div>
+         
+          {/* <ul className="ul_radio_button">
             <li className="radio_button">
               <input
                 style={{ width: "20px" }}
@@ -147,7 +185,7 @@ export default function Register({}: Props) {
                 Nữ
               </label>
             </li>
-          </ul>
+          </ul> */}
           <button type='submit' className="Submit_register">
             Đăng ký 
           </button>
