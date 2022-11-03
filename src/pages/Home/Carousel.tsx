@@ -13,8 +13,8 @@ export default function Carousel({}: Props) {
   const html = require("../../assets/img/html2.png");
   const css = require ("../../assets/img/css.png")
   const js = require ("../../assets/img/js.webp")
-  const frontend = require ("../../assets/img/frontend.jpeg");
-  const frontend2 = require ("../../assets/img/frontend2.jpeg")
+  const frontend = require ("../../assets/img/webdesign4.jpg");
+  const frontend2 = require ("../../assets/img/webdesign5.jpg")
   return (
     <div  id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
     <div className="carousel-inner carousel_1">
@@ -25,8 +25,8 @@ export default function Carousel({}: Props) {
           
           <h2 className='display-5'>Đào tạo chuyên môn về tư duy lập trình, Frontend, Backend</h2>
               <div className="carousel_button">
-                <button className='btn btn-primary mx-2'>Tìm hiểu thêm</button>
-                <button className='btn btn-success'>Tham gia ngay</button>
+                <button className='btn btn-primary mx-2 button_1'>Tìm hiểu thêm</button>
+                <button className='btn btn-success button_2'>Tham gia ngay</button>
 
               </div>
         </div>
@@ -40,8 +40,8 @@ export default function Carousel({}: Props) {
           
           <h2 className='display-5'></h2>
               <div className="carousel_button">
-                <button className='btn btn-primary mx-2'>Tìm hiểu thêm</button>
-                <button className='btn btn-success'>Tham gia ngay</button>
+                <button className='btn btn-primary mx-2 button_1'>Tìm hiểu thêm</button>
+                <button className='btn btn-success button_2'>Tham gia ngay</button>
 
               </div>
         </div>

@@ -19,6 +19,8 @@ import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
 import Support from './pages/Contact/Contact';
 import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
+import Introduce from './components/Introduce';
+import AllProductCard from './components/AllProductCard';
 
 export const history = createBrowserHistory();
 
@@ -36,6 +38,8 @@ root.render(
             <Route path='cart' element={<Cart />}></Route>
             <Route path='search' element={<Search />}></Route>
             <Route path='profile' element={<Profile />}></Route>
+            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
+            <Route path='AllProductCard' element={<AllProductCard />}></Route>
             <Route path='detail'>
               <Route path=':id' element={<Detail />}>
             </Route> 
@@ -45,7 +49,7 @@ root.render(
               <Route path='advise' element={<Advise />}></Route>
               <Route path='support' element={<Support />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
-            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
+            
         </Routes>
     </HistoryRouter>
   </Provider>

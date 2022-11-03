@@ -16,10 +16,11 @@ export default function ProductCard({prod}: Props) {
         <p>{prod.tenKhoaHoc.length>30 ? prod.tenKhoaHoc.slice(0,30) + '...':prod.tenKhoaHoc}</p>
         <p>Lượt xem:{prod.luotXem}</p>
         <p>{prod.moTa.length>100 ? prod.moTa.slice(0,100) + '...' :prod.moTa}</p>
-        <button className='btn btn-success btn-secondary'>
-          Lựa chọn khóa học
-          <i className='fa fa-cart-plus'></i>
-        </button>
+        <div>
+          <button style={{marginRight : '10px'}} className='btn btn-success btn-secondary'>Đọc thêm </button>
+           <button className='btn btn-success btn-primary'>Tham gia ngay </button>
+        </div>
+        
       </div>
     </div>
   )
