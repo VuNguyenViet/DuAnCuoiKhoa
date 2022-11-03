@@ -6,10 +6,20 @@ import { ACCESS_TOKEN, getStore, getStoreJSON, http, setCookie, setStore, setSto
 export interface User {
   taiKhoan:        string;
   matKhau:         string
+};
+export interface Register {
+  taiKhoan:        string;
+  matKhau:           string;
+  hoTen:            string;
+  soDT:          string;
+  maNhom:           string;
+  email:           string
+
 }
 
 const initialState = {
   userLogin: getStoreJSON(USER_LOGIN), //null
+  newUser:{},
 }
 
 
@@ -22,11 +32,13 @@ const userReducer = createSlice({
       state.userLogin =  userLogin;
       // state.userLogin.email = email;
   },
-
+  setNewUser: (state, action) => {
+    state.newUser = action.payload;
+}
   }
 });
 
-export const {setUserLoginAction} = userReducer.actions
+export const {setUserLoginAction,setNewUser} = userReducer.actions
 
 export default userReducer.reducer
 
@@ -63,19 +75,24 @@ export const signinApi = (userLogin:any) => { //userLogin = {email:'',password}
   }
 }
 
-// export const signupApi:any = (userSignin:{}) => {  // { "email": "", "password": "",  "name": "",  "gender": true, "phone": "" }
-//   return async (dispatch:AppDispatch) => {
-//       try {
-//           let result = await http.post('/users/signup', userSignin);
-//           console.log('result', result.data);
 
-//           const action = setNewUser(result.data);
-//           dispatch(action);
 
-//           history.push('/login');
-//       } catch (err) {
-//           console.log(err);
-//       }
-//   }
-// }
+// Đăng ký 
+
+export const signupApi = (userSignin:any) => {  // { "email": "", "password": "",  "name": "",  "gender": true, "phone": "" }
+  return async (dispatch:AppDispatch) => {
+      try {
+          let result = await http.post('/QuanLyNguoiDung/DangKy', userSignin);
+          console.log('result', result.data);
+
+          const action = setNewUser(result.data);
+          dispatch(action);
+
+          history.push('/login');
+      } catch (err) {
+          console.log(err);
+          alert('Vui lòng thử lại')
+      }
+  }
+}
  

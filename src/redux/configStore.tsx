@@ -7,8 +7,7 @@ import userReducer from './reducers/userReducer'
 export const store = configureStore({
   reducer: {
     productReducer:productReducer,
-    userReducer:userReducer,
-    registerReducer: registerReducer
+    userReducer:userReducer
   
   },
 })
