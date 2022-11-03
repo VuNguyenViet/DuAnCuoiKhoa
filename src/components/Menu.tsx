@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/scss/styles.css'
+import { NavLink } from 'react-router-dom';
 
 type Props = {}
 
@@ -8,10 +9,10 @@ export default function Menu({}: Props) {
     <section className="menu">
     <div className="container">
         <a href="./index.html" className="active">Trang chủ</a>
-        <a href="#">Giới thiệu</a>
-        <a href="#">Đội ngũ giảng viên</a>
-        <a href="#">Tư vấn</a>
-        <a href="#">Hỗ trợ</a>
+        <NavLink to="/about">Giới thiệu</NavLink>
+        <NavLink to="/mentor">Đội ngũ giảng viên</NavLink>
+        <NavLink to="/advise">Tư vấn</NavLink>
+        <NavLink to="/support">Liên hệ</NavLink>
     </div>
 </section>
   )

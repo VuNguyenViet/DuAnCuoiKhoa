@@ -1,0 +1,73 @@
+.mentors_title{
+    margin-top: 20px;
+    background-color: rgba(38, 47, 139, 0.515);
+    border-radius: 15px;
+ 
+
+    p{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(63, 69, 141);
+    }
+
+}
+
+.container{
+    .intro_mentors1{
+        margin: 50px 0;
+        .row{
+            .col-4{
+                .mentor_profile{
+                    img{
+                        position: relative;
+                       
+                    }
+                    i{
+                        margin: 20px 10px;
+                        padding-left: 65px;
+                        color: purple;
+                        font-size: 30px;
+                        
+                    }
+                    .mentor_item{
+                        h2{
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .intro_mentors2{
+        margin: 50px 0;
+        .row{
+            .col-4{
+                .mentor_profile{
+                    img{
+
+                    }
+                    i{
+                        margin: 20px 10px;
+                        padding-left: 65px;
+                        color: purple;
+                        font-size: 30px;
+                    }
+                    .mentor_item{
+                        h2{
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

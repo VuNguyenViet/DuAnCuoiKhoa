@@ -1,0 +1,40 @@
+.contact_title{
+    padding: 20px 30px;
+    h2{
+        text-align: center;
+    }
+}
+
+    .container{
+        .contact{
+            .row{
+                .col-6{
+                    .contact_content{
+                        h3{
+                            padding-bottom: 30px;
+                            text-align: center;
+                        }
+                       ul{
+                        
+                        li{
+                            padding: 20px 10px;
+                            a{
+                                span{
+
+                                }
+                            }
+                        }
+                       }
+                    }
+                }
+
+                .col-6{
+                    .contact_img{
+                        img{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
