@@ -21,6 +21,7 @@ import Support from './pages/Contact/Contact';
 import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
 import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
+import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
 
 export const history = createBrowserHistory();
 
@@ -40,6 +41,7 @@ root.render(
             <Route path='profile' element={<Profile />}></Route>
             <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
             <Route path='AllProductCard' element={<AllProductCard />}></Route>
+            <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}></Route>
             <Route path='detail'>
               <Route path=':id' element={<Detail />}>
             </Route> 

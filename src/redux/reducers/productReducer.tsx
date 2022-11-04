@@ -31,11 +31,15 @@ const productReducer = createSlice({
     getProductAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
         state.arrProduct = action.payload;
         
+    },
+    laydanhsachAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
+        state.arrProduct = action.payload;
+        
     }
   }
 });
 
-export const {getProductAction} = productReducer.actions
+export const {getProductAction,laydanhsachAction} = productReducer.actions
 
 export default productReducer.reducer
 
@@ -55,3 +59,19 @@ export const getAllProductApi = () => {
         }
     }
 }
+
+// api lấy danh sách theo khóa học 
+export const LayDanhSachKhoaHoc = () => {
+    return async (dispatch:AppDispatch) => {
+        try{
+            const result = await http.get('QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=FrontEnd&MaNhom=GP01');
+            //Sau khi lấy dữ liệu từ api về => đưa lên redux
+            const action = laydanhsachAction(result.data);
+            dispatch(action);
+        }   
+        catch(err) {
+            console.log({err})
+        }
+    }
+}
+
