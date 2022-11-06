@@ -63,6 +63,7 @@ export const signinApi = (userLogin:any) => { //userLogin = {email:'',password}
           const action = setUserLoginAction(result.data);
           dispatch(action);
           history.push('/profile');
+         alert('Đăng nhập thành công')
 
 
       } catch (err) {
@@ -88,7 +89,8 @@ export const signupApi = (userSignin:any) => {  // { "email": "", "password": ""
           const action = setNewUser(result.data);
           dispatch(action);
 
-          history.push('/login');
+          history.push('/Home');
+          alert('Đăng ký tài khoản thành công')
       } catch (err) {
           console.log(err);
           alert('Vui lòng thử lại')

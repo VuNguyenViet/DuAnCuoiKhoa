@@ -68,6 +68,7 @@ export const LayDanhSachKhoaHoc = () => {
             //Sau khi lấy dữ liệu từ api về => đưa lên redux
             const action = laydanhsachAction(result.data);
             dispatch(action);
+           
         }   
         catch(err) {
             console.log({err})

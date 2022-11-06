@@ -17,12 +17,16 @@ export default function Register({}: Props) {
       password: "",
       name: "" ,
       phone: "",
+      title:"",
+      review:""
     },
     validationSchema: Yup.object().shape({
       phone: Yup.string()
         .required("Số điện thoại không được để trống !")
         .min(10, "Số điện thoại phải đủ 10 số "),
       name: Yup.string().required("Tên không được để trống "),
+      title: Yup.string().required("Tài khoản không được để trống "),
+      review: Yup.string().required("Mã nhóm không được để trống "),
       email: Yup.string()
         .required("Email không được bỏ trống !")
         .email("Email không đúng định dạng!"),
@@ -34,12 +38,12 @@ export default function Register({}: Props) {
     }),
     onSubmit: (values) => {
      const payload = {
-      taiKhoan: values.name,
+      taiKhoan: values.title,
       matKhau: values.password,
       hoTen: values.name,
       soDT: values.phone,
       email: values.email,
-      maNhom: values.name
+      maNhom: values.review
      }
      const action = signupApi(payload) ;
      dispatch(action)
@@ -52,7 +56,23 @@ export default function Register({}: Props) {
     <div className="register">
       <form className="row" onSubmit={formik.handleSubmit}>
         {/* Bên trái  */}
-        <div className="col-6">
+        <div className="col-12">
+        <p>Tài Khoản</p>
+          <input
+            id="title"
+            className="input_validation"
+            type="text"
+            placeholder="title"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          <div>
+          {formik.errors.title ? (
+            <p className="text text-danger">{formik.errors.title}</p>
+          ) : (
+            ""
+          )}
+          </div>
           <p>Email</p>
           <input
             name="email"
@@ -106,7 +126,7 @@ export default function Register({}: Props) {
           
         </div>
         {/* Bên phải  */}
-        <div className="col-6 register_right">
+        <div className="col-12 register_right">
           <p>Tên</p>
           <input
             id="name"
@@ -142,50 +162,21 @@ export default function Register({}: Props) {
          
            <p>Mã nhóm</p>
            <input
-            id="name"
+            id="review"
             className="input_validation"
             type="text"
-            placeholder="Name"
+            placeholder="review"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
           <div>
-          {formik.errors.name ? (
-            <p className="text text-danger">{formik.errors.name}</p>
+          {formik.errors.review ? (
+            <p className="text text-danger">{formik.errors.review}</p>
           ) : (
             ""
           )}
           </div>
          
-          {/* <ul className="ul_radio_button">
-            <li className="radio_button">
-              <input
-                style={{ width: "20px" }}
-                id="Male"
-                type="radio"
-                name="gender"
-                checked={gender ? true : false}
-                onChange={() => setGender(true)}
-              />
-              <label style={{ paddingLeft: "10px" }} htmlFor="Male">
-                Nam
-              </label>
-            </li>
-
-            <li className="radio_button">
-              <input
-                style={{ width: "20px" }}
-                id="Famale"
-                type="radio"
-                name="gender"
-                checked={!gender ? true : false}
-                onChange={() => setGender(false)}
-              />
-              <label style={{ paddingLeft: "10px" }} htmlFor="Famale">
-                Nữ
-              </label>
-            </li>
-          </ul> */}
           <button type='submit' className="Submit_register">
             Đăng ký 
           </button>
