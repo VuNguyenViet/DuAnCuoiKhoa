@@ -3,11 +3,19 @@ import './../../assets/scss/pages/_about.scss'
 
 type Props = {};
 
+
 export default function Introduction({}: Props) {
+  const about1 = require('./../../assets/img/about/about1.jpg')
+  const about2 = require('./../../assets/img/about/about2.jpeg')
+  const about3 = require('./../../assets/img/about/about3.jpg')
+  const about4 = require('./../../assets/img/about/about4.jpeg')
+  const about5 = require('./../../assets/img/about/about5.jpeg')
+
+
   return (
     <div className="container">
       <div className="main_about_img">
-        {/* <img src="https://picsum.photos/200/200" alt="..." /> */}
+        <img src={about1} alt="..." />
       </div>
 
       <div className="row about_title_main">
@@ -59,20 +67,20 @@ export default function Introduction({}: Props) {
       <div className="row welcome">
         <div className="col-6 pack_1">
           <div className="welcome_img">
-            <img src="https://picsum.photos/500/400" alt="" />
+            <img src={about3} alt="" />
           </div>
         </div>
 
         <div className="col-6 pack_2">
           <div className="welcome_content">
-            <h1>Welcome to Eleaning</h1>
+            <h1>Welcome to Elearning</h1>
             <p className="welcome_text1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <i className="fas fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Incidunt, qui?
             </p>
 
             <p className="welcome_text2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos hic
+            <i className="fas fa-hand-point-right"></i>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos hic
               expedita soluta. Ullam, rerum odio.
             </p>
 
@@ -82,33 +90,36 @@ export default function Introduction({}: Props) {
                   <ul>
                     <li>
                       <i className="fa fa-arrow-right"></i>
-                      Skilled Intructors
+                     Skilled Intructors
                     </li>
                     <li>
                       <i className="fa fa-arrow-right"></i>
-                      Skilled Intructors
+                     Skilled Intructors
                     </li>
                     <li>
                       <i className="fa fa-arrow-right"></i>
-                      Skilled Intructors
+                     Skilled Intructors
                     </li>
                   </ul>
                   <button className="btn btn-primary">Read more</button>
                 </div>
+                 
 
                 <div className="col-6 skill_pack2">
-                  <li>
+                        <ul>
+                        <li>
                     <i className="fa fa-arrow-right"></i>
-                    Skilled Intructors
+                   Skilled Intructors
                   </li>
                   <li>
                     <i className="fa fa-arrow-right"></i>
-                    Skilled Intructors
+                   Skilled Intructors
                   </li>
                   <li>
                     <i className="fa fa-arrow-right"></i>
-                    Skilled Intructors
+                   Skilled Intructors
                   </li>
+                        </ul>
                 </div>
               </div>
             </div>
@@ -117,20 +128,20 @@ export default function Introduction({}: Props) {
       </div>
 
       <div className="about_slogan">
-        <div className="about_slogun_top">
-          <i className="fa fa-graduation-cap"></i>
+        <div className="about_slogan_top">
+        <i className="fas fa-code"></i>
             <h2>Lorem ipsum dolor sit amet.</h2>
         </div>
 
         <div className="about_slogan_bot">
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <div className="row">
-                <div className="col-6 slogan_img">
-                  <img src="https://picsum.photos/200/200" alt="" />
+                <div className="col-6 slogan_img_left">
+                  <img src={about4} alt="" />
                 </div>
 
-                <div className="col-6 slogan_img">
-                  <img src="https://picsum.photos/200/200" alt="" />
+                <div className="col-6 slogan_img_right">
+                  <img src={about5} alt="" />
                 </div>
               </div>
 

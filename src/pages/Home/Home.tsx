@@ -5,6 +5,7 @@ import { AppDispatch, RootState } from '../../redux/configStore'
 import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
 import TuvanKhoahoc from '../TuvanKhoahoc/TuvanKhoahoc';
 import Carousel from './Carousel';
+import '../../assets/scss/pages/_home.scss'
 type Props = {}
 
 export default function Home({ }: Props) {
@@ -32,9 +33,9 @@ export default function Home({ }: Props) {
               <h3>Thông tin khóa học</h3>
             </div>
           </div>
-          <div className='row gx-5'>
+          <div className='row'>
             {arrProduct.map((item: Product, index: number) => {
-              return <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
+              return <div className='col-lg-4 g-lg-5 col-md-6 col-sm-12 ' key={index}>
                 <ProductCard prod={item} />
               </div>
             })}

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 //setup redux
 import {Provider} from 'react-redux'
 import {store} from './redux/configStore';
-import  './assets/scss/styles.css'
+import  './assets/scss/styles.scss'
 //setup router dom
 import {createBrowserHistory} from 'history'; 
 import {unstable_HistoryRouter as HistoryRouter, Routes,Route,Navigate} from 'react-router-dom';
@@ -19,6 +19,7 @@ import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
 import Support from './pages/Contact/Contact';
 import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
+import About from './pages/About/About';
 
 export const history = createBrowserHistory();
 
@@ -40,7 +41,7 @@ root.render(
               <Route path=':id' element={<Detail />}>
             </Route> 
             </Route>
-            {/* <Route path='about' element={<About />}></Route> */}
+            <Route path='about' element={<About/>}></Route>
               <Route path='mentor' element={<Mentors />}></Route>
               <Route path='advise' element={<Advise />}></Route>
               <Route path='support' element={<Support />}></Route>

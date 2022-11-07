@@ -6,51 +6,50 @@
         border-radius: 25px;
         margin-top: 20px;
         img{
-            
+            width: 100%;
+            border-radius: 25px;
         }       
     }
 
     .about_title_main{
         
-        margin-top: 20px;
+        :hover{
+            animation:upToDown 1s;
+        }
+        margin-top: 80px;
         .col-3{
-            :hover{
-                animation:upToDown 1s;
-            }
+           
         }
         .about_title{
             background-color: rgb(41, 66, 83);
             border-radius: 15px;
             height: 300px;
-                
+            text-align: center;
             i{
                 
-                color:red;
+                color:#769dd6;
                 font-size: 100px;
                 margin: 20px 90px
                 
             };
             h2{
-                color: aqua
+                color: aqua;
             };
 
             p{
-
+                color: #fff;
             };
     
         }
-
-       
-      
-
-        
     }
 
     .welcome{
+        margin-top: 50px;
         .pack_1{
             .welcome_img{
                 img{
-
+                    width: 100%;
+                    border-radius: 25px;
                 }
             }
         }
@@ -58,13 +57,22 @@
         .pack_2{
             .welcome_content{
                 h1{
-
+                    font-weight: 600;
+                    font-size:55px;
+                    color: #3e70b9;
                 }
                 .welcome_text1{
-                    
+                    padding-top: 20px;
+                    i{
+
+                    }
                 }
 
                 .welcome_text2{
+                    padding-top: 20px;
+                    i{
+
+                    }
 
                 }
             }
@@ -73,42 +81,155 @@
     }
 
         .welcome_skill_list{
+            padding-top: 20px;
             .row{
                 .skill_pack1{
                     ul{
+                      
                         li{
+                            padding-bottom: 10px;
                             i{
-
+                                margin-right: 20px;
+                                color: #3e70b9;
                             }
                         }
+                    }
+                    .btn{
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 15px;
+                       margin-left: 10%;
+                       background: rgb(0,85,252);
+background: linear-gradient(90deg, rgba(0,85,252,0.8631827731092436) 0%, rgba(3,44,121,1) 0%, rgba(10,99,228,0.6250875350140056) 100%);
+                       margin: 10px;
+                       padding: 15px 45px;
+                       text-align: center;
+                       text-transform: uppercase;
+                       transition: 0.5s;
+                       background-size: 200%;
+                       color: white;
+                       box-shadow: 0 0 20px #eee;
+                       border-radius: 30px;
+                       border: none;
+                       cursor: pointer;
+                      
+                    }
+                    :hover{
+                        background-position: right center;
+                        color: #fff;
+                        
                     }
                 }
 
                 .skill_pack2{
-
+                    ul{
+                        li{
+                                padding-bottom: 10px;
+                            i{
+                                margin-right: 20px;
+                                color: #3e70b9;
+                            }
+                        }
+                    }
                 }
             }
         }
 
         .about_slogan{
-            .about_slogun_top{
-                
-            }
-            .about_slogun_bot{
-                h3{
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            .about_slogan_top{
+                i{
+                    font-size: 100px;
+                    color:#769dd6;
+                    padding-bottom: 20px;
+                }   
 
+                    h2{
+                        font-size: 50px;
+                        font-weight: 600;
+                        padding-bottom: 30px;
+                    }
+            }
+            .about_slogan_bot{
+                
+                h3{
+                    font-weight: 600;
+                    padding-bottom: 30px;
                 }
                 .row{
-                    .slogan_img{
+                    padding-bottom: 30px;
+                    .slogan_img_left{
+                            img{
+                                width: 100%;
+                                border-radius: 25px;
+                            }
+                        
+                    }
 
+                    .slogan_img_right{
+                        img{
+                            width: 100%;
+                            border-radius: 25px;
+
+                        }
                     }
 
                 }
             }
-
-            button{
-
+            /* CSS */
+            .btn {
+                // padding-top: 30px;
+                margin-top: 50px;
+              background-color: #3DD1E7;
+              border: 0 solid #E5E7EB;
+              box-sizing: border-box;
+              color: #000000;
+              display: flex;
+              font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+              font-size: 1rem;
+              font-weight: 700;
+              justify-content: center;
+              line-height: 1.75rem;
+              padding: .75rem 1.65rem;
+              position: relative;
+              text-align: center;
+              text-decoration: none #000000 solid;
+              text-decoration-thickness: auto;
+              width: 100%;
+              max-width: 250px;
+              position: relative;
+              cursor: pointer;
+              transform: rotate(-2deg);
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              left: 40%;
             }
+            :focus{
+                outline: 0;
+              }
+              ::after{
+                content: '';
+                position: absolute;
+                border: 1px solid #000000;
+                bottom: 4px;
+                left: 4px;
+                width: calc(99% - 1px);
+                height: calc(100% - 1px);
+              }
+              :hover::after{
+                bottom: 2px;
+                left: 2px;
+              }
+              @media (min-width: 768px) {
+                .btn {
+                  padding: .75rem 3rem;
+                  font-size: 1.25rem;
+                }
+              }
+           
         }
 
 
