@@ -15,13 +15,29 @@ export interface Product {
     nguoiTao:      string;
     danhMucKhoaHoc: string;
 }
+export interface productDetail {
+    maKhoaHoc:      string;
+    biDanh:         string;
+    tenKhoaHoc:     string;
+    moTa:           string;
+    luotXem:        number;
+    hinhAnh:        string;
+    maNhom:         string;
+    ngayTao:        string;
+    soLuongHocVien: number;
+    nguoiTao:       {};
+    danhMucKhoaHoc: {};
+}
 
 export interface ProductState {
-    arrProduct:Product[]
+    arrProduct:Product[],
+    productDetail: productDetail[],
+   
 }
 
 const initialState:ProductState = {
-    arrProduct: []
+    arrProduct: [],
+    productDetail: [],
 }
 
 const productReducer = createSlice({
@@ -35,11 +51,17 @@ const productReducer = createSlice({
     laydanhsachAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
         state.arrProduct = action.payload;
         
-    }
+    },
+    setProductDetailAction: (state:ProductState,action:PayloadAction<productDetail[]>) =>{
+        state.productDetail = action.payload;
+        
+    },
+    
+
   }
 });
 
-export const {getProductAction,laydanhsachAction} = productReducer.actions
+export const {getProductAction,laydanhsachAction,setProductDetailAction} = productReducer.actions
 
 export default productReducer.reducer
 
@@ -64,7 +86,7 @@ export const getAllProductApi = () => {
 export const LayDanhSachKhoaHoc = () => {
     return async (dispatch:AppDispatch) => {
         try{
-            const result = await http.get('QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=FrontEnd&MaNhom=GP01');
+            const result = await http.get('/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=FrontEnd&MaNhom=GP01');
             //Sau khi lấy dữ liệu từ api về => đưa lên redux
             const action = laydanhsachAction(result.data);
             dispatch(action);
@@ -75,4 +97,17 @@ export const LayDanhSachKhoaHoc = () => {
         }
     }
 }
-
+// api detail 
+export const getProductDetailApiAction = (maKhoaHoc:any) => {
+    return async (dispatch:AppDispatch) => {
+      // call api
+      try {
+        const result = await http.get(`/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${maKhoaHoc}`);
+        //Sau khi lấy dữ liệu từ api về => đưa lên redux
+        const action = setProductDetailAction(result.data);
+        dispatch(action);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+  };

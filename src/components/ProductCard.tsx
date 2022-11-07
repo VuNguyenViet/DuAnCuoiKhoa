@@ -1,12 +1,14 @@
 import React from 'react'
 import { Product } from '../redux/reducers/productReducer'
 import '../assets/scss/styles.css'
+import { NavLink, useNavigate } from "react-router-dom";
 
 type Props = {
     prod:Product
 }
 
 export default function ProductCard({prod}: Props) {
+  const navigate = useNavigate();
 
   return (
     
@@ -17,8 +19,10 @@ export default function ProductCard({prod}: Props) {
         <p>Lượt xem:{prod.luotXem}</p>
         <p>{prod.moTa.length>100 ? prod.moTa.slice(0,100) + '...' :prod.moTa}</p>
         <div>
-          <button style={{marginRight : '10px'}} className='btn btn-success btn-secondary'>Đọc thêm </button>
-           <button className='btn btn-success btn-primary'>Tham gia ngay </button>
+           <button className='btn btn-success btn-primary'  onClick={() => {
+            navigate(`/detail/${prod.maKhoaHoc}`);
+            document.documentElement.scrollTop = 0;
+          }}>Chi Tiết Khóa Học </button>
         </div>
         
       </div>

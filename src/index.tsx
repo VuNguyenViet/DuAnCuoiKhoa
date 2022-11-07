@@ -42,8 +42,8 @@ root.render(
             <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
             <Route path='AllProductCard' element={<AllProductCard />}></Route>
             <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}></Route>
-            <Route path='detail'>
-              <Route path=':id' element={<Detail />}>
+            <Route path='detail' element= {<Detail />}>
+              <Route path=':maKhoaHoc' element={<Detail/>}>
             </Route> 
             </Route>
             {/* <Route path='about' element={<About />}></Route> */}
