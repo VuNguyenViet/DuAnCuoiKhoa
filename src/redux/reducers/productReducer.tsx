@@ -25,19 +25,19 @@ export interface productDetail {
     maNhom:         string;
     ngayTao:        string;
     soLuongHocVien: number;
-    nguoiTao:       {};
-    danhMucKhoaHoc: {};
+    nguoiTao:      string;
+    danhMucKhoaHoc: string;
 }
 
 export interface ProductState {
     arrProduct:Product[],
-    productDetail: productDetail[],
+    productDetail: {},
    
 }
 
 const initialState:ProductState = {
     arrProduct: [],
-    productDetail: [],
+    productDetail: {},
 }
 
 const productReducer = createSlice({
@@ -52,7 +52,7 @@ const productReducer = createSlice({
         state.arrProduct = action.payload;
         
     },
-    setProductDetailAction: (state:ProductState,action:PayloadAction<productDetail[]>) =>{
+    setProductDetailAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
         state.productDetail = action.payload;
         
     },

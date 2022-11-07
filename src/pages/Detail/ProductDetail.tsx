@@ -24,6 +24,7 @@ export default function ProductDetail({ prod }: Props) {
            <p>Người tạo:{prod.maNhom}</p>
            <p>Lượt xem: {prod.luotXem}</p>
            <p>Số lượng học viên: {prod.soLuongHocVien}</p>
+          
            <button>Ghi danh khóa học</button>
         </div>
       </div>

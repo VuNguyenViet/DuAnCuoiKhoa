@@ -22,11 +22,6 @@ export default function Menu({}: Props) {
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <ListKhoaHoc />
-           
-            {/* <li><a className="dropdown-item Menu_danhmuc_2" href="#">Action</a></li>
-            <li><a className="dropdown-item Menu_danhmuc_2" href="#">Another action</a></li>
-            <li><a className="dropdown-item Menu_danhmuc_2" href="#">Something else here</a></li> */}
-
           </ul>
         </li>
     </div>
