@@ -145,7 +145,7 @@ export default function Introduction({}: Props) {
                 </div>
               </div>
 
-                  <button className="btn btn-success">Join us now</button>
+                  <button className="btn btn-success button-slogan">Join us now</button>
         </div>
       </div>
     </div>

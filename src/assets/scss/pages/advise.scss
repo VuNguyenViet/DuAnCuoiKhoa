@@ -1,126 +1,200 @@
 .advise {
-    padding-top: 30px;
-    
-    .advise_title {
-        padding-bottom: 30px;
-        h1 {
-            text-align: center;
-            color: #173359;
+  padding-top: 30px;
+
+  .advise_title {
+    padding-bottom: 30px;
+    background: rgb(2, 113, 166);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 113, 166, 0.7287289915966386) 10%,
+      rgba(22, 113, 233, 0.34217436974789917) 83%
+    );
+    border-radius: 25px;
+
+    h1 {
+      padding-top: 20px;
+      text-align: center;
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  .container {
+    .advise_content {
+      .about_course {
+        margin-top: 30px;
+        background: rgb(93, 139, 199);
+        background: linear-gradient(
+          90deg,
+          rgba(93, 139, 199, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        border-radius: 15px;
+        .row {
+          .col-6 {
+            .about_course_left {
+              img {
+                border-radius: 15px;
+                margin: 10px 20px;
+                width: 100%;
+              }
+            }
+          }
+
+          .col-6 {
+            .about_course_right {
+              .title_about_course {
+                h2 {
+                    text-align: center;
+                  color: #173359;
+                  font-size: 40px;
+                  font-weight: 600;
+                  margin-bottom: 50px;
+                }
+              }
+
+              .content_about_course {
+                p {
+                    margin-left: 40px;
+                    margin-bottom: 10px;
+                }
+              }
+            }
+          }
         }
+      }
+
+      .choose_course {
+        margin: 40px 0;
+        .row {
+          .col-6 {
+            .choose_course_left {
+              .choose_course_title {
+                h1 {
+                    text-align: center;
+                    color: #173359;
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+
+                }
+              }
+              .choose_course_content {
+                p {
+                  margin-left: 40px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+
+          .col-6 {
+            .choose_course_right {
+              img {
+                width: 100%;
+                border-radius: 30px;
+              }
+            }
+          }
+        }
+      }
+
+      .not_IT {
+        background: rgb(93, 139, 199);
+        background: linear-gradient(
+          90deg,
+          rgba(93, 139, 199, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        border-radius: 15px;
+        .row {
+          .col-6 {
+            .not_IT_left {
+              img {
+                border-radius: 15px; 
+                width: 100%;
+              }
+            }
+          }
+
+          .col-6 {
+            .not_IT_right {
+              .not_IT_title {
+                h1 {
+                    text-align: center;
+                    color: #173359;
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                }
+              }
+
+              .not_IT_content {
+                p {
+                    margin-left: 40px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .IT_student {
+        margin: 40px 0;
+        .row {
+          .col-6 {
+            .IT_student_left {
+              .IT_student_title {
+                h1 {
+                    text-align: center;
+                    color: #173359;
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                }
+              }
+
+              .IT_student_content {
+                p {
+                    margin-left: 40px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+
+          .col-6 {
+            .IT_student_right {
+              img {
+                width: 100%;
+                border-radius: 25px;
+              }
+              
+            }
+          }
+        }
+      }
     }
 
-    .container {
-        .advise_content {
-            .about_course {
-                background: rgb(93,139,199);
-                background: linear-gradient(90deg, rgba(93,139,199,1) 0%, rgba(255,255,255,1) 100%);
-                border-radius: 15px;
-                .row {
-                    .col-6 {
-                        .about_course_left {
-                            img {
-                              border-radius: 15px; 
-                              margin: 10px 20px; 
-                            }
-                        }
-                    }
-
-                    .col-6 {
-                        .about_course_right {
-                            .title_about_course {
-                                h2 {
-                                    color: #173359;
-                                    font-size: 40px;
-                                }
-                            }
-
-                            .content_about_course {
-                                p {
-
-                                }
-                            }
-                        }
-                    }
-                }
-
+        .btn-contact{
+            position: relative;
+           padding-bottom: 50px;
+            button{
+                position: absolute;
+                padding-left: 15px;
+                // top: -20px;
+                left: 44%;
+                background-color: rgba(93, 139, 199, 1);
+                font-weight: 600;
+                &:hover{
+                    color: black;
+                    background-color: #16e9c3;
+                    font-weight: 600;
+                }   
             }
-
-            .choose_course {
-                .row {
-                    .col-6 {
-                        .choose_course_left {
-                            .choose_course_title {
-                                h1 {}
-
-                                .choose_course_content {
-                                    p {}
-                                }
-                            }
-                        }
-
-                    }
-
-                    .col-6 {
-                        .choose_course_right {
-                            img {}
-                        }
-                    }
-                }
-            }
-
-            .not_IT {
-                background: rgb(93,139,199);
-                background: linear-gradient(90deg, rgba(93,139,199,1) 0%, rgba(255,255,255,1) 100%);
-                border-radius: 15px;
-                .row {
-                    .col-6 {
-                        .not_IT_left {
-                            img {
-                                border-radius: 15px; 
-                                margin: 10px 20px; 
-                            }
-                        }
-                    }
-
-                    .col-6 {
-                        .not_IT_right {
-                            .not_IT_title {
-                                h1 {}
-                            }
-
-                            .not_IT_content {
-                                p {}
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            .IT_student {
-                .row {
-                    .col-6 {
-                        .IT_student_left {
-                            .IT_student_title {
-                                h1 {}
-                            }
-
-                            .IT_student_content {
-                                p {}
-                            }
-                        }
-                    }
-
-                    .col-6 {
-                        .IT_student_right {
-                            img {}
-                        }
-                    }
-                }
-            }
-
-        }
-
-
-    }
+        }     
+  }
 }
+
+
