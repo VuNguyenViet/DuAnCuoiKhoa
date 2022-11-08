@@ -21,12 +21,15 @@ const ListDanhmucReducer = createSlice({
   initialState,
   reducers: {
     getListAction: (state:ListState,action:PayloadAction<List[]>) =>{
-      state.arrList = action.payload;
-  }
+      state.arrList = action.payload;  
+  },
+  laydanhsachAction: (state:ListState,action:PayloadAction<List[]>) =>{
+    state.arrList = action.payload;  
+},
 }
 });
 
-export const {getListAction} = ListDanhmucReducer.actions
+export const {getListAction,laydanhsachAction} = ListDanhmucReducer.actions
 
 export default ListDanhmucReducer.reducer
 // api 
@@ -42,4 +45,20 @@ export const getApiList = () => {
         console.log({err})
     }
 }
+};
+
+
+export const LayDanhSachKhoaHoc = (maDanhMuc:any) => {
+  return async (dispatch:AppDispatch) => {
+      try{
+          const result = await http.get(`/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${maDanhMuc}&MaNhom=GP01`);
+          //Sau khi lấy dữ liệu từ api về => đưa lên redux
+          const action = laydanhsachAction(result.data);
+          dispatch(action);
+         
+      }   
+      catch(err) {
+          console.log({err})
+      }
+  }
 }

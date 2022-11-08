@@ -41,7 +41,10 @@ root.render(
             <Route path='profile' element={<Profile />}></Route>
             <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
             <Route path='AllProductCard' element={<AllProductCard />}></Route>
-            <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}></Route>
+            <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}>
+            <Route path=':maDanhMuc' element={<DanhSachKhoaHoc/>}>
+            </Route> 
+            </Route>
             <Route path='detail' element= {<Detail />}>
               <Route path=':maKhoaHoc' element={<Detail/>}>
             </Route> 

@@ -83,10 +83,10 @@ export const getAllProductApi = () => {
 }
 
 // api lấy danh sách theo khóa học 
-export const LayDanhSachKhoaHoc = () => {
+export const LayDanhSachKhoaHoc = (maDanhMuc:any) => {
     return async (dispatch:AppDispatch) => {
         try{
-            const result = await http.get('/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=FrontEnd&MaNhom=GP01');
+            const result = await http.get(`/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${maDanhMuc}&MaNhom=GP01`);
             //Sau khi lấy dữ liệu từ api về => đưa lên redux
             const action = laydanhsachAction(result.data);
             dispatch(action);

@@ -4,19 +4,22 @@ import { useSelector, useDispatch } from 'react-redux'
 import { AppDispatch, RootState } from '../../redux/configStore'
 import { LayDanhSachKhoaHoc, Product } from '../../redux/reducers/productReducer';
 import ProductCard from '../../components/ProductCard'
+import { useParams } from "react-router-dom";
 type Props = {}
 
 export default function DanhSachKhoaHoc({}: Props) {
     const { arrProduct } = useSelector((state: RootState) => state.productReducer);
 
     const dispatch: AppDispatch = useDispatch();
-  
-    console.log({ arrProduct });
+    const params = useParams();
+    const getDanhsachApi = () => {
+
+    }
     useEffect(() => {
       //Gọi api
-      const action = LayDanhSachKhoaHoc();
+      const action = LayDanhSachKhoaHoc(params.maDanhMuc);
       dispatch(action);
-    }, []);
+    }, [params.maDanhMuc]);
   return (
     <>
     <div className='row gx-5'>
