@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 100% !important;
+}
+
 .header_fixed {
   background-color: white !important;
   color: black !important;
@@ -46,7 +50,6 @@
 html,
 body {
   font-family: "Inter", sans-serif;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -105,22 +108,49 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #000;
 }
 
+.Menu_danhmuc_2 {
+  background-color: #0d6870;
+  color: black !important;
+}
+
 .carousel {
   padding: 10px 0;
 }
-.carousel .carousel_1 .carousel_2 {
+.carousel .carousel_1 {
   position: relative;
-  text-align: center !important;
+  height: 720px;
 }
 .carousel .carousel_1 .carousel_2 img {
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  filter: bluescale(10%) contrast(50%);
 }
-.carousel .carousel_1 .carousel_2 h1 {
+.carousel .carousel_1 .carousel_2 .carousel_content {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 40%;
+  left: 12%;
+  width: 75%;
+}
+.carousel .carousel_1 .carousel_2 .carousel_content h2 {
+  font-weight: 700;
+  color: rgb(189, 206, 211);
+}
+.carousel .carousel_1 .carousel_2 .carousel_content .carousel_button button {
+  background: #06282c;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200%;
   color: white;
+  box-shadow: 0 0 20px rgb(173, 169, 169);
+  border: none;
+  cursor: pointer;
+}
+.carousel .carousel_1 .carousel_2 .carousel_content .carousel_button :hover {
+  background-position: right center;
+  color: black;
+  background-color: #fff;
 }
 
 .card_home {
@@ -139,7 +169,6 @@ p, h1, h2, h3, h4, h5, h6 {
 html,
 body {
   font-family: "Inter", sans-serif;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -167,7 +196,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 .footer .footer__part.--part-1 {
-  background-color: #102027;
+  background-color: #181d38;
 }
 .footer .footer__part.--part-2 {
   background-color: rgb(231, 231, 231);
@@ -270,25 +299,20 @@ p, h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 .card_home .card_mota {
-  background-color: #b9eaef !important;
+  background-color: #F0FBFC !important;
   color: rgb(0, 0, 0) !important;
   font-size: 15px;
 }
 
 .ProductFeature {
-  background: #37474f;
-  width: 698px;
-  height: 74px;
   top: 44px;
   left: -4px;
-  color: white;
+  color: black;
   margin: 20px 0;
 }
-.ProductFeature .ProductText {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 48px;
-  padding: 20px;
+.ProductFeature .ProductText h1 {
+  font-weight: 900;
+  text-align: center;
 }
 
 .btn-card {
@@ -398,7 +422,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .register {
-  width: 1100px;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -450,7 +473,6 @@ p, h1, h2, h3, h4, h5, h6 {
 html,
 body {
   font-family: "Inter", sans-serif;
-  max-width: 1280px;
   margin: 0 auto;
 }
 

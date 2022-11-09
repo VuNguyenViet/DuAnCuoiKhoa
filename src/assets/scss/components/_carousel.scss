@@ -1,5 +1,6 @@
 .carousel {
   padding: 10px 0;
+  z-index: 1;
   .carousel_1 {
     position: relative;
     height: 720px;
@@ -7,9 +8,9 @@
     .carousel_2 {
       img {
         height: 100%;
-        filter: grayscale(50%) contrast(50%);
-        border-radius: 30px;
+        filter: bluescale(10%) contrast(50%);
       }
+
       .carousel_content {
         position: absolute;
         bottom: 40%;
@@ -20,13 +21,12 @@
 
         h2 {
           font-weight: 700;
-          color: #00fffc;
+          color: rgb(189, 206, 211);
         }
+
         .carousel_button {
           button {
-            border-radius: 15px;
-            background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,0.7903536414565826) 11%, rgba(39,137,201,1) 52%, rgba(0,255,252,0.8827906162464986) 100%);
+            background: #06282c;
             margin: 10px;
             padding: 15px 45px;
             text-align: center;
@@ -34,26 +34,19 @@ background: linear-gradient(90deg, rgba(2,0,36,0.7903536414565826) 11%, rgba(39,
             transition: 0.5s;
             background-size: 200%;
             color: white;
-            box-shadow: 0 0 20px #eee;
-            border-radius: 30px;
+            box-shadow: 0 0 20px rgb(173, 169, 169);
+  
             border: none;
             cursor: pointer;
-          }
-                :hover{
-                    background-position: right center;
-                    color: #fff;
-                    
-                }
-        }
-      }
-    }
+          };
+          :hover {
+            background-position: right center;
+            color: black;
+            background-color: #fff;
 
-    .carousel_2 {
-      img {
-        height: 100%;
-        filter: grayscale(40%) contrast(60%);
-      }
-      h1 {
+          };
+        
+        }
       }
     }
   }

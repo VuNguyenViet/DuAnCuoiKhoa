@@ -17,9 +17,13 @@ import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
 import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
-import Support from './pages/Contact/Contact';
+// import Support from './pages/Contact/Contact';
 import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
 import About from './pages/About/About';
+import Introduce from './components/Introduce';
+import AllProductCard from './components/AllProductCard';
+import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
+import Contact from './pages/Contact/Contact';
 
 export const history = createBrowserHistory();
 
@@ -37,16 +41,22 @@ root.render(
             <Route path='cart' element={<Cart />}></Route>
             <Route path='search' element={<Search />}></Route>
             <Route path='profile' element={<Profile />}></Route>
-            <Route path='detail'>
-              <Route path=':id' element={<Detail />}>
+            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
+            <Route path='AllProductCard' element={<AllProductCard />}></Route>
+            <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}>
+            <Route path=':maDanhMuc' element={<DanhSachKhoaHoc/>}>
+            </Route> 
+            </Route>
+            <Route path='detail' element= {<Detail />}>
+              <Route path=':maKhoaHoc' element={<Detail/>}>
             </Route> 
             </Route>
             <Route path='about' element={<About/>}></Route>
               <Route path='mentor' element={<Mentors />}></Route>
               <Route path='advise' element={<Advise />}></Route>
-              <Route path='support' element={<Support />}></Route>
+              <Route path='contact' element={<Contact />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
-            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
+            
         </Routes>
     </HistoryRouter>
   </Provider>

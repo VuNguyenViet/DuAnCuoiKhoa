@@ -6,27 +6,30 @@
     width: auto;
   }
   .card_mota {
-    background-color: #b9eaef !important;
+    background-color: #F0FBFC !important;
     color: rgb(0, 0, 0) !important;
     font-size: 15px;
   }
 }
 .ProductFeature {
-  background:#37474f ;
-  width: 698px;
-  height: 74px;
+  // background:#37474f ;
+  // width: 698px;
+  // height: 74px;
   top: 44px;
   left: -4px;
-  color: white;
+  color: black;
   margin: 20px 0;
   border-radius: 15px;
   .ProductText {
     
       h3{
-        font-size: 40px;
-      font-weight: 400;
+        margin-top: 50px;
+        font-size: 50px;
+      font-weight: 600;
       line-height: 48px;
+      text-align: center;
      
+      
       }
 
   }

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import Introduce from '../../components/Introduce';
 import ProductCard from '../../components/ProductCard';
 import { AppDispatch, RootState } from '../../redux/configStore'
 import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
@@ -30,7 +31,7 @@ export default function Home({ }: Props) {
         <div className='container '>
           <div className='ProductFeature'>
             <div className='ProductText'>
-              <h3>Thông tin khóa học</h3>
+              <h3 >Thông tin khóa học</h3>
             </div>
           </div>
           <div className='row'>
@@ -40,8 +41,9 @@ export default function Home({ }: Props) {
               </div>
             })}
           </div>
+         
         </div>
-        <TuvanKhoahoc />
+                    {/* <TuvanKhoahoc /> */}
       </div>
     </>
   )

@@ -13,12 +13,12 @@ export default function Introduction({}: Props) {
 
 
   return (
-    <div className="container">
+    <>
       <div className="main_about_img">
         <img src={about1} alt="..." />
       </div>
-
-      <div className="row about_title_main">
+        <div className="container">
+      <div className="row about_card  animate__animated animate__fadeInDown animate__delay-0.5s">
         <div className="col-3">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
@@ -30,7 +30,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-3">
+        <div className="col-3 ">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -64,8 +64,9 @@ export default function Introduction({}: Props) {
         </div>
       </div>
 
-      <div className="row welcome">
-        <div className="col-6 pack_1">
+      <div className="welcome">
+      <div className="row ">
+        <div className="col-6 pack_1  animate__animated animate__fadeInLeft animate__delay-1s">
           <div className="welcome_img">
             <img src={about3} alt="" />
           </div>
@@ -73,39 +74,39 @@ export default function Introduction({}: Props) {
 
         <div className="col-6 pack_2">
           <div className="welcome_content">
-            <h1>Welcome to Elearning</h1>
-            <p className="welcome_text1">
-            <i className="fas fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <h1 className=" animate__animated animate__shakeX animate__delay-1s ">Welcome to Elearning</h1>
+            <p className="welcome_text1  animate__animated animate__fadeIn animate__delay-2s">
+            <i className="fas fa-hand-point-right  "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Incidunt, qui?
             </p>
 
-            <p className="welcome_text2">
+            <p className="welcome_text2 animate__animated animate__fadeIn animate__delay-3s">
             <i className="fas fa-hand-point-right"></i>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos hic
               expedita soluta. Ullam, rerum odio.
             </p>
 
             <div className="welcome_skill_list">
               <div className="row">
-                <div className="col-6 skill_pack1">
+                <div className="col-6 skill_pack1 animate__animated animate__fadeInLeft animate__delay-4s">
                   <ul>
-                    <li>
-                      <i className="fa fa-arrow-right"></i>
+                    <li className=" ">
+                      <i className="fa fa-arrow-right "></i>
                      Skilled Intructors
                     </li>
-                    <li>
-                      <i className="fa fa-arrow-right"></i>
+                    <li >
+                      <i className="fa fa-arrow-right  "></i>
                      Skilled Intructors
                     </li>
-                    <li>
-                      <i className="fa fa-arrow-right"></i>
+                    <li >
+                      <i className="fa fa-arrow-right "></i>
                      Skilled Intructors
                     </li>
                   </ul>
-                  <button className="btn btn-primary">Read more</button>
                 </div>
-                 
+               
+               
 
-                <div className="col-6 skill_pack2">
+                <div className="col-6 skill_pack2 animate__animated animate__fadeInLeft animate__delay-4s">
                         <ul>
                         <li>
                     <i className="fa fa-arrow-right"></i>
@@ -125,29 +126,34 @@ export default function Introduction({}: Props) {
             </div>
           </div>
         </div>
+        </div>
+
+        <button className="btn btn-success button_welcome animate__animated animate__bounceIn animate__delay-5s">Read More</button>
+
       </div>
 
       <div className="about_slogan">
-        <div className="about_slogan_top">
+        <div className="about_slogan_top animate__animated animate__bounceIn animate__delay-4s ">
         <i className="fas fa-code"></i>
             <h2>Lorem ipsum dolor sit amet.</h2>
         </div>
 
         <div className="about_slogan_bot">
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 className=" animate__animated animate__bounceInUp animate__delay-5s  ">Lorem ipsum dolor sit amet consectetur.</h3>
               <div className="row">
-                <div className="col-6 slogan_img_left">
+                <div className="col-6 slogan_img_left animate__animated animate__backInLeft animate__delay-4s ">
                   <img src={about4} alt="" />
                 </div>
 
-                <div className="col-6 slogan_img_right">
+                <div className="col-6 slogan_img_right animate__animated animate__backInRight animate__delay-4s">
                   <img src={about5} alt="" />
                 </div>
               </div>
 
-                  <button className="btn btn-success button-slogan">Join us now</button>
+                  <button className="btn btn-success button-slogan  animate__animated animate__fadeInUpBig animate__delay-5s ">Join us now</button>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 }
