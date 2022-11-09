@@ -15,7 +15,7 @@ export default function Menu({}: Props) {
         <NavLink to="/about">Giới thiệu</NavLink>
         <NavLink to="/mentor">Đội ngũ giảng viên</NavLink>
         <NavLink to="/advise">Tư vấn</NavLink>
-        <NavLink to="/support">Liên hệ</NavLink>
+        <NavLink to="/contact">Liên hệ</NavLink>
         <li className="nav-item dropdown Menu_danhmuc">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Danh mục khóa học
@@ -25,6 +25,7 @@ export default function Menu({}: Props) {
           </ul>
         </li>
     </div>
+   
 </section>
 </>
   )

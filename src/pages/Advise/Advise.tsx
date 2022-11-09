@@ -4,6 +4,11 @@ import '../../assets/scss/pages/advise.scss'
 type Props = {};
 
 export default function Advise({}: Props) {
+  const advise1 = require('../../assets/img/advise/advise1.jpg');
+  const advise2 = require('../../assets/img/advise/advise2.jpg');
+  const advise3 = require('../../assets/img/advise/advise3.jpg');
+  const advise4 = require('../../assets/img/advise/advise4.jpg');
+
   return (
     <div className="advise">
       <div className="advise_title">
@@ -16,7 +21,7 @@ export default function Advise({}: Props) {
             <div className="row">
               <div className="col-6">
                 <div className="about_course_left">
-                  <img src="https://picsum.photos/300/300" alt="..." />
+                  <img src={advise1} alt="..." />
                 </div>
               </div>
 
@@ -62,7 +67,7 @@ export default function Advise({}: Props) {
               </div>
               <div className="col-6">
                     <div className="choose_course_right">
-                      <img src="https://picsum.photos/300/300" alt="..." />
+                      <img src={advise2} alt="..." />
                     </div>       
               </div>
             </div>
@@ -72,7 +77,7 @@ export default function Advise({}: Props) {
             <div className="row">
               <div className="col-6">
                 <div className="not_IT_left">
-                  <img src="https://picsum.photos/300/300" alt="..." />
+                  <img src={advise3} alt="..." />
                 </div>
               </div>
 
@@ -117,12 +122,17 @@ export default function Advise({}: Props) {
 
               <div className="col-6">
                   <div className="IT_student_right">
-                  <img src="https://picsum.photos/300/300" alt="" />
+                  <img src={advise4} alt="" />
                   </div>
               </div>
             </div>
           </div>
+            <div className="btn-contact">
+            <button className="btn btn-success ">Liên hệ ngay</button>
+            </div>
+             
         </div>
+
       </div>
     </div>
   );
