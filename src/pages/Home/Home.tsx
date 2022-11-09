@@ -6,6 +6,7 @@ import { AppDispatch, RootState } from '../../redux/configStore'
 import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
 import TuvanKhoahoc from '../TuvanKhoahoc/TuvanKhoahoc';
 import Carousel from './Carousel';
+import '../../assets/scss/pages/_home.scss'
 type Props = {}
 
 export default function Home({ }: Props) {
