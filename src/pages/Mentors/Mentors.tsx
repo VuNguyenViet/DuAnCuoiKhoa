@@ -40,6 +40,7 @@ export default function Mentors({ }: Props) {
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
+               
               </div>
             </div>
 

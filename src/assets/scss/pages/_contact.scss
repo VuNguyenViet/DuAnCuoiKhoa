@@ -1,40 +1,76 @@
-.contact_title{
-    padding: 20px 30px;
-    h2{
-        text-align: center;
-    }
-}
-
-    .container{
-        .contact{
-            .row{
-                .col-6{
-                    .contact_content{
-                        h3{
-                            padding-bottom: 30px;
-                            text-align: center;
-                        }
-                       ul{
-                        
-                        li{
-                            padding: 20px 10px;
-                            a{
-                                span{
-
-                                }
-                            }
-                        }
-                       }
+.container{
+    .contact{
+       .contact1{
+        margin-bottom: 50px;
+        .row{
+            .col-6{
+                .contact_img{
+                    img{
+                        width: 80%;
                     }
                 }
+            }
 
-                .col-6{
-                    .contact_img{
-                        img{
+            .col-6{
+                position: relative;
 
-                        }
+                .contact_title{
+                        position: absolute;
+                        top: 20%;
+                    
+                    h1{
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }   
+
+                    p{
+                        font-weight: 600;
                     }
                 }
             }
         }
+       }
+
+        .contact2{
+            position: relative;
+              .row{
+                .col-6{
+                    .contact2_content{
+                        position: absolute;
+                        top: 25%;
+                        h2{
+                        
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                        }
+
+
+                        p{
+                            // text-align: center;
+                            margin-bottom: 30px;
+                            font-size: 20px;
+                            i{
+                                margin-right: 10px;
+                                margin-left: 15px;
+                            }
+                        }
+
+                    }
+                }
+
+                .col-6{
+                    .contact2_img{
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+              }
+                
+            
+        }
+        
     }
+}

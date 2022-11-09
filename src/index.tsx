@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 //setup redux
 import {Provider} from 'react-redux'
 import {store} from './redux/configStore';
-import  './assets/scss/styles.css'
+import  './assets/scss/styles.scss'
 //setup router dom
 import {createBrowserHistory} from 'history'; 
 import {unstable_HistoryRouter as HistoryRouter, Routes,Route,Navigate} from 'react-router-dom';
@@ -17,11 +17,13 @@ import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
 import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
-import Support from './pages/Contact/Contact';
+// import Support from './pages/Contact/Contact';
 import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
+import About from './pages/About/About';
 import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
 import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
+import Contact from './pages/Contact/Contact';
 
 export const history = createBrowserHistory();
 
@@ -49,10 +51,10 @@ root.render(
               <Route path=':maKhoaHoc' element={<Detail/>}>
             </Route> 
             </Route>
-            {/* <Route path='about' element={<About />}></Route> */}
+            <Route path='about' element={<About/>}></Route>
               <Route path='mentor' element={<Mentors />}></Route>
               <Route path='advise' element={<Advise />}></Route>
-              <Route path='support' element={<Support />}></Route>
+              <Route path='contact' element={<Contact />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
             
         </Routes>
