@@ -28,7 +28,7 @@ export default function Mentors({ }: Props) {
       <div className="container">
         <div className="intro_mentors1">
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src= {mentor1} alt="" />
                 <div className="contact_mentor">
@@ -44,7 +44,7 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src= {mentor2} alt="..." />
                 <div className="contact_mentor">
@@ -58,7 +58,7 @@ export default function Mentors({ }: Props) {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src={mentor3} alt="..." />
                 <div className="contact_mentor">
@@ -79,7 +79,7 @@ export default function Mentors({ }: Props) {
 
         <div className="intro_mentors2">
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src= {mentor4} alt="..." />
                 <div className="contact_mentor">
@@ -94,7 +94,7 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src= {mentor5} alt="..." />
                 <div className="contact_mentor">
@@ -109,7 +109,7 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-md-4 col-sm-12">
               <div className="mentor_profile">
                 <img src={mentor5} alt="..." />
                 <div className="contact_mentor">

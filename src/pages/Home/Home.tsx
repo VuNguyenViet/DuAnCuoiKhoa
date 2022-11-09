@@ -26,19 +26,23 @@ export default function Home({ }: Props) {
 
   return (
     <>
-      <div>
+       <div>
         <Carousel />
         <div className='container '>
           <div className='ProductFeature'>
-            {/* <div className='ProductText'>
-              <h1>Đào tạo lập trình chuyên sâu cho người trái nghành</h1>
-              <div className='ProductText_2'> </div>
-            </div> */}
-            <Introduce />
+            <div className='ProductText'>
+              <h3>Thông tin khóa học</h3>
+            </div>
+          </div>
+          <div className='row'>
+            {arrProduct.map((item: Product, index: number) => {
+              return <div className='col-lg-4 g-lg-5 col-md-6 col-sm-12' key={index}>
+                <ProductCard prod={item} />
+              </div>
+            })}
           </div>
          
         </div>
-        <TuvanKhoahoc />
       </div>
     </>
   )

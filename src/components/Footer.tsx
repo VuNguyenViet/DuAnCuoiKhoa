@@ -7,7 +7,7 @@ type Props = {
 
 export default function Footer({ }: Props) {
   return (
-    <footer className='footer'>
+    <footer className='footer '>
       <div className='footer__part'>
         <div className='container py-3 bg-light'>
           <div className='footer__item'>

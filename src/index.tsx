@@ -23,6 +23,7 @@ import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
 import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 export const history = createBrowserHistory();
 
@@ -53,7 +54,7 @@ root.render(
             <Route path='about' element={<About/>}></Route>
               <Route path='mentor' element={<Mentors />}></Route>
               <Route path='advise' element={<Advise />}></Route>
-              <Route path='support' element={<Support />}></Route>
+              <Route path='contact' element={<Contact />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
             
         </Routes>

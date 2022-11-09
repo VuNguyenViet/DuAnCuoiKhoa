@@ -19,7 +19,7 @@ export default function Introduction({}: Props) {
       </div>
 
       <div className="row about_title_main">
-        <div className="col-3">
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -30,7 +30,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-3">
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -41,7 +41,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-3">
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -52,7 +52,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-3">
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -65,13 +65,13 @@ export default function Introduction({}: Props) {
       </div>
 
       <div className="row welcome">
-        <div className="col-6 pack_1">
+        <div className="col-md-6 col-sm-12 pack_1">
           <div className="welcome_img">
             <img src={about3} alt="" />
           </div>
         </div>
 
-        <div className="col-6 pack_2">
+        <div className="col-md-6 col-sm-12 pack_2">
           <div className="welcome_content">
             <h1>Welcome to Elearning</h1>
             <p className="welcome_text1">
@@ -136,11 +136,11 @@ export default function Introduction({}: Props) {
         <div className="about_slogan_bot">
               <h3>Lorem ipsum dolor sit amet consectetur.</h3>
               <div className="row">
-                <div className="col-6 slogan_img_left">
+                <div className="col-md-6 col-sm-12 slogan_img_left">
                   <img src={about4} alt="" />
                 </div>
 
-                <div className="col-6 slogan_img_right">
+                <div className="col-md-6 col-sm-12 slogan_img_right">
                   <img src={about5} alt="" />
                 </div>
               </div>
