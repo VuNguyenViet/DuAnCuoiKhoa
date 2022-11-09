@@ -1,12 +1,54 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
+import { useSelector } from "react-redux";
+import {
+  ACCESS_TOKEN,
+  clearCookie,
+  clearLocalStorage,
+  USER_LOGIN,
+} from "../util/setting";
 
 type Props = {
   title?: string;
 };
 
 export default function Header({ }: Props) {
+  const { userLogin } = useSelector((state:any) => state.userReducer);
+
   const elearning = require("../assets/img/elearning.webp")
+  const renderUserNavLink = () => {
+    if (userLogin) {
+      return (
+        <>
+          <li className="nav-item">
+            <NavLink className="nav-link " to="/profile" aria-current="page">
+              XIN CHÀO: {userLogin.taiKhoan}!
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <span
+              className="nav-link"
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                clearLocalStorage(USER_LOGIN);
+                clearLocalStorage(ACCESS_TOKEN);
+                clearCookie(ACCESS_TOKEN);
+
+                window.location.href = "/";
+              }}
+            >
+              Đăng xuất 
+            </span>
+          </li>
+        </>
+      );
+    }
+    return (
+      <NavLink className="nav-link" to="/login">
+        Đăng nhập
+      </NavLink>
+    );
+  };
   return (
     <nav style={{padding:'10px'}} className=" navbar-expand-sm navbar-light bg-dark header_fixed">
       <NavLink className="navbar-brand header_text" to="/">
@@ -34,8 +76,9 @@ export default function Header({ }: Props) {
         </form>
         <ul className="navbar-nav me-auto mt-2 mt-lg-0">
           <li className="nav-item">
+         
             <NavLink className="nav-link active" to="/login" aria-current="page">
-              Đăng Nhập
+            {renderUserNavLink()}
             </NavLink>
           </li>
           <li className="nav-item">
