@@ -4,6 +4,7 @@
     background-color: #0d6870;
     color: white;
     padding: 16px 0 0;
+    z-index: 10;
 
     .container {
         display: flex;
@@ -38,6 +39,14 @@
                 }
             }
         };
+        ul{
+            a{
+
+            }
+            li{
+                z-index: 10;
+            }
+        }
        
     }
 };

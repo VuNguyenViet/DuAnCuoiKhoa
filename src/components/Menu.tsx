@@ -1,5 +1,6 @@
 import React from 'react'
-import '../assets/scss/styles.css'
+// import '../assets/scss/styles.css'
+import './../assets/scss/components/_menu.scss'
 import { NavLink } from 'react-router-dom';
 import ListItem from './ListItem';
 import ListKhoaHoc from './ListKhoaHoc'
@@ -16,14 +17,14 @@ export default function Menu({}: Props) {
         <NavLink to="/mentor">Đội ngũ giảng viên</NavLink>
         <NavLink to="/advise">Tư vấn</NavLink>
         <NavLink to="/contact">Liên hệ</NavLink>
-        <li className="nav-item dropdown Menu_danhmuc">
+        <ul className="nav-item dropdown Menu_danhmuc">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Danh mục khóa học
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li className="dropdown-menu" aria-labelledby="navbarDropdown">
             <ListKhoaHoc />
-          </ul>
-        </li>
+          </li>
+        </ul>
     </div>
    
 </section>
