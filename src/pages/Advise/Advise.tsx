@@ -8,16 +8,21 @@ export default function Advise({}: Props) {
   const advise2 = require('../../assets/img/advise/advise2.jpg');
   const advise3 = require('../../assets/img/advise/advise3.jpg');
   const advise4 = require('../../assets/img/advise/advise4.jpg');
+  const adivse5 = require('../../assets/img/advise/advise5.jpg');
+  const backToTop = () =>{
+    window.scrollTo(0,0);
+}
 
+ 
   return (
     <div className="advise">
       <div className="advise_title">
-        <h1>Hãy để chúng tôi tư vấn cho bạn</h1>
+          {/* <img src={adivse5} alt="" /> */}
       </div>
 
       <div className="container">
         <div className="advise_content">
-          <div className="about_course">
+          <div className="about_course_main animate__animated animate__lightSpeedInRight animate__delay-0.5s">
             <div className="row">
               <div className="col-6">
                 <div className="about_course_left">
@@ -46,7 +51,7 @@ export default function Advise({}: Props) {
             </div>
           </div>
 
-          <div className="choose_course">
+          <div className="choose_course animate__animated animate__lightSpeedInLeft animate__delay-1s">
             <div className="row">
               <div className="col-6">
                 <div className="choose_course_left">
@@ -73,7 +78,7 @@ export default function Advise({}: Props) {
             </div>
           </div>
 
-          <div className="not_IT">
+          <div className="not_IT_main animate__animated animate__lightSpeedInRight animate__delay-2s">
             <div className="row">
               <div className="col-6">
                 <div className="not_IT_left">
@@ -101,7 +106,7 @@ export default function Advise({}: Props) {
             </div>
           </div>
 
-          <div className="IT_student">
+          <div className="IT_student animate__animated animate__lightSpeedInLeft animate__delay-3s">
             <div className="row">
               <div className="col-6">
                     <div className="IT_student_left">
@@ -127,13 +132,17 @@ export default function Advise({}: Props) {
               </div>
             </div>
           </div>
-            <div className="btn-contact">
+            <div className="btn-contact animate__animated animate__bounceIn animate__delay-4s">
             <button className="btn btn-success ">Liên hệ ngay</button>
             </div>
              
         </div>
 
       </div>
+
+      <div className='backToTop' onClick={()=>{
+                        backToTop()
+                  }}><i className="fas fa-arrow-up"></i></div>
     </div>
   );
 }

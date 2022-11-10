@@ -1,4 +1,5 @@
-
+.about_main{
+    padding-top: 8%;
   .main_about_img {
     height: 100%;
     // background-image: url(../);
@@ -16,7 +17,7 @@
     }
   }
   .container {
-    overflow: hidden;
+    // overflow: hidden;
   .about_card {
     margin-top: 60px;
     .col-3 {
@@ -252,4 +253,22 @@
   }
 }
 
+.backToTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  border-radius: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  &:hover{
+    background-color: #f7f7f7;
+    color: #000;
+  }
+}
 
+
+}

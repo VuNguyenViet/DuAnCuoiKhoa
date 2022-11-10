@@ -16,7 +16,8 @@ export default function Carousel({}: Props) {
   const frontend = require ("../../assets/img/webdesign4.jpg");
   const frontend2 = require ("../../assets/img/webdesign5.jpg")
   return (
-    <div  id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
+    <div className='carousel_main'>
+    <div  id="carouselExampleControls" className="carousel_slide slide " data-bs-ride="carousel">
     <div className="carousel-inner carousel_1">
       
       <div className="carousel-item active carousel_2">
@@ -58,7 +59,7 @@ export default function Carousel({}: Props) {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-
+  </div>
 
 
   )

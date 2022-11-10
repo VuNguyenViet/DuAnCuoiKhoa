@@ -1,76 +1,104 @@
-.container{
-    .contact{
-       .contact1{
-        margin-bottom: 50px;
-        .row{
-            .col-6{
-                .contact_img{
-                    img{
-                        width: 80%;
-                    }
-                }
-            }
-
-            .col-6{
-                position: relative;
-
-                .contact_title{
-                        position: absolute;
-                        top: 20%;
-                    
-                    h1{
-                        font-weight: 600;
-                        margin-bottom: 20px;
-                    }   
-
-                    p{
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-       }
-
-        .contact2{
-            position: relative;
-              .row{
-                .col-6{
-                    .contact2_content{
-                        position: absolute;
-                        top: 25%;
-                        h2{
-                        
-                            text-align: center;
-                            font-size: 40px;
-                            font-weight: 600;
-                            margin-bottom: 20px;
-                        }
-
-
-                        p{
-                            // text-align: center;
-                            margin-bottom: 30px;
-                            font-size: 20px;
-                            i{
-                                margin-right: 10px;
-                                margin-left: 15px;
+.contact_main{
+    padding-top: 8%;
+    .container {
+        .contact {
+            
+            .contact1 {
+                // margin-bottom: 70px;
+    
+                .row {
+                    .col-6 {
+                        .contact_img {
+                            img {
+                                width: 80%;
+                                
+                                -webkit-animation: mover 1s infinite alternate;
+                                animation: mover 1s infinite alternate;
+                            }
+                            @-webkit-keyframes mover {
+                                0% { transform: translateY(0); }
+                                100% { transform: translateY(-10px); }
+                            }
+                            @keyframes mover {
+                                0% { transform: translateY(0); }
+                                100% { transform: translateY(-10px); }
                             }
                         }
-
                     }
-                }
-
-                .col-6{
-                    .contact2_img{
-                        img{
-                            width: 80%;
+    
+                    .col-6 {
+                        position: relative;
+                        .contact_title {
+                            position: absolute;
+                            top: 20%;
+    
+                            h1 {
+                                font-weight: 600;
+                                margin-bottom: 20px;
+                            }
+    
+                            p {
+                                font-weight: 600;
+                            }
                         }
                     }
                 }
-              }
-                
-            
+            }
+    
+            .contact2 {
+                position: relative;
+    
+                .row {
+                    .col-6 {
+                        .contact2_content {
+                            position: absolute;
+                            top: 25%;
+    
+                            h2 {
+    
+                                text-align: center;
+                                font-size: 40px;
+                                font-weight: 600;
+                                margin-bottom: 20px;
+                            }
+    
+    
+                            p {
+                                // text-align: center;
+                                margin-bottom: 30px;
+                                font-size: 20px;
+    
+                                i {
+                                    margin-right: 10px;
+                                    margin-left: 15px;
+                                }
+                            }
+    
+                        }
+                    }
+    
+                    .col-6 {
+                        .contact2_img {
+                            img {
+                                width: 80%; 
+                                -webkit-animation: mover 1s infinite alternate;
+                                animation: mover 1s infinite alternate;
+                            }
+                            @-webkit-keyframes mover {
+                                0% { transform: translateY(0); }
+                                100% { transform: translateY(-10px); }
+                            }
+                            @keyframes mover {
+                                0% { transform: translateY(0); }
+                                100% { transform: translateY(-10px); }
+                            }
+                        }
+                    }
+                }
+    
+    
+            }
+    
         }
-        
     }
 }

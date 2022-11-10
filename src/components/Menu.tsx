@@ -9,8 +9,8 @@ type Props = {}
 
 export default function Menu({}: Props) {
   return (
-    <>
-    <section className="menu">
+    <div className='menu_main'>
+    <div className="menu">
     <div className="container">
         <a href="./index.html" className="active">Trang chủ</a>
         <NavLink to="/about">Giới thiệu</NavLink>
@@ -27,7 +27,7 @@ export default function Menu({}: Props) {
         </ul>
     </div>
    
-</section>
-</>
+</div>
+</div>
   )
 }
