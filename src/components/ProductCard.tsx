@@ -12,7 +12,7 @@ export default function ProductCard({prod}: Props) {
   const navigate = useNavigate();
 
   return (
-    <div className='card card_home animate__animated animate__fadeIn animate__delay-0.5s '>
+    <div style={{overflow:'hidden'}} className='card card_home animate__animated animate__fadeIn animate__delay-0.5s '>
       <div className="card_img animate__animated animate__fadeInDown animate__delay-1s">
       <img style={{height:'150px'}} src={prod.hinhAnh} alt={prod.tenKhoaHoc} />
       </div>

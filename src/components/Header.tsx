@@ -94,7 +94,7 @@ export default function Header({ }: Props) {
             className="nav-link text-light header_icon"
             to="/cart"
             aria-current="page"
-          >
+          >   
             <i className="fa fa-cart-plus"></i>(0)
           </NavLink>
         </form>

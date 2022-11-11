@@ -30,6 +30,7 @@ export default function Home({ }: Props) {
         <Carousel />
         <div className='container '>
           <div className='ProductFeature'>
+            <Introduce />
             <div className='ProductText'>
               <h3 >Thông tin khóa học</h3>
             </div>
@@ -41,9 +42,9 @@ export default function Home({ }: Props) {
               </div>
             })}
           </div>
-         
+
         </div>
-                    {/* <TuvanKhoahoc /> */}
+        <TuvanKhoahoc />
       </div>
     </>
   )
