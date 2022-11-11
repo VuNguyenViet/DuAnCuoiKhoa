@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { signupApi } from "../../redux/reducers/userReducer";
 import { useDispatch } from "react-redux";
 import { AppDispatch} from '../../redux/configStore'
+import '../../assets/scss/pages/_register.scss'
 type Props = {}
 
 export default function Register({}: Props) {
@@ -49,11 +50,13 @@ export default function Register({}: Props) {
      dispatch(action)
     }
   });
-
+  const register1 = require('../../assets/img/register/register1.jpg');
+  const register2 = require('../../assets/img/register/register2.jpg')
   return (
     
     
     <div className="register">
+        
       <form className="row" onSubmit={formik.handleSubmit}>
         {/* Bên trái  */}
         <div className="col-12">
@@ -123,7 +126,6 @@ export default function Register({}: Props) {
             ""
           )}
           </div>
-          
         </div>
         {/* Bên phải  */}
         <div className="col-12 register_right">
@@ -181,6 +183,9 @@ export default function Register({}: Props) {
             Đăng ký 
           </button>
         </div>
+
+        <img src={register1} alt="" className="img_left"/>
+        <img src={register2} alt=""  className="img_right"/>
       </form>
     </div>
   );
