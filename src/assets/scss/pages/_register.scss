@@ -45,9 +45,15 @@ $border-input : #AE18E2;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10%;
+    position: relative;
     p {
-        margin-bottom: 10px;
+        // margin-bottom: 20%;
         text-align: start;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left:25%;
+       
     }
     .input_validation {
         width: 443px;
@@ -62,6 +68,41 @@ $border-input : #AE18E2;
         position: relative;
     }
     
+        .img_left{
+            position: absolute;
+            width: 30%;
+            right: 4%;
+            bottom: 15%;
+            
+                                
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+    }
+             @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+           100% { transform: translateY(-10px); }
+    }
+             @keyframes mover {
+                 0% { transform: translateY(0); }
+               100% { transform: translateY(-10px); }
+    }
+
+        .img_right{
+            position: absolute;
+            width: 30%;
+            left: 4%;
+            bottom: 15%;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+        @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+           100% { transform: translateY(-10px); }
+    }
+             @keyframes mover {
+                 0% { transform: translateY(0); }
+               100% { transform: translateY(-10px); }
+    }
     
 }
 .ul_radio_button {

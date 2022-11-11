@@ -6,6 +6,7 @@ import { AppDispatch } from '../../redux/configStore'
 import { useDispatch } from 'react-redux'
 import { signinApi } from '../../redux/reducers/userReducer'
 import { http } from '../../util/setting'
+import '../../assets/scss/pages/_login.scss'
 
 // import FacebookLogin from 'react-facebook-login'
 
@@ -42,14 +43,15 @@ onSubmit: (values)=>{
 }
 })
 
-
+const login1 = require('../../assets/img/login/login1.jpg')
 
   return (
-    <form className='login'  onSubmit={formik.handleSubmit}>
-      <p>Tài khoản</p>
+    <form className='login_main'  onSubmit={formik.handleSubmit}>
+              <h1>Đăng nhập</h1>
+      <h3>Tài khoản</h3>
       <input type="text" id="email" name='email' placeholder='Enter Your Email' className='Login_padding'  onChange={formik.handleChange} onBlur={formik.handleBlur}/>
       {formik.errors.email ? <p className='text text-danger'>{formik.errors.email}</p> : ''} 
-      <p>Mật khẩu</p>
+      <h3>Mật khẩu</h3>
       <div className='password'>
         <input type="password" placeholder=' Enter your PassWord' className='Login_padding' id="password" name='password' onChange={formik.handleChange}  onBlur={formik.handleBlur} />
         {formik.errors.password ? <p className='text text-danger'>{formik.errors.password}</p> : ''}
@@ -60,10 +62,10 @@ onSubmit: (values)=>{
       </div>
 
       <div className='login_flex'>
-        <div className='login_register'>
+        <div className='login_register my-3'>
           <NavLink to= "/Register">Đăng ký ngay ?</NavLink>
         </div>
-        <button type='submit' className='login_button'>Đăng nhập</button>
+        <button type='submit' className='login_button btn btn-success'>Đăng nhập</button>
       </div>
       {/* <div>
       <FacebookLogin
@@ -73,6 +75,7 @@ onSubmit: (values)=>{
     
     callback={responseFacebook} />,
       </div> */}
+      <img src={login1} alt="" />
     </form>
   //   <button className='facebook_button'>
   //   <div className='facebook_icon'>
