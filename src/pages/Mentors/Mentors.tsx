@@ -20,7 +20,7 @@ export default function Mentors({ }: Props) {
   return (
      
   
-    <div>
+    <div className='mentor_main'>
       <div className="mentors_title">
         <p>Our Team</p>
       </div>
@@ -28,15 +28,15 @@ export default function Mentors({ }: Props) {
       <div className="container">
         <div className="intro_mentors1">
           <div className="row">
-            <div className="col-4">
+            <div className="col-4 animate__animated animate__bounceInLeft animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src= {mentor1} alt="" />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
@@ -44,29 +44,29 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
-            <div className="col-4">
-              <div className="mentor_profile">
+            <div className="col-4 animate__animated animate__bounceIn animate__delay-0.5s">
+              <div className="mentor_profile ">
                 <img src= {mentor2} alt="..." />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-4 animate__animated animate__bounceInRight animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src={mentor3} alt="..." />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
@@ -79,45 +79,45 @@ export default function Mentors({ }: Props) {
 
         <div className="intro_mentors2">
           <div className="row">
-            <div className="col-4">
-              <div className="mentor_profile">
+            <div className="col-4 mentor_profile animate__animated animate__fadeInLeft animate__delay-0.5s">
+              <div className="mentor_profile ">
                 <img src= {mentor4} alt="..." />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-4">
-              <div className="mentor_profile">
+            <div className="col-4 mentor_profile animate__animated animate__fadeInUp animate__delay-0.5s">
+              <div className="mentor_profile ">
                 <img src= {mentor5} alt="..." />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-4 mentor_profile animate__animated animate__fadeInRight animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src={mentor5} alt="..." />
-                <div className="contact_mentor">
+                <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
                   <i className="fab fa-twitter"></i>
                 </div>
-                <div className="mentor_item">
+                <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
                 </div>

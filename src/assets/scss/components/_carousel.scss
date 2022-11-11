@@ -1,54 +1,65 @@
-.carousel {
-  padding: 10px 0;
-  z-index: 1;
-  .carousel_1 {
-    position: relative;
-    height: 720px;
-
-    .carousel_2 {
-      img {
-        height: 100%;
-        filter: bluescale(10%) contrast(50%);
-      }
-
-      .carousel_content {
-        position: absolute;
-        bottom: 40%;
-        left: 12%;
-        // justify-content: center;
-        width: 75%;
-        // color: aqua;
-
-        h2 {
-          font-weight: 700;
-          color: rgb(189, 206, 211);
-        }
-
-        .carousel_button {
-          button {
-            background: #06282c;
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200%;
-            color: white;
-            box-shadow: 0 0 20px rgb(173, 169, 169);
+.carousel_main{
+  .carousel_slide {
+    // padding: 50px 0;
+    .carousel_1 {
+      position: relative;
+      height: 720px;
   
-            border: none;
-            cursor: pointer;
-          };
-          :hover {
-            background-position: right center;
-            color: black;
-            background-color: #fff;
-
-          };
-        
+      .carousel_2 {
+        img {
+          height: 100%;
+          filter: bluescale(10%) contrast(50%);
+        }
+  
+        .carousel_content {
+          position: absolute;
+          bottom: 40%;
+          left: 12%;
+          // justify-content: center;
+          width: 75%;
+          // color: aqua;
+  
+          h2 {
+            font-weight: 700;
+            color: rgb(189, 206, 211);
+          }
+  
+          .carousel_button {
+            button {
+              background: #06282c;
+              margin: 10px;
+              padding: 15px 45px;
+              text-align: center;
+              text-transform: uppercase;
+              transition: 0.5s;
+              background-size: 200%;
+              color: white;
+              box-shadow: 0 0 20px rgb(173, 169, 169);
+    
+              border: none;
+              cursor: pointer;
+            };
+            :hover {
+              background-position: right center;
+              color: black;
+              background-color: #fff;
+  
+            };
+          
+          }
         }
       }
     }
-  }
-}
 
+    .carousel-control-prev{
+      // position: absolute;
+      top: 2%;
+      
+  }
+  .carousel-control-next{
+    top: 2%;
+  }
+  }
+  
+  
+}

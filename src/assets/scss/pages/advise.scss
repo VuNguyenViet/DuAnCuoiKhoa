@@ -1,34 +1,25 @@
 .advise {
-  padding-top: 30px;
+  padding-top: 8%;
 
   .advise_title {
-    padding-bottom: 30px;
-    background: rgb(2, 113, 166);
-    background: linear-gradient(
-      180deg,
-      rgba(2, 113, 166, 0.7287289915966386) 10%,
-      rgba(22, 113, 233, 0.34217436974789917) 83%
-    );
-    border-radius: 25px;
+      img{
+        width: 100%;
+        background-size: cover;
+      }
 
-    h1 {
-      padding-top: 20px;
-      text-align: center;
-      color: white;
-      font-weight: 600;
-    }
+    
   }
 
   .container {
     .advise_content {
-      .about_course {
+      .about_course_main {
         margin-top: 30px;
-        background: rgb(93, 139, 199);
-        background: linear-gradient(
-          90deg,
-          rgba(93, 139, 199, 1) 0%,
-          rgba(255, 255, 255, 1) 100%
-        );
+        // background: rgb(93, 139, 199);
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(93, 139, 199, 1) 0%,
+        //   rgba(255, 255, 255, 1) 100%
+        // );
         border-radius: 15px;
         .row {
           .col-6 {
@@ -37,7 +28,17 @@
                 border-radius: 15px;
                 margin: 10px 20px;
                 width: 100%;
+                -webkit-animation: mover 1s infinite alternate;
+                animation: mover 1s infinite alternate;
               }
+              @-webkit-keyframes mover {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+            }
+            @keyframes mover {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+            }
             }
           }
 
@@ -99,21 +100,32 @@
         }
       }
 
-      .not_IT {
-        background: rgb(93, 139, 199);
-        background: linear-gradient(
-          90deg,
-          rgba(93, 139, 199, 1) 0%,
-          rgba(255, 255, 255, 1) 100%
-        );
-        border-radius: 15px;
+      .not_IT_main {
+        // background: rgb(93, 139, 199);
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(93, 139, 199, 1) 0%,
+        //   rgba(255, 255, 255, 1) 100%
+        // );
+        // border-radius: 15px;
+        padding-top: 50px;
         .row {
           .col-6 {
             .not_IT_left {
               img {
                 border-radius: 15px; 
                 width: 100%;
+                -webkit-animation: mover 1s infinite alternate;
+                animation: mover 1s infinite alternate;
               }
+              @-webkit-keyframes mover {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+            }
+            @keyframes mover {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+            }
             }
           }
 
@@ -141,7 +153,7 @@
       }
 
       .IT_student {
-        margin: 40px 0;
+        margin: 60px 0;
         .row {
           .col-6 {
             .IT_student_left {
@@ -178,6 +190,7 @@
     }
 
         .btn-contact{
+          
             position: relative;
            padding-bottom: 50px;
             button{
@@ -195,6 +208,22 @@
             }
         }     
   }
-}
 
+  .backToTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    &:hover{
+      background-color: #f7f7f7;
+      color: #000;
+    }
+}
+}
 

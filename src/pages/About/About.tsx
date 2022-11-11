@@ -10,10 +10,12 @@ export default function Introduction({}: Props) {
   const about3 = require('./../../assets/img/about/about3.jpg')
   const about4 = require('./../../assets/img/about/about4.jpeg')
   const about5 = require('./../../assets/img/about/about5.jpeg')
-
+  const backToTop = () =>{
+    window.scrollTo(0,0);
+}
 
   return (
-    <>
+    <div className="about_main">
       <div className="main_about_img">
         <img src={about1} alt="..." />
       </div>
@@ -154,6 +156,10 @@ export default function Introduction({}: Props) {
         </div>
       </div>
       </div>
-      </>
+      
+      <div className='backToTop' onClick={()=>{
+                        backToTop()
+                  }}><i className="fas fa-arrow-up"></i></div>
+      </div>
   );
 }
