@@ -19,9 +19,9 @@ export default function AllProductCard({}: Props) {
     }, []);
   return (
     <>
-    <div className='row gx-5'>
+    <div className='row'>
     {arrProduct.map((item: Product, index: number) => {
-      return <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
+      return <div className='col-4' key={index}>
         <ProductCard prod={item} />
       </div>
     })}

@@ -6,7 +6,7 @@ export default function Support({}: Props) {
       const contact1 = require('../../assets/img/contact/contact1.jpg');
       const contact2 = require('../../assets/img/contact/contact2.jpg');
   return (
-    <div>
+    <div className='contact_main'>
             <div className="container">
                     <div className="contact">
                           <div className="contact1">

@@ -12,11 +12,13 @@ export default function ListItem({prod}: Props) {
 
   return (
     
-      <li><button className="dropdown-item Menu_danhmuc_2" 
+      
+        <li><button className="dropdown-item Menu_danhmuc_2" 
       onClick={() => {
         navigate(`/DanhSachKhoaHoc/${prod.maDanhMuc}`);
         document.documentElement.scrollTop = 0; }}
        >{prod.tenDanhMuc}</button></li>
+      
   
     
   )

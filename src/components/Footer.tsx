@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../assets/scss/components/_footer.scss'
 
 type Props = {
   title?: string

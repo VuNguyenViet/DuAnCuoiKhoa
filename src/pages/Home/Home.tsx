@@ -7,9 +7,12 @@ import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
 import TuvanKhoahoc from '../TuvanKhoahoc/TuvanKhoahoc';
 import Carousel from './Carousel';
 import '../../assets/scss/pages/_home.scss'
+import '../../assets/scss/base/_base.scss'
 type Props = {}
 
+
 export default function Home({ }: Props) {
+
 
   const { arrProduct } = useSelector((state: RootState) => state.productReducer);
 
@@ -22,7 +25,9 @@ export default function Home({ }: Props) {
     dispatch(action);
   }, []);
 
-
+  const backToTop = () =>{
+      window.scrollTo(0,0);
+  }
 
   return (
     <>
@@ -45,6 +50,9 @@ export default function Home({ }: Props) {
 
         </div>
         <TuvanKhoahoc />
+                  <div className='backToTop' onClick={()=>{
+                        backToTop()
+                  }}><i className="fas fa-arrow-up"></i></div>
       </div>
     </>
   )
