@@ -31,13 +31,21 @@
     }
     .header_right {
         padding-left: 350px;
-        form {
+        position: relative;
+        .search_cart {
+            position: absolute;
+            right: 15%;
             .header_icon {
 
             }
         } ;
        ul {
+        position: absolute;
         font-weight: 500;
+        right: 10px;
+        li{
+
+        }
        }
     }
 }
