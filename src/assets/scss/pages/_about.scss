@@ -20,7 +20,7 @@
     // overflow: hidden;
   .about_card {
     margin-top: 60px;
-    .col-3 {
+    .col-lg-3 {
       .about_title {
         background-color: rgb(41, 66, 83);
         border-radius: 15px;
@@ -145,6 +145,7 @@
         font-weight: 600;
         background-color: #7a00ff;
         border: none;
+        object-position: center;
         transition: all 0.5s;
             &:hover{
               background-color: #8dabcb;
