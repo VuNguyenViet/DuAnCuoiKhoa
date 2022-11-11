@@ -9,8 +9,8 @@ type Props = {
 export default function Footer({ }: Props) {
   return (
     <footer className='footer'>
-      <div className='footer__part'>
-        <div className='container py-3 bg-light'>
+      <div className='footer__part --part-1'>
+        <div className='container'>
           <div className='footer__item'>
             <h2>Hãy liên hệ ngay với chúng tôi</h2>
             <ul>
@@ -47,14 +47,12 @@ export default function Footer({ }: Props) {
             </ul>
           </div>
           <div className="footer__item">
-            <h2>Đăng ký tư vấn</h2>
-            <div className="mx-auto" style={{ maxWidth: "400px" }}>
-              <input className="form-control w-100 ps-4" type="text" placeholder="Tên" />
-              <input className="form-control w-100 ps-4" type="text" placeholder="Email" />
-              <input className="form-control w-100 ps-4" type="text" placeholder="Số điện thoại" />
-              <button type="button" className="btn btn-primary top-0 end-0 mt-2 me-2">Đăng ký</button>
-            </div>
-          </div>
+                    <h2 className="mb-3">Đăng ký tư vấn</h2>
+                    <div className="position-relative mx-auto" style={{maxWidth: "400px"}}>
+                        <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                        <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
         </div>
       </div>
     </footer>
