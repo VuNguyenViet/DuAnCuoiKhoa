@@ -39,12 +39,20 @@
 
             }
         } ;
+            .header_icon{
+                position: absolute;
+                right: 16%;
+            }
        ul {
         position: absolute;
         font-weight: 500;
         right: 10px;
         li{
-
+            .register{
+                // position: absolute;
+                // right: 40%;
+                padding-top: 15px;
+            }
         }
        }
     }

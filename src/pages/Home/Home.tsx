@@ -4,7 +4,7 @@ import Introduce from '../../components/Introduce';
 import ProductCard from '../../components/ProductCard';
 import { AppDispatch, RootState } from '../../redux/configStore'
 import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
-import TuvanKhoahoc from '../TuvanKhoahoc/TuvanKhoahoc';
+
 import Carousel from './Carousel';
 import '../../assets/scss/pages/_home.scss'
 import '../../assets/scss/base/_base.scss'
@@ -49,7 +49,7 @@ export default function Home({ }: Props) {
           </div>
 
         </div>
-        <TuvanKhoahoc />
+        
                   <div className='backToTop' onClick={()=>{
                         backToTop()
                   }}><i className="fas fa-arrow-up"></i></div>
