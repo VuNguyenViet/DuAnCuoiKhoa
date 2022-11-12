@@ -54,7 +54,7 @@ export default function Header({ }: Props) {
   return (
     <nav
       style={{ padding: "10px" }}
-      className=" navbar-expand-sm navbar-light bg-dark header_fixed"
+      className=" navbar-expand-sm navbar-light bg-dark header_fixed "
     >
       <NavLink className="navbar-brand header_text" to="/">
         <i
@@ -62,17 +62,7 @@ export default function Header({ }: Props) {
           className="fas fa-book"
         ></i>
       </NavLink>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+   
       <h2>eLEARNING</h2>
       <div
         className="collapse navbar-collapse header_right"

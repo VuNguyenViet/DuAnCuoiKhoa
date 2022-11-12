@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../assets/scss/pages/_mentors.scss'
+import '../../assets/scss/pages/_mentors.scss'
 
 
 type Props = {}
@@ -28,7 +28,8 @@ export default function Mentors({ }: Props) {
       <div className="container">
         <div className="intro_mentors1">
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12 animate__animated animate__bounceInLeft animate__delay-0.5s">
+            <div className="col-lg-4 col-md-6 col-sm-12 ">
+            <div className="animation animate__animated animate__bounceInLeft animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src= {mentor1} alt="" />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
@@ -39,12 +40,13 @@ export default function Mentors({ }: Props) {
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
                   <h2>Mentor name</h2>
                   <p>Frontend Developer</p>
-                </div>
-               
+              </div>
               </div>
             </div>
+            </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-12 animate__animated animate__bounceIn animate__delay-0.5s">
+              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="animation animate__animated animate__bounceIn animate__delay-0.5s">
               <div className="mentor_profile ">
                 <img src= {mentor2} alt="..." />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
@@ -58,7 +60,10 @@ export default function Mentors({ }: Props) {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 animate__animated animate__bounceInRight animate__delay-0.5s">
+              </div>
+          
+              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="animation animate__animated animate__bounceInRight animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src={mentor3} alt="..." />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
@@ -73,15 +78,19 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
+              </div>
+            
+
 
           </div>
         </div>
 
         <div className="intro_mentors2">
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12 mentor_profile animate__animated animate__fadeInLeft animate__delay-0.5s">
-              <div className="mentor_profile ">
-                <img src= {mentor4} alt="..." />
+          <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="animation animate__animated animate__fadeInLeft animate__delay-0.5s">
+              <div className="mentor_profile">
+                <img src={mentor4} alt="..." />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
                   <i className="fab fa-facebook-square"></i>
                   <i className="fab fa-instagram"></i>
@@ -94,7 +103,10 @@ export default function Mentors({ }: Props) {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-12 mentor_profile animate__animated animate__fadeInUp animate__delay-0.5s">
+              </div>
+
+                <div className='col-lg-4 col-md-6 col-sm-12'>
+            <div className=" animation animate__animated animate__fadeInUp animate__delay-0.5s">
               <div className="mentor_profile ">
                 <img src= {mentor5} alt="..." />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
@@ -108,8 +120,11 @@ export default function Mentors({ }: Props) {
                 </div>
               </div>
             </div>
+            </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-12 mentor_profile animate__animated animate__fadeInRight animate__delay-0.5s">
+
+              <div className='col-lg-4 col-md-6 col-sm-12'>
+            <div className=" animation animate__animated animate__fadeInRight animate__delay-0.5s">
               <div className="mentor_profile">
                 <img src={mentor5} alt="..." />
                 <div className="contact_mentor animate__animated animate__fadeIn animate__delay-1s">
@@ -123,6 +138,7 @@ export default function Mentors({ }: Props) {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

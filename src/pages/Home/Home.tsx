@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import Introduce from '../../components/Introduce';
+// import Introduce from '../../components/Introduce';
 import ProductCard from '../../components/ProductCard';
 import { AppDispatch, RootState } from '../../redux/configStore'
 import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
@@ -31,18 +31,17 @@ export default function Home({ }: Props) {
 
   return (
     <>
-      <div>
+       <div>
         <Carousel />
         <div className='container '>
           <div className='ProductFeature'>
-            <Introduce />
             <div className='ProductText'>
               <h3 >Thông tin khóa học</h3>
             </div>
           </div>
           <div className='row'>
             {arrProduct.map((item: Product, index: number) => {
-              return <div className='col-lg-4 g-lg-5 col-md-6 col-sm-12 ' key={index}>
+              return <div className='col-lg-4 g-lg-5 col-md-6 col-sm-12' key={index}>
                 <ProductCard prod={item} />
               </div>
             })}
