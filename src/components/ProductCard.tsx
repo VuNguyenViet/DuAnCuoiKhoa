@@ -17,24 +17,28 @@ export default function ProductCard({ prod }: Props) {
 }
   return (
     <div className="cardProduct">
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className=" row hire_space">
+        <div className="col-sm-12 col-md-6 col-lg-4 ">
           <div style={{overflow:'hidden'}} className="card card_home animate__animated animate__fadeIn animate__delay-0.5s ">
             <div className="card_img animate__animated animate__fadeInDown animate__delay-1s">
               <img
                 style={{ height: "150px" }}
                 src={prod.hinhAnh}
                 alt={prod.tenKhoaHoc}
+                
               />
             </div>
             <div
               style={{ height: 250, backgroundColor: "gray" }}
               className="card-body bg-dark text-white card_mota animate__animated animate__fadeInLeft animate__delay-1s"
             >
-              <h2>
-                {prod.tenKhoaHoc.length > 30
+              <h2 onClick={() => {
+                  navigate(`/detail/${prod.maKhoaHoc}`);
+                  document.documentElement.scrollTop = 0;
+                }} style={{cursor:"pointer"}}>
+                <a >{prod.tenKhoaHoc.length > 30
                   ? prod.tenKhoaHoc.slice(0, 30) + "..."
-                  : prod.tenKhoaHoc}
+                  : prod.tenKhoaHoc}</a>
               </h2>
               <h3>Lượt xem:{prod.luotXem}</h3>
               <p>
@@ -51,7 +55,7 @@ export default function ProductCard({ prod }: Props) {
                   document.documentElement.scrollTop = 0;
                 }}
               >
-                Chi Tiết Khóa Học{" "}
+                Chi Tiết Khóa Học
               </button>
             </div>
           </div>
