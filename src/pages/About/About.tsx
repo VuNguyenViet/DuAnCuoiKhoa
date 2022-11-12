@@ -17,7 +17,7 @@ export default function Introduction({}: Props) {
   return (
     <div className="about_main">
       <div className="main_about_img">
-        <img src={about1} alt="..." />
+        <img src={about1} alt="..." className="img-fluid" />
       </div>
         <div className="container">
       <div className="row about_card  animate__animated animate__fadeInDown animate__delay-0.5s">

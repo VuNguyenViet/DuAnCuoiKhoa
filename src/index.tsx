@@ -18,7 +18,7 @@ import Detail from './pages/Detail/Detail';
 import Mentors from './pages/Mentors/Mentors';
 import Advise from './pages/Advise/Advise';
 // import Support from './pages/Contact/Contact';
-import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
+// import TuvanKhoahoc from './pages/TuvanKhoahoc/TuvanKhoahoc';
 import About from './pages/About/About';
 import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
@@ -41,7 +41,7 @@ root.render(
             <Route path='cart' element={<Cart />}></Route>
             <Route path='search' element={<Search />}></Route>
             <Route path='profile' element={<Profile />}></Route>
-            <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route>
+            {/* <Route path='tuvankhoahoc' element={<TuvanKhoahoc />}></Route> */}
             <Route path='AllProductCard' element={<AllProductCard />}></Route>
             <Route path='DanhSachKhoaHoc' element={<DanhSachKhoaHoc />}>
             <Route path=':maDanhMuc' element={<DanhSachKhoaHoc/>}>

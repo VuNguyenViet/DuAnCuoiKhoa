@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { AppDispatch, RootState } from '../redux/configStore'
 import { getAllProductApi, Product } from '../redux/reducers/productReducer';
 import ProductCard from '../components/ProductCard'
+import '../assets/scss/components/_productCart.scss'
 
 type Props = {}
 
@@ -18,7 +19,7 @@ export default function AllProductCard({}: Props) {
       dispatch(action);
     }, []);
   return (
-    <>
+    <div className='container'>
     <div className='row'>
     {arrProduct.map((item: Product, index: number) => {
       return <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
@@ -26,6 +27,6 @@ export default function AllProductCard({}: Props) {
       </div>
     })}
   </div>
-  </>
+  </div>
   )
 }

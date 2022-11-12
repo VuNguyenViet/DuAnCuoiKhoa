@@ -44,9 +44,11 @@ export default function Header({ }: Props) {
       );
     }
     return (
+          
       <NavLink className="nav-link" to="/login">
         Đăng nhập
       </NavLink>
+      
     );
   };
   return (
@@ -71,13 +73,19 @@ export default function Header({ }: Props) {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-
       <h2>eLEARNING</h2>
       <div
         className="collapse navbar-collapse header_right"
         id="collapsibleNavId"
       >
-        <form className="d-flex my-2 my-lg-0 search_cart">
+        <NavLink
+            className="nav-link text-light header_icon"
+            to="/cart"
+            aria-current="page"
+          >   
+            <i className="fa fa-cart-plus"></i>(0)
+          </NavLink>
+        {/* <form className="d-flex my-2 my-lg-0 search_cart">
           <input
             className="form-control me-sm-2 w-50"
             type="text"
@@ -90,14 +98,8 @@ export default function Header({ }: Props) {
           >
             Tìm kiếm
           </button>
-          <NavLink
-            className="nav-link text-light header_icon"
-            to="/cart"
-            aria-current="page"
-          >   
-            <i className="fa fa-cart-plus"></i>(0)
-          </NavLink>
-        </form>
+          
+        </form> */}
         <ul className="navbar-nav me-auto mt-2 mt-lg-0 login_regis">
           <li className="nav-item">
          
@@ -107,7 +109,7 @@ export default function Header({ }: Props) {
           </li>
           <li className="nav-item">
             <NavLink
-              className="nav-link active"
+              className="nav-link active register"
               to="/register"
               aria-current="page"
             >
