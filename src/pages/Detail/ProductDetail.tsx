@@ -19,13 +19,13 @@ export default function ProductDetail({ prod }: Props) {
         <p>{prod.moTa}</p>
       </div>
       <div className='w-50'>
-        <div className='card'>
+        <div className='card card_detail'>
            <p>Ngày tạo:{prod.ngayTao}</p>
            <p>Người tạo:{prod.maNhom}</p>
            <p>Lượt xem: {prod.luotXem}</p>
            <p>Số lượng học viên: {prod.soLuongHocVien}</p>
           
-           <button>Ghi danh khóa học</button>
+          <button>Ghi danh khóa học</button>
         </div>
       </div>
     </div>
