@@ -21,7 +21,7 @@ export default function Introduction({}: Props) {
       </div>
         <div className="container">
       <div className="row about_card  animate__animated animate__fadeInDown animate__delay-0.5s">
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -32,7 +32,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12 ">
+        <div className="col-xl-3 col-md-6 col-sm-12 ">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -43,7 +43,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -54,7 +54,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
