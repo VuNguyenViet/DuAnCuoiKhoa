@@ -7,10 +7,11 @@
                 // margin-bottom: 70px;
     
                 .row {
-                    .col-6 {
+                    .contact1_item1{
                         .contact_img {
+                            padding-top: 20%;
                             img {
-                                width: 80%;
+                                width: 50%;
                                 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
@@ -26,7 +27,7 @@
                         }
                     }
     
-                    .col-6 {
+                    .contact1_item2{
                         position: relative;
                         .contact_title {
                             position: absolute;
@@ -49,7 +50,7 @@
                 position: relative;
     
                 .row {
-                    .col-6 {
+                    .contact2_item1 {
                         .contact2_content {
                             position: absolute;
                             top: 25%;
@@ -77,10 +78,11 @@
                         }
                     }
     
-                    .col-6 {
+                    .contact2_item2 {
+                            // display: none;
                         .contact2_img {
                             img {
-                                width: 80%; 
+                                width: 50%; 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
                             }
