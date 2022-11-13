@@ -25,22 +25,22 @@ export default function Footer({ }: Props) {
             <ul>
 
               <li>
-                <NavLink className="active" to="/tuvankhoahoc" aria-current="page">
+                <NavLink className="active" to="/advise" aria-current="page">
                   Tư vấn khóa học
                 </NavLink>
               </li>
               <li>
-                <NavLink className="active" to="/tuvankhoahoc">
+                <NavLink className="active" to="/advise">
                   Lựa chọn khóa học
                 </NavLink>
               </li>
               <li>
-                <NavLink className="active" to="/tuvankhoahoc">
+                <NavLink className="active" to="/advise">
                   Bạn là dân trái ngành?
                 </NavLink>
               </li>
               <li>
-                <NavLink className="active" to="/tuvankhoahoc">
+                <NavLink className="active" to="/advise">
                   Bạn là sinh viên nghành CNTT?
                 </NavLink>
               </li>
@@ -50,7 +50,9 @@ export default function Footer({ }: Props) {
                     <h2 className="mb-3">Đăng ký tư vấn</h2>
                     <div className="position-relative mx-auto" style={{maxWidth: "400px"}}>
                         <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                        <NavLink to= "/Register">
                         <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </NavLink>
                     </div>
                 </div>
         </div>

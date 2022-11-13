@@ -36,18 +36,18 @@ export default function Search({}: Props) {
     dispatch(getProductByKwdApiAction(tenKhoaHoc));
   };
 
-  // useEffect(() => {
-  //   // gọi api 
+  useEffect(() => {
+    // gọi api 
     
-  //   timeout = setTimeout(() => {
-  //     getProductByKwdApi(searchParams.get('tenKhoaHoc'));
-  //   }, 1000);
-  //   return () => {
-  //     if (timeout !== null) {
-  //       clearTimeout(timeout);
-  //     }
-  //   };
-  // }, [searchParams.get('tenKhoaHoc')]);
+    timeout = setTimeout(() => {
+      getProductByKwdApi(searchParams.get("tenKhoaHoc"));
+    },5000);
+    return () => {
+      if (timeout !== null) {
+        clearTimeout(timeout);
+      }
+    };
+  }, [searchParams.get("tenKhoaHoc")]);
 
   return (
     <div className="search">

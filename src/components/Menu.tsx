@@ -48,7 +48,7 @@ export default function Menu({}: Props) {
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Tìm kiếm khóa học..." aria-label="Search" />
-        <NavLink to= "/Search">
+        <NavLink to= "/search">
         <button className="btn btn-outline-success text-white" type="submit">Đến trang tìm kiếm</button>
         </NavLink>
        

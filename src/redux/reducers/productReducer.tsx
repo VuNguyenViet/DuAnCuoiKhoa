@@ -125,7 +125,7 @@ export const getProductByKwdApiAction = (tenKhoaHoc:any) => {
     return async (dispatch:AppDispatch) => {
       // call api
       try {
-        const result = await http.get(`/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${tenKhoaHoc}&MaNhom=GP01`);
+        const result = await http.get(`/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${tenKhoaHoc}`);
         //Sau khi lấy dữ liệu từ api về => đưa lên redux
         const action = getProductByKwdAction(result.data);
         dispatch(action);

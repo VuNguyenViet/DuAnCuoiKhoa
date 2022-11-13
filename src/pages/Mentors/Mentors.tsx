@@ -22,7 +22,7 @@ export default function Mentors({ }: Props) {
   
     <div className='mentor_main'>
       <div className="mentors_title">
-        <p>Our Team</p>
+        <p>Đội ngũ giảng viên</p>
       </div>
 
       <div className="container">
@@ -38,8 +38,8 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
-                  <p>Frontend Developer</p>
+                  <h2>John</h2>
+                  <p>Chuyên gia lập trình Back-end</p>
               </div>
               </div>
             </div>
@@ -55,8 +55,8 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
-                  <p>Frontend Developer</p>
+                  <h2>Andy</h2>
+                  <p>Giảng viên Frontend Developer</p>
                 </div>
               </div>
             </div>
@@ -72,8 +72,8 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
-                  <p>Frontend Developer</p>
+                  <h2>Jessica</h2>
+                  <p>Giảng viên lập trình Mobile</p>
                 </div>
               </div>
             </div>
@@ -97,8 +97,8 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
-                  <p>Frontend Developer</p>
+                  <h2>Jenny</h2>
+                  <p>Lập trình Fullstack</p>
                 </div>
               </div>
             </div>
@@ -115,8 +115,8 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
-                  <p>Frontend Developer</p>
+                  <h2>David</h2>
+                  <p>Giảng viên tư duy lập trình</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Mentors({ }: Props) {
                   <i className="fab fa-twitter"></i>
                 </div>
                 <div className="mentor_item animate__animated animate__fadeIn animate__delay-1s">
-                  <h2>Mentor name</h2>
+                  <h2>Will</h2>
                   <p>Frontend Developer</p>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import '../../assets/scss/pages/advise.scss'
+import { NavLink } from 'react-router-dom'
 
 type Props = {};
 
@@ -37,14 +38,10 @@ export default function Advise({}: Props) {
                   </div>
 
                   <div className="content_about_course">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt, eligendi eius asperiores deleniti quod
-                      voluptatem.
-                    </p>
+                    <p>-Tư vấn chuyên nghiệp</p>
+                    <p>-Lựa chọn khóa học phù hợp với lượng kiến thức đang có</p>
+                    <p>-Lộ trình rõ ràng, từng bước </p>
+                    <p>-Phù hợp cho cả người đang đi làm và sinh viên</p>
                   </div>
                 </div>
               </div>
@@ -59,14 +56,9 @@ export default function Advise({}: Props) {
                     <h1>Lựa chọn khóa học</h1>
                   </div>
                   <div className="choose_course_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt, eligendi eius asperiores deleniti quod
-                      voluptatem.
-                    </p>
+                    <p>-Đội ngũ giảng viên nhiều kinh nghiêm.</p>
+                    <p>-Nhiều khóa học, phù hợp với nhiều nhóm đối tượng học viên</p>
+                    <p>-Bắt đầu từ cơ bản đến nâng cao</p>
                   </div>
                 </div>
               </div>
@@ -92,14 +84,9 @@ export default function Advise({}: Props) {
                     <h1> Bạn là dân trái ngành ?</h1>
                   </div>
                   <div className="not_IT_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt, eligendi eius asperiores deleniti quod
-                      voluptatem.
-                    </p>
+                    <p>-Đừng lo lắng nếu bạn là dân trái nghành</p>
+                    <p>-Chúng tôi đào tạo từ những gì cơ bản nhất </p>
+                    <p>-Đảm bảo lượng kiến thức đáp ứng được nhu cầu thị trường</p>
                   </div>
                 </div>
               </div>
@@ -114,12 +101,11 @@ export default function Advise({}: Props) {
                   <h1>Bạn là sinh viên ngành CNTT ?</h1>
                 </div>
                 <div className="IT_student_content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                  <p>-Bạn là sinh viên CNTT, nhưng làm công việc khác,nay muốn quay lại lập trình</p>
+                  <p>-Bạn là sinh viên CNTT, đã có kiến thức về lập trình</p>
+                  <p>-Bạn là sinh viên CNTT, nhưng bị mất căn bản</p>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Deserunt, eligendi eius asperiores deleniti quod voluptatem.
+                    Hãy đến với chúng tôi
                   </p>
                 </div>
                     </div>
@@ -133,7 +119,9 @@ export default function Advise({}: Props) {
             </div>
           </div>
             <div className="btn-contact animate__animated animate__bounceIn animate__delay-4s">
+              <NavLink to= "/contact">
             <button className="btn btn-success ">Liên hệ ngay</button>
+            </NavLink>
             </div>
              
         </div>
