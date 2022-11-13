@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/scss/pages/_profile.scss'
+import {USER_LOGIN} from '../../util/setting'
 type Props = {}
 
 export default function Profile({}: Props) {
