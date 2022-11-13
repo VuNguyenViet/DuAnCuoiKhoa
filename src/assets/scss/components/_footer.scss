@@ -1,13 +1,14 @@
 @import './variable-base' ;
 
 .footer {
+   margin-top: 80px;
     .footer__part {
-        height: 141px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: white;
-   padding-top: 10px;
+   padding-bottom: 120px;
 
         &.--part-1 {
             background-color:  #181d38;

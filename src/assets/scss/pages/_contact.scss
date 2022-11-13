@@ -31,10 +31,9 @@
                     }
     
                     .contact1_item2{
-                        position: relative;
+                        
                         .contact_title {
-                            position: absolute;
-                            top: 20%;
+                            padding-top: 80px;
     
                             h1 {
                                 font-weight: 600;
@@ -50,13 +49,13 @@
             }
     
             .contact2 {
-                position: relative;
+                // position: relative;
     
                 .row {
                     .contact2_item1 {
                         .contact2_content {
-                            position: absolute;
-                            top: 25%;
+                          
+                            padding-top: 60px;
     
                             h2 {
     
