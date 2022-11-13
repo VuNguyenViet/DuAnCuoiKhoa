@@ -12,7 +12,7 @@ export default function Footer({ }: Props) {
       <div className='footer__part --part-1'>
         <div className='container'>
           <div className='row'>
-            <div className='col-xl-4 col-lg-4 col-md-6'>
+            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
               <div className='footer__item'>
                 <h2>Hãy liên hệ ngay với chúng tôi</h2>
                 <ul>
@@ -23,7 +23,7 @@ export default function Footer({ }: Props) {
                 </ul>
               </div>
             </div>
-            <div className='col-xl-4 col-lg-4 col-md-6'>
+            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
               <div className='footer__item ps-3 me-3 --border'>
                 <h2>Bạn cần hỗ trợ</h2>
                 <ul>
@@ -51,7 +51,7 @@ export default function Footer({ }: Props) {
                 </ul>
               </div>
             </div>
-            <div className='col-xl-4 col-lg-4 col-md-6'>
+            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
               <div className="footer__item">
                 <h2 className="mb-3">Đăng ký tư vấn</h2>
                 <div className="position-relative mx-auto" style={{ maxWidth: "400px" }}>
