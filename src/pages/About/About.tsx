@@ -21,7 +21,7 @@ export default function Introduction({}: Props) {
       </div>
         <div className="container">
       <div className="row about_card  animate__animated animate__fadeInDown animate__delay-0.5s">
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -32,7 +32,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12 ">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -43,7 +43,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -54,7 +54,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title">
             <i className="fa fa-graduation-cap"></i>
             <h2>Skilled Instructor</h2>
@@ -143,11 +143,11 @@ export default function Introduction({}: Props) {
         <div className="about_slogan_bot">
               <h3 className=" animate__animated animate__bounceInUp animate__delay-5s  ">Lorem ipsum dolor sit amet consectetur.</h3>
               <div className="row">
-                <div className="col-md-6 col-sm-12 slogan_img_left animate__animated animate__backInLeft animate__delay-4s ">
+                <div className="col-md-6 col-sm-12 mt-5 slogan_img_left animate__animated animate__backInLeft animate__delay-4s ">
                   <img src={about4} alt="" />
                 </div>
 
-                <div className="col-md-6 col-sm-12 slogan_img_right animate__animated animate__backInRight animate__delay-4s">
+                <div className="col-md-6 col-sm-12 mt-5 slogan_img_right animate__animated animate__backInRight animate__delay-4s">
                   <img src={about5} alt="" />
                 </div>
               </div>

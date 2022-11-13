@@ -15,6 +15,9 @@
                                 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
+                                @media only screen and (max-width: 767px){
+                                    display: none;
+                                }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }
@@ -85,6 +88,9 @@
                                 width: 50%; 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
+                                @media only screen and (max-width: 767px){
+                                    display: none;
+                                }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }
