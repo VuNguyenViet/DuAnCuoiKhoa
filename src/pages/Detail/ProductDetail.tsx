@@ -32,8 +32,9 @@ export default function ProductDetail({ prod }: Props) {
                 <p className="maNhom">Mã nhóm:{prod.maNhom}</p>
                 <p className="luotXem">Lượt xem: {prod.luotXem}</p>
                 <p className="slHocVien">Số lượng học viên: {prod.soLuongHocVien}</p>
-
+                 <NavLink to= "/register">
                 <button className="detail_button btn btn-success">Ghi danh khóa học</button>
+                </NavLink>
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Cart from './pages/Cart/Cart';
-import Search from './pages/Search/Search';
+import Search from "./pages/Search/Search";
 import Profile from './pages/Profile/Profile';
 import Detail from './pages/Detail/Detail';
 import Mentors from './pages/Mentors/Mentors';

@@ -9,6 +9,7 @@ type Props = {}
 
 export default function Menu({}: Props) {
   return (
+    <>
     <div className='menu_main'>
     <div className="menu_1">
 
@@ -47,7 +48,10 @@ export default function Menu({}: Props) {
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Tìm kiếm khóa học..." aria-label="Search" />
-        <button className="btn btn-outline-success text-white" type="submit">Search</button>
+        <NavLink to= "/search">
+        <button className="btn btn-outline-success text-white" type="submit">Đến trang tìm kiếm</button>
+        </NavLink>
+       
       </form>
     </div>
   </div>
@@ -68,6 +72,7 @@ export default function Menu({}: Props) {
     </div>
    
 </div>
+</>
 
 
 

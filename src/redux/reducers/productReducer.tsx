@@ -56,12 +56,20 @@ const productReducer = createSlice({
         state.productDetail = action.payload;
         
     },
+    getProductByKwdAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
+        state.arrProduct = action.payload;
+        
+    },
     
 
   }
 });
 
-export const {getProductAction,laydanhsachAction,setProductDetailAction} = productReducer.actions
+export const {getProductAction
+    ,laydanhsachAction,
+    setProductDetailAction,
+    getProductByKwdAction
+} = productReducer.actions
 
 export default productReducer.reducer
 
@@ -111,3 +119,19 @@ export const getProductDetailApiAction = (maKhoaHoc:any) => {
       }
     };
   };
+
+//   api search  
+export const getProductByKwdApiAction = (tenKhoaHoc:any) => {
+    return async (dispatch:AppDispatch) => {
+      // call api
+      try {
+        const result = await http.get(`/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${tenKhoaHoc}`);
+        //Sau khi lấy dữ liệu từ api về => đưa lên redux
+        const action = getProductByKwdAction(result.data);
+        dispatch(action);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+  };
+
