@@ -181,72 +181,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.footer .footer__part {
-  height: 141px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-}
-.footer .footer__part.--part-1 {
-  background-color: #181d38;
-}
-.footer .footer__part.--part-2 {
-  background-color: rgb(231, 231, 231);
-}
-.footer .footer__part .container {
-  display: flex;
-}
-.footer .footer__part .container .footer__item:nth-child(1) {
-  padding-left: 50px;
-}
-.footer .footer__part .container .footer__item {
-  flex-basis: 33.3333333333%;
-}
-.footer .footer__part .container .footer__item.--border {
-  border: solid rgb(219, 219, 219);
-  border-width: 0 2px 0 2px;
-}
-.footer .footer__part .container .footer__item h2 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #000;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  padding-top: 10px;
-  color: white;
-}
-.footer .footer__part .container .footer__item ul {
-  padding: 0;
-  margin: 0;
-}
-.footer .footer__part .container .footer__item ul li {
-  list-style: none;
-  line-height: 20px;
-}
-.footer .footer__part .container .footer__item ul li span {
-  font-weight: 600;
-}
-.footer .footer__part .container .footer__item ul li a {
-  font-size: 12px;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.2;
-  color: white;
-}
-.footer .footer__part .container .footer__item p {
-  font-size: 15px;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.2;
-  margin-bottom: 4px;
-}
-.footer .footer__part .container .footer__item > a {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgb(200, 80, 79);
-  line-height: 1.2;
-}
+
 
 .card_home {
   width: 334px;

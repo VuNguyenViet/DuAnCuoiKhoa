@@ -1,33 +1,17 @@
-@import './variable-base' ;
+@import './variable-base';
 
 .footer {
     .footer__part {
-        height: 141px;
-        display: flex;
-        flex-direction: column;
+        //height: 200px;
+        //display: flex;
+        //flex-direction: column;
         justify-content: center;
         color: white;
-   padding-top: 10px;
-
-        &.--part-1 {
-            background-color:  #181d38;
-        }
-
-        &.--part-2 {
-            background-color: rgb(231, 231, 231);
-        }
-
+        background-color: #181d38;
         .container {
-            display: flex;
-
-            & .footer__item:nth-child(1) {
-                padding-left: 50px;
-            }
-
+            padding-top: 30px;
+            padding-bottom: 30px;
             .footer__item {
-
-                flex-basis: calc(100%/3);
-
                 &.--border {
                     border: solid rgb(219, 219, 219);
                     border-width: 0 2px 0 2px;
@@ -38,7 +22,6 @@
                     margin-bottom: 5px;
                     padding-top: 10px;
                     color: white;
-
                 }
 
                 ul {
@@ -48,6 +31,7 @@
                     li {
                         list-style: none;
                         line-height: 20px;
+
                         span {
                             font-weight: 600;
                         }

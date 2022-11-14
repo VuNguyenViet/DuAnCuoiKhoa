@@ -50,6 +50,7 @@ export default function Search({}: Props) {
   }, [searchParams.get("tenKhoaHoc")]);
 
   return (
+    <div className="container">
     <div className="search">
       <form
         className="search-bar"
@@ -65,10 +66,12 @@ export default function Search({}: Props) {
       </form>
       <div className="search-result">
         <p>Khóa học cần tìm</p>
+        
         <div className="search-result__products row">
           {searchResultSorted === null
             ? renderSearchResult(arrProduct)
             : renderSearchResult(searchResultSorted)}
+        </div>
         </div>
       </div>
     </div>

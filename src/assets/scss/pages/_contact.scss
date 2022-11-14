@@ -7,16 +7,17 @@
                 // margin-bottom: 70px;
     
                 .row {
-                    .col-md-6 {
+                    .contact1_item1{
                         .contact_img {
+                            padding-top: 20%;
                             img {
-                                width: 80%;
+                                width: 50%;
                                 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
-                                @media screen and (max-width: 768px) {
-                                    display: none;
-                                }
+                                // @media screen and (max-width: 768px){
+                                //     display: none;
+                                // }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }
@@ -29,8 +30,8 @@
                         }
                     }
     
-                    .col-md-6 {
-                        position: relative;
+                    .contact1_item2{
+                        
                         .contact_title {
                             padding-top: 80px;
     
@@ -48,11 +49,12 @@
             }
     
             .contact2 {
-                position: relative;
+                // position: relative;
     
                 .row {
-                    .col-md-6 {
+                    .contact2_item1 {
                         .contact2_content {
+                          
                             padding-top: 60px;
     
                             h2 {
@@ -78,13 +80,14 @@
                         }
                     }
     
-                    .col-md-6 {
+                    .contact2_item2 {
+                            // display: none;
                         .contact2_img {
                             img {
-                                width: 80%; 
+                                width: 50%; 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
-                                @media screen and (max-width: 768px) {
+                                @media screen and (max-width: 768px){
                                     display: none;
                                 }
                             }

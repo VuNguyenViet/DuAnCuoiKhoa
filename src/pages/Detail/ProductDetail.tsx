@@ -16,14 +16,14 @@ export default function ProductDetail({ prod }: Props) {
     <div className="container">
       <div className="d-flex detail_main">
         <div className="row">
-          <div className="col-6 animate__animated animate__fadeInLeft animate__delay-0.5s">
+          <div className="col-md-6 col-sm-12 animate__animated animate__fadeInLeft animate__delay-0.5s">
             <div className="w-50 detail_img">
               <img src={prod.hinhAnh} alt="..." />
               
             </div>
           </div>
 
-          <div className="col-6 animate__animated animate__fadeInRight animate__delay-0.5s">
+          <div className="col-md-6 col-sm-12 animate__animated animate__fadeInRight animate__delay-0.5s">
             <div className="w-50 detail_content">
               <div className="card">
                   <h1>{prod.tenKhoaHoc}</h1>

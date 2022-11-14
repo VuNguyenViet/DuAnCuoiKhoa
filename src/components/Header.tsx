@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useSelector } from "react-redux";
 import { AppDispatch, RootState } from '../redux/configStore'
 // import {cart} from '../redux/reducers/cartReducer'
+import '../assets/scss/components/_header.scss'
 import {
   ACCESS_TOKEN,
   clearCookie,
@@ -50,9 +51,18 @@ export default function Header({ }: Props) {
           
       <NavLink className="nav-link" to="/login">
         Đăng nhập
+        <NavLink
+            className="nav-link text-light header_icon"
+            to="/cart"
+            aria-current="page"
+          >   
+            <i className="fa fa-cart-plus"></i>(0)
+          </NavLink>
       </NavLink>
       
+      
     );
+    
   };
   return (
     <div
@@ -70,13 +80,13 @@ export default function Header({ }: Props) {
       <div
         className="header__right"
       >
-        <NavLink
+        {/* <NavLink
           className="nav-link text-light header_icon"
           to="/cart"
           aria-current="page"
         >
           <i className="fa fa-cart-plus"></i>(0)
-        </NavLink>
+        </NavLink> */}
         <ul className=" login_regis">
           <li className="nav-item">
 
@@ -94,5 +104,6 @@ export default function Header({ }: Props) {
         </ul>
       </div>
     </div>
+    
   );
 }

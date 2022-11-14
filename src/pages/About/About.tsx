@@ -22,7 +22,7 @@ export default function Introduction({}: Props) {
       </div>
         <div className="container">
       <div className="row about_card  animate__animated animate__fadeInDown animate__delay-0.5s">
-        <div  className="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div  className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title card">
           <i className="fab fa-html5"></i>
             <h2>HTML</h2>
@@ -32,7 +32,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5 ">
           <div className="about_title">
           <i className="fab fa-css3-alt"></i>
             <h2>CSS</h2>
@@ -42,7 +42,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title">
           <i className="fab fa-js"></i>
             <h2>JavaScript</h2>
@@ -52,7 +52,7 @@ export default function Introduction({}: Props) {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-sm-12 mt-5">
+        <div className="col-xl-3 col-md-6 col-sm-12 mt-5">
           <div className="about_title">
           <i className="fab fa-react"></i>
             <h2>ReactJs</h2>
