@@ -55,41 +55,32 @@ export default function Header({ }: Props) {
     );
   };
   return (
-    <nav
-      style={{ padding: "10px" }}
-      className=" navbar-expand-sm navbar-light bg-dark header_fixed "
+    <div
+      className="header_fixed"
     >
-      <NavLink className="navbar-brand header_text" to="/">
-        <i
-          style={{ color: "#06BBCC", fontSize: "50px" }}
-          className="fas fa-book"
-        ></i>
-      </NavLink>
-   
-      <h2>eLEARNING</h2>
+      <div className="header__left">
+        <NavLink className="navbar-brand header_text" to="/">
+          <i
+            style={{ color: "#06BBCC" }}
+            className="fas fa-book"
+          ></i>
+        </NavLink>
+        <h2>eLEARNING</h2>
+      </div>
       <div
-        className="collapse navbar-collapse header_right"
-        id="collapsibleNavId"
+        className="header__right"
       >
         <NavLink
-            className="nav-link text-light header_icon"
-            to="/cart"
-            aria-current="page"
-          >   
-            <i className="fa fa-cart-plus"></i>(
-                {/* {cart.reduce(
-                  (totalQnt, prodInCart) => (totalQnt += prodInCart.quantity),
-                  0
-                )} */}
-                )
-          </NavLink>
-
-        <ul className="navbar-nav me-auto mt-2 mt-lg-0 login_regis">
+          className="nav-link text-light header_icon"
+          to="/cart"
+          aria-current="page"
+        >
+          <i className="fa fa-cart-plus"></i>(0)
+        </NavLink>
+        <ul className=" login_regis">
           <li className="nav-item">
-         
-            <NavLink className="nav-link active" to="/login" aria-current="page">
+
             {renderUserNavLink()}
-            </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
@@ -102,6 +93,6 @@ export default function Header({ }: Props) {
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   );
 }

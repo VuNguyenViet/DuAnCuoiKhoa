@@ -26,7 +26,7 @@ export default function Search({}: Props) {
 
   const renderSearchResult = (productArray:any) => {
     return productArray.map((product:any) => (
-      <div className="col-4 search-result__product" key={product.maKhoaHoc}>
+      <div className="col-xl-4 col-md-6 col-sm-12 search-result__product" key={product.maKhoaHoc}>
         <ProductCard prod={product} />
       </div>
     ));

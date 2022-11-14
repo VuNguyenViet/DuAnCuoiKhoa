@@ -7,13 +7,16 @@
                 // margin-bottom: 70px;
     
                 .row {
-                    .col-6 {
+                    .col-md-6 {
                         .contact_img {
                             img {
                                 width: 80%;
                                 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
+                                @media screen and (max-width: 768px) {
+                                    display: none;
+                                }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }
@@ -26,11 +29,10 @@
                         }
                     }
     
-                    .col-6 {
+                    .col-md-6 {
                         position: relative;
                         .contact_title {
-                            position: absolute;
-                            top: 20%;
+                            padding-top: 80px;
     
                             h1 {
                                 font-weight: 600;
@@ -49,10 +51,9 @@
                 position: relative;
     
                 .row {
-                    .col-6 {
+                    .col-md-6 {
                         .contact2_content {
-                            position: absolute;
-                            top: 25%;
+                            padding-top: 60px;
     
                             h2 {
     
@@ -77,12 +78,15 @@
                         }
                     }
     
-                    .col-6 {
+                    .col-md-6 {
                         .contact2_img {
                             img {
                                 width: 80%; 
                                 -webkit-animation: mover 1s infinite alternate;
                                 animation: mover 1s infinite alternate;
+                                @media screen and (max-width: 768px) {
+                                    display: none;
+                                }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }

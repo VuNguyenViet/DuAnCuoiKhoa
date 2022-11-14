@@ -53,140 +53,150 @@ export default function Register({}: Props) {
   const register1 = require('../../assets/img/register/register1.jpg');
   const register2 = require('../../assets/img/register/register2.jpg')
   return (
-    
-    
-    <div className="register">
+    <div className="container">
+      <div className="register">
         
-      <form className="row" onSubmit={formik.handleSubmit}>
-        {/* Bên trái  */}
-        <div className="col-12">
-        <p>Tài Khoản</p>
-          <input
-            id="title"
-            className="input_validation"
-            type="text"
-            placeholder="title"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.title ? (
-            <p className="text text-danger">{formik.errors.title}</p>
-          ) : (
-            ""
-          )}
+        <form className="row" onSubmit={formik.handleSubmit}>
+          {/* Bên trái  */}
+          <div className="col-12">
+          <p>Tài Khoản</p>
+            <input
+              id="title"
+              className="input_validation"
+              type="text"
+              placeholder="title"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.title ? (
+              <p className="text text-danger">{formik.errors.title}</p>
+            ) : (
+              ""
+            )}
+            </div>
+            <p>Email</p>
+            <input
+              name="email"
+              className="input_validation"
+              type="text"
+              placeholder="Email"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.email ? (
+              <p className="text text-danger">{formik.errors.email}</p>
+            ) : (
+              ""
+            )}
+            </div>
+            
+            <p>Mật khẩu</p>
+            <input
+              name="password"
+              className="input_validation"
+              type="password"
+              placeholder="PassWord"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.password ? (
+              <p className="text text-danger">{formik.errors.password}</p>
+            ) : (
+              ""
+            )}
+            </div>
+            
+            <p>Nhập lại mật khẩu</p>
+            <input
+              name="passwordConfirmed"
+              className="input_validation"
+              type="password"
+              placeholder="Password"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.password ? (
+              <p className="text text-danger">{formik.errors.password}</p>
+            ) : (
+              ""
+            )}
+            </div>
           </div>
-          <p>Email</p>
-          <input
-            name="email"
-            className="input_validation"
-            type="text"
-            placeholder="Email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.email ? (
-            <p className="text text-danger">{formik.errors.email}</p>
-          ) : (
-            ""
-          )}
-          </div>
+          {/* Bên phải  */}
+          <div className="col-12 register_right">
+            <p>Tên</p>
+            <input
+              id="name"
+              className="input_validation"
+              type="text"
+              placeholder="Name"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.name ? (
+              <p className="text text-danger">{formik.errors.name}</p>
+            ) : (
+              ""
+            )}
+            </div>
           
-          <p>Mật khẩu</p>
-          <input
-            name="password"
-            className="input_validation"
-            type="password"
-            placeholder="PassWord"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.password ? (
-            <p className="text text-danger">{formik.errors.password}</p>
-          ) : (
-            ""
-          )}
+            <p>Số điện thoại</p>
+            <input
+              id="phone"
+              className="input_validation"
+              placeholder="Phone"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.phone ? (
+              <p className="text text-danger">{formik.errors.phone}</p>
+            ) : (
+              ""
+            )}
+            </div>
+           
+             <p>Mã nhóm</p>
+             <input
+              id="review"
+              className="input_validation"
+              type="text"
+              placeholder="review"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            <div>
+            {formik.errors.review ? (
+              <p className="text text-danger">{formik.errors.review}</p>
+            ) : (
+              ""
+            )}
+            </div>
+           
+            <button type='submit' className="Submit_register">
+              Đăng ký 
+            </button>
           </div>
+  
+               <div className="img_register_bottom">
+                <div className="row">
+                  <div className="col-6">
+                  <img src={register1} alt="" className="img_left"/>
+                  </div>
+                  <div className="col-6">
+                  <img src={register2} alt=""  className="img_right"/>
+                  </div>
+                </div>
+               </div>
           
-          <p>Nhập lại mật khẩu</p>
-          <input
-            name="passwordConfirmed"
-            className="input_validation"
-            type="password"
-            placeholder="Password"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.password ? (
-            <p className="text text-danger">{formik.errors.password}</p>
-          ) : (
-            ""
-          )}
-          </div>
-        </div>
-        {/* Bên phải  */}
-        <div className="col-12 register_right">
-          <p>Tên</p>
-          <input
-            id="name"
-            className="input_validation"
-            type="text"
-            placeholder="Name"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.name ? (
-            <p className="text text-danger">{formik.errors.name}</p>
-          ) : (
-            ""
-          )}
-          </div>
         
-          <p>Số điện thoại</p>
-          <input
-            id="phone"
-            className="input_validation"
-            placeholder="Phone"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.phone ? (
-            <p className="text text-danger">{formik.errors.phone}</p>
-          ) : (
-            ""
-          )}
-          </div>
-         
-           <p>Mã nhóm</p>
-           <input
-            id="review"
-            className="input_validation"
-            type="text"
-            placeholder="review"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          <div>
-          {formik.errors.review ? (
-            <p className="text text-danger">{formik.errors.review}</p>
-          ) : (
-            ""
-          )}
-          </div>
-         
-          <button type='submit' className="Submit_register">
-            Đăng ký 
-          </button>
-        </div>
-
-        <img src={register1} alt="" className="img_left"/>
-        <img src={register2} alt=""  className="img_right"/>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }
