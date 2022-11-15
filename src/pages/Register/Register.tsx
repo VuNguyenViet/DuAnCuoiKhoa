@@ -58,7 +58,7 @@ export default function Register({ }: Props) {
 
         <form className="row" onSubmit={formik.handleSubmit}>
           {/* Bên trái  */}
-          <div className="col-md-6 col-sm-12">
+          <div className="col-md-6 col-sm-12 mx-auto">
             <p>Tài Khoản</p>
             <input
               id="title"
@@ -127,7 +127,7 @@ export default function Register({ }: Props) {
             </div>
 
             {/* Bên phải  */}
-            <div className="col-12 register_right">
+            <div className="register_right">
               <p>Tên</p>
               <input
                 id="name"

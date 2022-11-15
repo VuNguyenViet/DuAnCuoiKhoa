@@ -5,18 +5,18 @@
     bottom: 0;
 
     .footer__part {
-
+        //position: absolute;
+        //bottom: 0;
         //height: 200px;
         //display: flex;
         //flex-direction: column;
         justify-content: center;
         color: white;
-        background-color: #181d38;
-
+        background-color: #0d6870;
+        width: auto;
         .container {
             padding-top: 30px;
             padding-bottom: 30px;
-
             .footer__item {
                 &.--border {
                     border: solid rgb(219, 219, 219);
