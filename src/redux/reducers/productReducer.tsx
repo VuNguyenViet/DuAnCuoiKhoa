@@ -27,6 +27,12 @@ export interface productDetail {
     soLuongHocVien: number;
     nguoiTao:      string;
     danhMucKhoaHoc: string;
+    lstHocVien : [
+      { taiKhoan: string;
+        hoTen :string
+
+      }
+    ]
 }
 
 export interface ProductState {
@@ -60,7 +66,14 @@ const productReducer = createSlice({
         state.arrProduct = action.payload;
         
     },
+    thongtinaction: (state:ProductState,action:PayloadAction<productDetail[]>) =>{
+      state.productDetail = action.payload;
+      
+  },
+  dangkykhoahocAction: (state:ProductState,action:PayloadAction<Product[]>) =>{
+    state.arrProduct = action.payload;
     
+},
 
   }
 });
@@ -68,7 +81,9 @@ const productReducer = createSlice({
 export const {getProductAction
     ,laydanhsachAction,
     setProductDetailAction,
-    getProductByKwdAction
+    getProductByKwdAction,
+    thongtinaction,
+    dangkykhoahocAction
 } = productReducer.actions
 
 export default productReducer.reducer
@@ -120,7 +135,49 @@ export const getProductDetailApiAction = (maKhoaHoc:any) => {
     };
   };
 
-//   api search  
+
+  // dang ky khoc hoc x
+  export const dangkykhoahoc = () => {
+    return async (dispatch:AppDispatch) => {
+      // call api
+      try {
+        const result = await http.get(`/QuanLyKhoaHoc/DangKyKhoaHoc`);
+        //Sau khi lấy dữ liệu từ api về => đưa lên redux
+        const action = dangkykhoahocAction(result.data);
+        dispatch(action);
+        alert('Ghi danh khóa học thành công')
+      } catch (err) {
+        console.log(err);
+        alert('Đăng ký không thành công')
+      }
+    };
+  };
+
+
+
+  // Thong tin nguoi hoc khoc hoc
+  // export const thongtinnguoihoc = (maKhoaHoc:any) => {
+  //   return async (dispatch:AppDispatch) => {
+  //     // call api
+  //     try {
+  //       const result = await http.get(`/QuanLyKhoaHoc/LayThongTinHocVienKhoaHoc?maKhoaHoc=${maKhoaHoc}`);
+  //       //Sau khi lấy dữ liệu từ api về => đưa lên redux
+  //       const action = thongtinaction(result.data);
+  //       dispatch(action);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  // };
+
+
+
+
+
+
+
+
+  // api search  
 export const getProductByKwdApiAction = (tenKhoaHoc:any) => {
     return async (dispatch:AppDispatch) => {
       // call api

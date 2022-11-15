@@ -12,7 +12,7 @@ export default function HomeTemplate({ }: Props) {
     <>
       <Header />
       < Menu />
-      <div style={{ minHeight: 600 }}>
+      <div style={{ minHeight: 600 ,paddingTop:'160px'}}>
         <Outlet />
       </div>
       <Footer />

@@ -23,6 +23,7 @@ export default function Header({ }: Props) {
     if (userLogin) {
       return (
         <>
+         <div className="row">
           <li className="nav-item">
             <NavLink className="nav-link " to="/profile" aria-current="page">
               XIN CHÀO: {userLogin.taiKhoan}!
@@ -43,6 +44,7 @@ export default function Header({ }: Props) {
               Đăng xuất 
             </span>
           </li>
+          </div>
         </>
       );
     }
@@ -56,12 +58,12 @@ export default function Header({ }: Props) {
   };
   return (
     <nav
-      style={{ padding: "10px" }}
+      
       className=" navbar-expand-sm navbar-light bg-dark header_fixed "
     >
       <NavLink className="navbar-brand header_text" to="/">
         <i
-          style={{ color: "#06BBCC", fontSize: "50px" }}
+          style={{ color: "#06BBCC", fontSize: "50px",padding: '10px ' }}
           className="fas fa-book"
         ></i>
       </NavLink>

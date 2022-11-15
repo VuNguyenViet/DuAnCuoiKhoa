@@ -98,3 +98,23 @@ export const signupApi = (userSignin:any) => {  // { "email": "", "password": ""
   }
 }
  
+
+// Lay thong tin nguoi dung 
+export const getProfileApi = ()=>{
+
+  return async (dispatch:AppDispatch) => {
+      try {
+          let result = await http.post('/QuanLyNguoiDung/ThongTinTaiKhoan');
+
+
+          console.log('Kết quả',result.data)
+          //Tạo ra actioncreator => dispatch lên redux
+          const action = setUserLoginAction(result.data);
+          dispatch(action);
+      }catch(err){
+          alert('Đăng nhập để vào trang này !');
+          history.push('/login');
+          console.log({err})
+      }
+  } 
+}

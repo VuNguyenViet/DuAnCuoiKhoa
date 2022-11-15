@@ -10,7 +10,7 @@ type Props = {}
 export default function Menu({}: Props) {
   return (
     <>
-    <div className='menu_main'>
+    <div className='menu_main container-fluid'>
     <div className="menu_1">
 
     <nav className="navbar navbar-expand-lg navbar-dark menu_content">

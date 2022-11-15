@@ -26,7 +26,7 @@ export default function Search({}: Props) {
 
   const renderSearchResult = (productArray:any) => {
     return productArray.map((product:any) => (
-      <div className="col-4 search-result__product" key={product.maKhoaHoc}>
+      <div className="col-4 search-result__product " key={product.maKhoaHoc}>
         <ProductCard prod={product} />
       </div>
     ));
@@ -38,8 +38,7 @@ export default function Search({}: Props) {
 
   useEffect(() => {
     // gọi api 
-    
-    timeout = setTimeout(() => {
+     timeout = setTimeout(() => {
       getProductByKwdApi(searchParams.get("tenKhoaHoc"));
     },5000);
     return () => {
@@ -48,6 +47,9 @@ export default function Search({}: Props) {
       }
     };
   }, [searchParams.get("tenKhoaHoc")]);
+
+
+  
 
   return (
     <div className="search">
@@ -59,7 +61,9 @@ export default function Search({}: Props) {
       >
         <p>Tìm kiếm</p>
         <input placeholder="Nhập từ khóa..." onChange={handleChange} />
-        <button className="btnSearch" type="submit">
+        <button className="btnSearch" type="submit"
+        
+        >
           Tìm kiếm
         </button>
       </form>

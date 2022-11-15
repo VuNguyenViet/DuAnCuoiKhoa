@@ -65,24 +65,10 @@ const login1 = require('../../assets/img/login/login1.jpg')
         <div className='login_register my-3'>
           <NavLink to= "/Register">Đăng ký ngay ?</NavLink>
         </div>
-        <button type='submit' className='login_button btn btn-success'>Đăng nhập</button>
+        <button type='submit' className='login_button btn btn-success'
+        
+        >Đăng nhập</button>
       </div>
-      {/* <div>
-      <FacebookLogin
-    appId="405558278438475"
-    autoLoad={true}
-    fields="name,email,picture"
-    
-    callback={responseFacebook} />,
-      </div> */}
-      <img src={login1} alt="" />
     </form>
-  //   <button className='facebook_button'>
-  //   <div className='facebook_icon'>
-  //     <i class="fab fa-facebook "></i>
-  //   </div>
-
-  //   <p className='fb_text'>Continue With Facebook</p>
-  // </button>
   )
 }

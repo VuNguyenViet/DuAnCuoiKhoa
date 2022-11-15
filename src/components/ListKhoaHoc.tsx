@@ -22,7 +22,7 @@ export default function AllList({}: Props) {
     <div className='row gx-5'>
     {arrList.map((item: List, index: number) => {
       return <div className='' key={index}>
-        <ListItem prod={item} />
+        <ListItem  prod={item} />
       </div>
     })}
   </div>

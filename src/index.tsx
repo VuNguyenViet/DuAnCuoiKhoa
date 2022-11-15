@@ -24,6 +24,7 @@ import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
 import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
 import Contact from './pages/Contact/Contact';
+// import AdminTemplate from './templates/AdminTemplate';
 
 export const history = createBrowserHistory();
 
@@ -56,6 +57,9 @@ root.render(
               <Route path='advise' element={<Advise />}></Route>
               <Route path='contact' element={<Contact />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
+            {/* <Route path= 'admin' element={<AdminTemplate />}>
+               
+            </Route> */}
             
         </Routes>
     </HistoryRouter>

@@ -8,6 +8,7 @@ import { getAllProductApi, Product } from '../../redux/reducers/productReducer';
 import Carousel from './Carousel';
 import '../../assets/scss/pages/_home.scss'
 import '../../assets/scss/base/_base.scss'
+import Introduce from '../../components/Introduce';
 type Props = {}
 
 
@@ -33,6 +34,7 @@ export default function Home({ }: Props) {
     <>
        <div>
         <Carousel />
+        <Introduce />
         <div className='container '>
           <div className='ProductFeature'>
             <div className='ProductText'>

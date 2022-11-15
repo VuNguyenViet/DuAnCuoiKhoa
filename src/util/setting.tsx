@@ -106,3 +106,5 @@ http.interceptors.response.use((response) => {
         return Promise.reject(err)
     }
 })
+
+export const USER_SIGNIN = "USER_SIGNIN";
