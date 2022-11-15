@@ -83,7 +83,10 @@
                             img {
                                 width: 50%; 
                                 -webkit-animation: mover 1s infinite alternate;
-                                animation: mover 1s infinite alternate;                               
+                                animation: mover 1s infinite alternate;
+                                @media screen and (max-width: 768px){
+                                    display: none;
+                                }
                             }
                             @-webkit-keyframes mover {
                                 0% { transform: translateY(0); }

@@ -1,10 +1,12 @@
-
 @import './variable-base' ;
 .menu_main{
     position: fixed;
     z-index: 10;
     width: 100%;
     top: 80px;
+    @media screen and  (max-width: 768px) {
+        top: 55px;
+    }
             .menu_1{
                 nav{
                     font-weight: 600;

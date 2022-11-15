@@ -53,7 +53,6 @@ export default function Register({}: Props) {
   const register1 = require('../../assets/img/register/register1.jpg');
   const register2 = require('../../assets/img/register/register2.jpg')
   return (
-
     <div className="container">
       <div className="register">
         

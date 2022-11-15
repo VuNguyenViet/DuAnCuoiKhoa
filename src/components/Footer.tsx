@@ -6,13 +6,13 @@ type Props = {
   title?: string
 }
 
-export default function Footer({}: Props) {
+export default function Footer({ }: Props) {
   return (
     <footer className='footer'>
-      <div className='footer__part --part-1'>
+      <div className='footer__part'>
         <div className='container'>
           <div className='row'>
-            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
               <div className='footer__item'>
                 <h2>Hãy liên hệ ngay với chúng tôi</h2>
                 <ul>
@@ -23,47 +23,48 @@ export default function Footer({}: Props) {
                 </ul>
               </div>
             </div>
-            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
               <div className='footer__item ps-3 me-3 --border'>
                 <h2>Bạn cần hỗ trợ</h2>
                 <ul>
 
-              <li>
-                <NavLink className="active" to="/advise" aria-current="page">
-                  Tư vấn khóa học
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="active" to="/advise">
-                  Lựa chọn khóa học
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="active" to="/advise">
-                  Bạn là dân trái ngành?
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="active" to="/advise">
-                  Bạn là sinh viên nghành CNTT?
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="footer__item">
-                    <h2 className="mb-3">Đăng ký tư vấn</h2>
-                    <div className="position-relative mx-auto" style={{maxWidth: "400px"}}>
-                        <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                        <NavLink to= "/Register">
-                        <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </NavLink>
-                    </div>
+                  <li>
+                    <NavLink className="active" to="/advise" aria-current="page">
+                      Tư vấn khóa học
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="active" to="/advise">
+                      Lựa chọn khóa học
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="active" to="/advise">
+                      Bạn là dân trái ngành?
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="active" to="/advise">
+                      Bạn là sinh viên nghành CNTT?
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12'>
+              <div className="footer__item">
+                <h2 className="mb-3">Đăng ký tư vấn</h2>
+                <div className="position-relative" style={{ maxWidth: "400px" }}>
+                  <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                  <NavLink to="/Register">
+                    <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                  </NavLink>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-   
+      </div>
+    </footer >
   )
 }
