@@ -50,7 +50,6 @@ export default function Cart({ }: Props) {
                   <td>1</td>
                   <td>6 tháng</td>
                   <td><button className='btn btn-danger'>Xóa</button></td>
-
                 </tr>
                 <tr>
                   <td className='cart_img'><img src="https://picsum.photos/100/100" alt="..." /> ReactJS</td>
@@ -58,7 +57,6 @@ export default function Cart({ }: Props) {
                   <td>1</td>
                   <td>6 tháng</td>
                   <td><button className='btn btn-danger'>Xóa</button></td>
-
                 </tr>
                 <tr>
                   <td className='cart_img'><img src="https://picsum.photos/100/100" alt="..." /> ReactJS</td>
@@ -115,5 +113,7 @@ export default function Cart({ }: Props) {
 
 }
 
+
+  
 
 

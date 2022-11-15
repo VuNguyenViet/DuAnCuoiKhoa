@@ -5,12 +5,12 @@ import {NavLink} from 'react-router-dom'
 
 
 type Props = {
-  title?:string
+  title?: string
 }
 
 
-export default function Carousel({}: Props) {
-  const logo =  require("../../assets/img/Logo.png");
+export default function Carousel({ }: Props) {
+  const logo = require("../../assets/img/Logo.png");
   const html = require("../../assets/img/html2.png");
   const css = require ("../../assets/img/css.png")
   const js = require ("../../assets/img/js.webp")

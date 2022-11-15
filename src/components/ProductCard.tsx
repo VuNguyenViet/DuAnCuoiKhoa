@@ -17,8 +17,8 @@ export default function ProductCard({ prod }: Props) {
 }
   return (
     <div className="cardProduct">
-      <div className=" row hire_space">
-        <div className="col-sm-12 col-md-6 col-lg-4 ">
+      <div className="hire_space">
+        <div className="col-sm-12">
           <div style={{overflow:'hidden'}} className="card card_home animate__animated animate__fadeIn animate__delay-0.5s ">
             <div className="card_img animate__animated animate__fadeInDown animate__delay-1s">
               <img

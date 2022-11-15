@@ -199,5 +199,7 @@ export default function Register({ }: Props) {
         </div>
       </form>
     </div>
+
+
   );
 }

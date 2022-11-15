@@ -23,11 +23,20 @@
   position: fixed;
   z-index: 10;
   width: 100%;
+  padding: 0 20px;
   background-color: white !important;
   color: black !important;
-  display: flex !important;
-  justify-content: space-around !important;
-  align-items: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_fixed .header_text {
+  font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+  .header_fixed .header_text {
+    font-size: 30px;
+  }
 }
 .header_fixed a {
   color: #06BBCC !important;
@@ -36,25 +45,42 @@
   color: #06BBCC;
   font-weight: 700;
 }
-.header_fixed .header_right {
-  padding-left: 350px;
-  position: relative;
+.header_fixed .header__left {
+  display: flex;
+  align-items: center;
 }
-.header_fixed .header_right .search_cart {
-  position: absolute;
-  right: 15%;
+.header_fixed .header__right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
 }
-.header_fixed .header_right .header_icon {
-  position: absolute;
-  right: 25%;
+.header_fixed .header__right .nav-link {
+  padding: 0;
 }
-.header_fixed .header_right ul {
-  position: absolute;
-  font-weight: 500;
-  right: 10px;
+.header_fixed .header__right .login_regis {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-bottom: 0;
 }
-.header_fixed .header_right ul li .register {
-  padding-top: 15px;
+.header_fixed .header__right .login_regis .login {
+  margin-right: 20px;
+}
+.header_fixed .header__right .login_regis .register {
+  padding-left: 10px;
+  padding-bottom: 24px;
+}
+.header_fixed .header__right .navbar-nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row !important;
+}
+.header_fixed .header__right .navbar-nav li {
+  margin-left: 20px;
 }
 
 * {
@@ -91,6 +117,11 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   top: 80px;
 }
+@media screen and (max-width: 768px) {
+  .menu_main {
+    top: 55px;
+  }
+}
 .menu_main .menu_1 nav {
   font-weight: 600;
   background-color: #0d6870;
@@ -101,19 +132,21 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 3px 0;
 }
 
-.carousel_main .carousel_slide .carousel_1 {
+.carousel_main .carousel_slide .carousel_1 .carousel_2 {
+  min-height: 100vh;
   position: relative;
-  height: 720px;
+  z-index: 1;
 }
 .carousel_main .carousel_slide .carousel_1 .carousel_2 img {
-  height: 100%;
-  filter: bluescale(10%) contrast(50%);
+  width: 100%;
+  height: auto;
 }
 .carousel_main .carousel_slide .carousel_1 .carousel_2 .carousel_content {
   position: absolute;
-  bottom: 40%;
-  left: 12%;
-  width: 75%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .carousel_main .carousel_slide .carousel_1 .carousel_2 .carousel_content h2 {
   font-weight: 700;
@@ -532,10 +565,9 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: 115px;
 }
 .login_main img {
-  position: absolute;
-  width: 90%;
-  right: -95%;
-  bottom: 20%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -556,20 +588,22 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.register {
+.container {
+  padding-top: 100px;
+}
+.container .register {
+  margin-top: 80px;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   position: relative;
 }
-.register p {
+.container .register p {
   text-align: start;
   font-weight: 600;
   font-size: 15px;
   margin-left: 10%;
 }
-.register .input_validation {
+.container .register .input_validation {
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
@@ -577,10 +611,10 @@ p, h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: rgba(33, 33, 33, 0.08);
 }
-.register .register_right {
+.container .register .register_right {
   position: relative;
 }
-.register .img_left {
+.container .register .img_left {
   position: absolute;
   width: 30%;
   right: 4%;
@@ -604,11 +638,16 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-.register .img_right {
-  position: absolute;
-  width: 30%;
-  left: 4%;
-  bottom: 15%;
+.container .register .input_validation {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(33, 33, 33, 0.08);
+}
+.container .register .col-md-6 .img_left {
+  width: 100%;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -628,23 +667,20 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-
-.ul_radio_button {
+.container .ul_radio_button {
   display: flex;
 }
-.ul_radio_button .radio_button {
+.container .ul_radio_button .radio_button {
   display: flex;
   padding: 35px;
   font-size: 30px;
 }
-
-.Submit_register {
+.container .Submit_register {
   width: 121px;
   height: 48px;
-  left: 0px;
   border-radius: 50px;
   border: none;
-  background-color: #6200EE;
+  background-color: #6200ee;
   color: white;
   margin-bottom: 20px;
   margin-right: 200px;
@@ -674,7 +710,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .container .detail_main .row {
   padding-bottom: 70px;
 }
-.container .detail_main .row .col-6 .detail_img img {
+.container .detail_main .row .col-md-6 .detail_img img {
   width: 200%;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
@@ -695,33 +731,33 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-.container .detail_main .row .col-6 .detail_content {
+.container .detail_main .row .col-md-6 .detail_content {
   margin-left: 20%;
 }
-.container .detail_main .row .col-6 .detail_content .card {
+.container .detail_main .row .col-md-6 .detail_content .card {
   border: none;
 }
-.container .detail_main .row .col-6 .detail_content .card h1 {
+.container .detail_main .row .col-md-6 .detail_content .card h1 {
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
   width: 200%;
 }
-.container .detail_main .row .col-6 .detail_content .card .moTa {
+.container .detail_main .row .col-md-6 .detail_content .card .moTa {
   width: 200%;
 }
-.container .detail_main .row .col-6 .detail_content .card .ngayTao {
+.container .detail_main .row .col-md-6 .detail_content .card .ngayTao {
   padding-top: 30px;
 }
-.container .detail_main .row .col-6 .detail_content .card .slHocVien {
+.container .detail_main .row .col-md-6 .detail_content .card .slHocVien {
   padding-bottom: 30px;
 }
-.container .detail_main .row .col-6 .detail_content .card p {
+.container .detail_main .row .col-md-6 .detail_content .card p {
   margin-bottom: 10px;
   font-size: 19px;
   font-weight: 600;
 }
-.container .detail_main .row .col-6 .detail_content .card .detail_button {
+.container .detail_main .row .col-md-6 .detail_content .card .detail_button {
   font-weight: 600;
   font-size: 25px;
 }
@@ -873,7 +909,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about_main {
-  padding-top: 8%;
+  padding-top: 140px;
 }
 .about_main .main_about_img {
   height: 100%;
@@ -887,7 +923,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .about_main .container .about_card {
   margin-top: 60px;
 }
-.about_main .container .about_card .col-lg-3 .about_title {
+.about_main .container .about_card .col-xl-3 .about_title {
   background-color: rgb(41, 66, 83);
   border-radius: 15px;
   height: 300px;
@@ -895,31 +931,31 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
   transition: all 0.5s;
 }
-.about_main .container .about_card .col-lg-3 .about_title i {
+.about_main .container .about_card .col-xl-3 .about_title i {
   color: #769dd6;
   font-size: 100px;
   margin: 20px 90px;
   transition: all 0.5s;
 }
-.about_main .container .about_card .col-lg-3 .about_title h2 {
+.about_main .container .about_card .col-xl-3 .about_title h2 {
   color: aqua;
   font-weight: 600;
   transition: all 0.5s;
 }
-.about_main .container .about_card .col-lg-3 .about_title p {
+.about_main .container .about_card .col-xl-3 .about_title p {
   color: #fff;
   margin: 10px 10px;
 }
-.about_main .container .about_card .col-lg-3 .about_title:hover {
+.about_main .container .about_card .col-xl-3 .about_title:hover {
   transform: translateY(-30px);
   transition: all 0.5s;
   background-color: #8dabcb;
 }
-.about_main .container .about_card .col-lg-3 .about_title:hover i {
+.about_main .container .about_card .col-xl-3 .about_title:hover i {
   color: #00d3ff;
   transition: all 0.5s;
 }
-.about_main .container .about_card .col-lg-3 .about_title:hover h2 {
+.about_main .container .about_card .col-xl-3 .about_title:hover h2 {
   transition: all 0.5s;
   color: #000;
   font-weight: 600;

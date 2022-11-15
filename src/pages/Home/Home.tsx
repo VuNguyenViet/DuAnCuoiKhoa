@@ -43,7 +43,7 @@ export default function Home({ }: Props) {
           </div>
           <div className='row'>
             {arrProduct.map((item: Product, index: number) => {
-              return <div className='col-lg-4 g-lg-5 col-md-6 col-sm-12' key={index}>
+              return <div className='col-xl-4 g-lg-5 col-md-6 col-sm-12' key={index}>
                 <ProductCard prod={item} />
               </div>
             })}
