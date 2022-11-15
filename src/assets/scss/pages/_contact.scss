@@ -1,5 +1,5 @@
 .contact_main{
-    padding-top: 8%;
+    padding-top: 6%;
     .container {
         .contact {
             
@@ -9,7 +9,7 @@
                 .row {
                     .contact1_item1{
                         .contact_img {
-                            padding-top: 20%;
+                            padding-top: 80px;
                             img {
                                 width: 50%;
                                 
@@ -35,10 +35,12 @@
                             h1 {
                                 font-weight: 600;
                                 margin-bottom: 20px;
+                                font-size: 40px;
                             }
     
                             p {
-                                font-weight: 600;
+                                //font-weight: 600;
+                                font-size: 20px;
                             }
                         }
                     }

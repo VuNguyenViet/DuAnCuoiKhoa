@@ -49,7 +49,7 @@ export default function Login({ }: Props) {
     <form className='login_main' onSubmit={formik.handleSubmit}>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-6 col-sm-12'>
+          <div className='col-md-6 col-sm-12 pt-5'>
             <h1>Đăng nhập</h1>
             <h3>Tài khoản</h3>
             <input type="text" id="email" name='email' placeholder='Enter Your Email' className='Login_padding' onChange={formik.handleChange} onBlur={formik.handleBlur} />
@@ -68,12 +68,10 @@ export default function Login({ }: Props) {
                 <NavLink to="/Register">Đăng ký ngay ?</NavLink>
               </div>
               <button type='submit' className='login_button btn btn-success'>Đăng nhập</button>
-              </div>
-          
             </div>
-            <div className='col-md-6 col-sm-12'> 
-          
-          
+
+          </div>
+          <div className='col-md-6 col-sm-12 pt-5'>
             <img src={login1} alt="" />
           </div>
         </div>

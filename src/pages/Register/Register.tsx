@@ -178,7 +178,7 @@ export default function Register({}: Props) {
             )}
             </div>
            
-            <button type='submit' className="Submit_register">
+            <button type='submit' className="Submit_register me-auto">
               Đăng ký 
             </button>
           </div>
