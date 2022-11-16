@@ -139,12 +139,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .carousel_main .carousel_slide .carousel_1 .carousel_2 img {
   width: 100%;
-  height: auto;
+  height: 50%;
 }
 .carousel_main .carousel_slide .carousel_1 .carousel_2 .carousel_content {
   position: absolute;
-  left: 50%;
-  top: 40%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -169,6 +167,11 @@ p, h1, h2, h3, h4, h5, h6 {
   background-position: right center;
   color: black;
   background-color: #fff;
+}
+
+.ant-table-cell {
+  height: 80px;
+  padding: 10px;
 }
 
 .card_home {
@@ -588,22 +591,21 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.container {
-  padding-top: 100px;
-}
-.container .register {
-  margin-top: 80px;
+.register {
+  margin-top: 5%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   position: relative;
 }
-.container .register p {
+.register p {
   text-align: start;
   font-weight: 600;
   font-size: 15px;
   margin-left: 10%;
 }
-.container .register .input_validation {
+.register .input_validation {
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
@@ -611,10 +613,10 @@ p, h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: rgba(33, 33, 33, 0.08);
 }
-.container .register .register_right {
+.register .register_right {
   position: relative;
 }
-.container .register .img_left {
+.register .img_left {
   position: absolute;
   width: 30%;
   right: 4%;
@@ -638,15 +640,15 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-.container .register .input_validation {
-  width: 100%;
+.register .input_validation {
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
   background-color: rgba(33, 33, 33, 0.08);
 }
-.container .register .col-md-6 .img_left {
+.register .col-md-6 .img_left {
   width: 100%;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
@@ -667,15 +669,45 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
-.container .ul_radio_button {
+
+.col-6 .img_right {
+  margin-left: 80%;
+  width: 20%;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@media screen and (max-width: 768px) {
+  .col-6 .img_right {
+    display: none;
+  }
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.ul_radio_button {
   display: flex;
 }
-.container .ul_radio_button .radio_button {
+.ul_radio_button .radio_button {
   display: flex;
   padding: 35px;
   font-size: 30px;
 }
-.container .Submit_register {
+
+.Submit_register {
   width: 121px;
   height: 48px;
   border-radius: 50px;
@@ -767,6 +799,9 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-bottom: 30px;
   font-weight: 600;
+}
+.cart_main .container .cart_info .table thead tr th {
+  color: rgb(168, 198, 224);
 }
 .cart_main .container .cart_pay {
   text-align: end;
@@ -1113,4 +1148,41 @@ p, h1, h2, h3, h4, h5, h6 {
 .about_main .backToTop:hover {
   background-color: #f7f7f7;
   color: #000;
+}
+
+.ant-table-pagination-right {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.ant-pagination-item {
+  padding: 0 10px;
+  background-color: #8dabcb;
+}
+
+.ant-table-cell {
+  width: 500px;
+}
+
+.ant-table-column-sorters {
+  padding: 30px 0px;
+}
+
+.ant-select-show-arrow {
+  display: flex;
+}
+
+.ant-table-cell {
+  background-color: #a5b0bf;
+  margin: 10px;
+}
+.ant-table-cell img {
+  width: 70%;
+  height: 70%;
+  background-color: #a5b0bf;
+}
+
+.ant-form-item-control {
+  padding-left: 200px;
 }/*# sourceMappingURL=styles.css.map */

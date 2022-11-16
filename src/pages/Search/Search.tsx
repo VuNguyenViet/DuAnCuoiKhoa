@@ -40,7 +40,7 @@ export default function Search({}: Props) {
     // gọi api 
      timeout = setTimeout(() => {
       getProductByKwdApi(searchParams.get("tenKhoaHoc"));
-    },5000);
+    },3000);
     return () => {
       if (timeout !== null) {
         clearTimeout(timeout);

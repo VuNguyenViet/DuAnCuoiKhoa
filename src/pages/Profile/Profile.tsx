@@ -2,7 +2,7 @@ import React from 'react'
 import '../../assets/scss/pages/_profile.scss'
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProfileApi } from "../../redux/reducers/userReducer";
+// import { getProfileApi } from "../../redux/reducers/userReducer";
 import { AppDispatch, RootState } from '../../redux/configStore'
 import { useParams } from "react-router-dom";
 import {
@@ -23,10 +23,10 @@ export default function Profile({ }: Props) {
 
   console.log(userLogin);
 
-  useEffect(() => {
-    const action = getProfileApi();
-    dispatch(action);
-  },[]);
+  // useEffect(() => {
+  //   const action = getProfileApi();
+  //   dispatch(action);
+  // },[]);
   return (
 
     <div className='profile '>

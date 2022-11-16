@@ -68,7 +68,7 @@ export default function Header({ }: Props) {
   };
   return (
     <nav
-      style={{ padding: "10px" }}
+      // style={{ padding: "10px" }}
       className=" navbar-expand-sm navbar-light bg-dark header_fixed "
     >
       <NavLink className="navbar-brand header_text" to="/">

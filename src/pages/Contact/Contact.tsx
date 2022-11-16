@@ -13,7 +13,7 @@ export default function Support({ }: Props) {
                           <div className="row">
                             <div className="col-6 ">
                                 <div className="contact_img">
-                                    <img src={contact1} alt="" />
+                                    <img style={{width:'100%'}} src={contact1} alt="" />
                                 </div>
                             </div>
 
@@ -40,7 +40,7 @@ export default function Support({ }: Props) {
 
                               <div className="col-6">
                                   <div className="contact2_img">
-                                      <img src={contact2} alt="" />
+                                      <img style={{width:'100%'}} src={contact2} alt="" />
                                   </div>
                               </div>
 

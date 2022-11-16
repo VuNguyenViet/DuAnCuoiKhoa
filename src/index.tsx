@@ -24,6 +24,11 @@ import Introduce from './components/Introduce';
 import AllProductCard from './components/AllProductCard';
 import DanhSachKhoaHoc from './pages/DanhSachKhoaHoc/DanhSachKhoaHoc';
 import Contact from './pages/Contact/Contact';
+import AdminTemplate from './AdminTemPlate/AdminTemplate';
+import App from './App';
+import AddNewCourses from './AdminTemPlate/addNewCourses';
+import Admin from './templates/Admin';
+// import { store } from "./redux/configStore";
 // import AdminTemplate from './templates/AdminTemplate';
 
 export const history = createBrowserHistory();
@@ -53,14 +58,13 @@ root.render(
             </Route> 
             </Route>
             <Route path='about' element={<About/>}></Route>
-              <Route path='mentor' element={<Mentors />}></Route>
+              <Route path='mentor' element={<Mentors />} ></Route>
               <Route path='advise' element={<Advise />}></Route>
               <Route path='contact' element={<Contact />}></Route>
             <Route path='*' element={<Navigate to='' />} /> </Route>
-            {/* <Route path= 'admin' element={<AdminTemplate />}>
-               
-            </Route> */}
-            
+            <Route path='admin' element={<Admin />}>
+
+            </Route>
         </Routes>
     </HistoryRouter>
   </Provider>

@@ -16,16 +16,17 @@
 
         img {
           width: 100%;
-          height: auto;          
+          height: 50%;          
           //filter: bluescale(10%) contrast(50%);
         }
 
         .carousel_content {
           position: absolute;
-          left: 50%;
-          top: 40%;
+          // left: 50%;
+          // top: 40%;
           transform: translate(-50%, -50%);
           text-align: center;
+          
 
           h2 {
             font-weight: 700;
@@ -75,4 +76,9 @@
   }
 
 
+}
+
+.ant-table-cell {
+ height: 80px;
+ padding: 10px;
 }

@@ -3,6 +3,10 @@ import productReducer from './reducers/productReducer'
 import registerReducer from './reducers/ListDanhmucReducer'
 import userReducer from './reducers/userReducer'
 import ListDanhmucReducer from './reducers/ListDanhmucReducer'
+import { CoursesReducer } from "../AdminReducer/CoursesReducer";
+import { CategoryCoursesReducer } from "../AdminReducer/CategoryCoursesReducer";
+import { UserManagermentReducer } from "../AdminReducer/UserManagermentReducer";
+import { CoursesAdminReducer } from "../AdminReducer/CoursesAdminReducer";
 // ...
 
 export const store = configureStore({
@@ -10,7 +14,10 @@ export const store = configureStore({
     productReducer:productReducer,
     userReducer:userReducer,
     ListDanhmucReducer:ListDanhmucReducer,
-  
+    CoursesReducer: CoursesReducer,
+    CategoryCoursesReducer: CategoryCoursesReducer,
+     UserManagermentReducer: UserManagermentReducer,
+    CoursesAdminReducer: CoursesAdminReducer
     
   
   },

@@ -136,11 +136,11 @@ export default function Introduction({}: Props) {
       <div className="about_slogan">
         <div className="about_slogan_top animate__animated animate__bounceIn animate__delay-4s ">
         <i className="fas fa-code"></i>
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h2>Học lập trình ngay từ bây giờ</h2>
         </div>
 
         <div className="about_slogan_bot">
-              <h3 className=" animate__animated animate__bounceInUp animate__delay-5s  ">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 className=" animate__animated animate__bounceInUp animate__delay-5s  ">Hãy nỗ lực hết mình, ai cũng có thể bắt đầu lại .</h3>
               <div className="row">
                 <div className="col-md-6 col-sm-12 mb-5 slogan_img_left animate__animated animate__backInLeft animate__delay-4s ">
                   <img src={about4} alt="" />

@@ -76,15 +76,6 @@ export default function Login({ }: Props) {
           </div>
         </div>
       </div>
-
-      <div className='login_flex'>
-        <div className='login_register my-3'>
-          <NavLink to= "/Register">Đăng ký ngay ?</NavLink>
-        </div>
-        <button type='submit' className='login_button btn btn-success'
-        
-        >Đăng nhập</button>
-      </div>
     </form>
   )
 }
